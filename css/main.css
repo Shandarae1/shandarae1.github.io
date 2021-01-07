@@ -13,23 +13,23 @@ footer {
 }
 
 header,
-footer {  
+footer {
   background-color: #89b0ae;
   color: #353945;
   text-align: center;
 }
 
 header {
-  padding: 1.25rem;
+  padding: .5rem;
   font-size: 24px;
-}
-
-.profile-pic {  
-  float: right;
-  border: 1px solid #353945;
 }
 
 footer {
   background-color: #89b0ae;
   padding: 1.25rem;
+}
+
+img {
+  float: right;
+
 }
