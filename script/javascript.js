@@ -1,6 +1,6 @@
 const year = { year: "numeric" };
 
-let date = new Date(document.lastModified);
+const date = document.lastModified;
 
 document.getElementById("year").textContent = new Date().toLocaleDateString(
   "en-US",
