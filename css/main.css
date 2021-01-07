@@ -1,0 +1,35 @@
+body {
+  font-style: helvetica;
+  color: #353945;
+  font-size: 18px;
+  line-height: 1.5;
+}
+header,
+nav,
+main,
+footer {
+  margin: 1.25rem auto;
+  max-width: 760px;
+}
+
+header,
+footer {  
+  background-color: #89b0ae;
+  color: #353945;
+  text-align: center;
+}
+
+header {
+  padding: 1.25rem;
+  font-size: 24px;
+}
+
+.profile-pic {  
+  float: right;
+  border: 1px solid #353945;
+}
+
+footer {
+  background-color: #89b0ae;
+  padding: 1.25rem;
+}
