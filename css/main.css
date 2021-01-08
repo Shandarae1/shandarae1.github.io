@@ -31,6 +31,10 @@ footer {
 
 img {
   float: right;
+  margin: 5px;
+  border-color: #353945;
+  border-radius: 1px;
+  box-shadow: 2px 2px 5px 5px #52545e;
 }
 
 a {
