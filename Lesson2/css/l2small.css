@@ -5,11 +5,13 @@ body {
   line-height: 1.5;
 }
 
+/* phone or baseline view--------------*/
+
 header,
 nav,
 main,
 footer {
-  margin: 1.25rem auto;
+  margin: 1rem auto;
   max-width: 760px;
 }
 
@@ -25,13 +27,20 @@ header {
   font-size: 24px;
 }
 
-/*main {
+main {
+  max-width: 767px;
+  margin: 0 auto;
+  display: grid;
   grid-template-columns: 1fr;
-}*/
+}
 
-article {
+main section {
+  margin: 0.5rem;
+  border: 1px solid #353945;
+  padding: 0 1rem;
   background-color: #89b0ae;
 }
+
 
 h1 {
   font-family: "Trocchi", serif;
@@ -46,9 +55,28 @@ footer {
 img {
   margin: 5px;
   border-color: #353945;
-  
 }
 
 a {
   color: #353945;
+}
+
+
+/* medium view-----------*/
+@media only screen and (min-width: 32.5em) {
+
+main {
+  grid-template-columns: 1fr 1fr;
+}
+
+main section picture {
+  display: block;
+}
+}
+/* large view-----------*/
+@media only screen and (min-width: 60em) {
+
+main {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 }
