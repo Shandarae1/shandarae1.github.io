@@ -1,5 +1,5 @@
 body {
-  font-family: 'Garamond' , serif;
+  font-family: "Noto Sans", sans-serif;
   color: #353945;
   font-size: 18px;
   line-height: 1.5;
@@ -20,17 +20,20 @@ footer {
 }
 
 header {
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 24px;
+}
+h1 {
+  font-family: "Trocchi", serif;
 }
 
 footer {
+  font-family: "Trocchi", serif;
   background-color: #89b0ae;
   padding: 1.25rem;
 }
 
 img {
-  float: right;
   margin: 5px;
   border-color: #353945;
   border-radius: 1px;

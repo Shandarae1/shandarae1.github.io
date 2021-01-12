@@ -1,0 +1,54 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  color: #353945;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+header,
+nav,
+main,
+footer {
+  margin: 1.25rem auto;
+  max-width: 760px;
+}
+
+header,
+footer {
+  background-color: #89b0ae;
+  color: #353945;
+  text-align: center;
+}
+
+header {
+  padding: 0.5rem;
+  font-size: 24px;
+}
+
+/*main {
+  grid-template-columns: 1fr;
+}*/
+
+article {
+  background-color: #89b0ae;
+}
+
+h1 {
+  font-family: "Trocchi", serif;
+}
+
+footer {
+  font-family: "Trocchi", serif;
+  background-color: #89b0ae;
+  padding: 1.25rem;
+}
+
+img {
+  margin: 5px;
+  border-color: #353945;
+  
+}
+
+a {
+  color: #353945;
+}
