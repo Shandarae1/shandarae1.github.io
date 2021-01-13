@@ -19,6 +19,7 @@ main section {
   border: 1px solid #353945;
   padding: 0 1rem;
   background-color: #89b0ae;
+
 }
 
 header,
@@ -53,33 +54,10 @@ footer {
 }
 
 img {
-  margin: 5px;
+  margin: 0 auto;
   border-color: #353945;
 }
 
 a {
   color: #353945;
-}
-
-/* medium view-----------*/
-@media only screen and (min-width: 32.5em) {
-  main {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  main section picture {
-    display: block;
-  }
-
-  main section picture img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #353945;
-  }
-}
-/* large view-----------*/
-@media only screen and (min-width: 60em) {
-  main {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
