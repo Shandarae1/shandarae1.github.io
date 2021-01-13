@@ -7,12 +7,27 @@ body {
 
 /* phone or baseline view--------------*/
 
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+main section {
+  margin: 0.5rem;
+  border: 1px solid #353945;
+  padding: 0 1rem;
+  background-color: #89b0ae;
+}
+
 header,
 nav,
 main,
 footer {
   margin: 1rem auto;
   max-width: 760px;
+  text-align: center;
 }
 
 header,
@@ -26,21 +41,6 @@ header {
   padding: 0.5rem;
   font-size: 24px;
 }
-
-main {
-  max-width: 767px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-main section {
-  margin: 0.5rem;
-  border: 1px solid #353945;
-  padding: 0 1rem;
-  background-color: #89b0ae;
-}
-
 
 h1 {
   font-family: "Trocchi", serif;
@@ -61,22 +61,25 @@ a {
   color: #353945;
 }
 
-
 /* medium view-----------*/
 @media only screen and (min-width: 32.5em) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
 
-main {
-  grid-template-columns: 1fr 1fr;
-}
+  main section picture {
+    display: block;
+  }
 
-main section picture {
-  display: block;
-}
+  main section picture img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #353945;
+  }
 }
 /* large view-----------*/
 @media only screen and (min-width: 60em) {
-
-main {
-  grid-template-columns: 1fr 1fr 1fr;
-}
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
