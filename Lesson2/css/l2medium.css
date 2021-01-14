@@ -1,16 +1,10 @@
-@media only screen and (min-width: 32.5em){
-    main {
-        grid-template-columns: 1fr 1fr;
-      }
-    
-      main section picture {
-        display: block;
-      }
-    
-      main section picture img {
-        width: 100%;
-        height: auto;
-        border: 1px solid #353945;
-        
-      }
+@media only screen and (min-width: 650px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  main section picture {
+    display: block;
+  }
 }

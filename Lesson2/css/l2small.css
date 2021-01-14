@@ -1,34 +1,32 @@
 body {
   font-family: "Noto Sans", sans-serif;
   color: #353945;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.25;
+  margin: 1rem auto;
+  max-width: 840px;
+  text-align: center;
 }
 
 /* phone or baseline view--------------*/
 
 main {
-  max-width: 760px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
 }
 
 main section {
-  margin: 0.5rem;
-  border: 1px solid #353945;
-  padding: 0 1rem;
-  background-color: #89b0ae;
-
+  margin: 0.5rem 0;
+  border: 2px solid #353945;
+  border-radius: 5px;
 }
 
-header,
-nav,
-main,
-footer {
-  margin: 1rem auto;
-  max-width: 760px;
-  text-align: center;
+main section picture img {
+  margin: 0.5rem;
+  width: 90%;
+  height: auto;
+  border: 2px solid #353945;
 }
 
 header,
@@ -45,6 +43,24 @@ header {
 
 h1 {
   font-family: "Trocchi", serif;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 1rem;
+}
+
+section h2 {
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: white;
+  background-color: #89b0ae;
+  border-radius: 5px auto;
 }
 
 footer {
@@ -55,8 +71,7 @@ footer {
 
 img {
   margin: 0 auto;
-  border-color: #353945;
-  max-width: 250px;
+  border: 2px solid #353945;
 }
 
 a {
@@ -65,4 +80,5 @@ a {
 
 p {
   text-align: left;
+  margin: 1rem;
 }
