@@ -56,8 +56,13 @@ footer {
 img {
   margin: 0 auto;
   border-color: #353945;
+  max-width: 250px;
 }
 
 a {
   color: #353945;
+}
+
+p {
+  text-align: left;
 }
