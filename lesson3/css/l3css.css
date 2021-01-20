@@ -1,0 +1,44 @@
+body {
+    font-family: "comfortaa", 'Cursive';
+    color: #bfbdc1;
+    background-color: #37323e;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 1rem auto;
+    max-width: 840px;
+   }
+  
+  /* phone or baseline view--------------*/
+  
+  main {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  /* main section picture img {
+    margin: 1.0rem;
+    width: 90%;
+    height: auto;
+    border: 2px solid #353945;
+    float: right;
+  } */
+  
+  footer {
+    background-color: #bfbdc1;
+    color: #353945;
+    text-align: center;
+  }
+  
+  header {
+    padding: 0.5rem;
+    font-size: 24px;
+  }
+  
+  h1 {
+    font-family: "Hammersmith One", sans-serif;
+  }
+h2 {
+    color: #DE9E36;
+}
+  
