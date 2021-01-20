@@ -19,7 +19,7 @@ main {
 
 nav a {
     font-family: "Hammersmith One";
-    color: #1985A1;
+    color: #2BBADE;
     text-decoration: none;
     font-size: 1.3rem;
     display: block;
@@ -38,9 +38,12 @@ nav a:hover {
 
 footer {
   background-color: #6d6a75;
-  color: #bfbdc1;
+  color: #ffffff;
   text-align: center;
   padding: .75rem;
+}
+footer a {
+  color:#ffffff;
 }
 
 header {
