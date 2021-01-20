@@ -1,44 +1,68 @@
 body {
-    font-family: "comfortaa", 'Cursive';
-    color: #bfbdc1;
-    background-color: #37323e;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 1rem auto;
-    max-width: 840px;
-   }
-  
-  /* phone or baseline view--------------*/
-  
-  main {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  
-  /* main section picture img {
-    margin: 1.0rem;
-    width: 90%;
-    height: auto;
-    border: 2px solid #353945;
-    float: right;
-  } */
-  
-  footer {
-    background-color: #bfbdc1;
-    color: #353945;
-    text-align: center;
-  }
-  
-  header {
-    padding: 0.5rem;
-    font-size: 24px;
-  }
-  
-  h1 {
-    font-family: "Hammersmith One", sans-serif;
-  }
-h2 {
-    color: #DE9E36;
+  font-family: "comfortaa", "Cursive";
+  color: #bfbdc1;
+  background-color: #37323e;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 1rem auto;
+  max-width: 840px;
+  padding: 1rem;
 }
-  
+
+/* phone or baseline view--------------*/
+
+main {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+nav a {
+    font-family: "Hammersmith One";
+    color: #1985A1;
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: block;
+    padding: .5rem;
+}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+
+}
+
+nav a:hover {
+    background-color: #de9e36;
+    color: #37323e;
+}
+
+footer {
+  background-color: #6d6a75;
+  color: #bfbdc1;
+  text-align: center;
+  padding: .75rem;
+}
+
+header {
+  padding: 0.5rem;
+  font-size: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Hammersmith One", sans-serif;
+}
+h2 {
+  color: #de9e36;
+}
+
+
+p, picture {
+    padding: 1.5rem;
+}
+
+.desktoplogo {
+    display: none;
+}
+
+
