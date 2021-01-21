@@ -71,3 +71,7 @@ picture {
   font-family: "Righteous";
   font-size: 2rem;
 }
+
+.active {
+  color: #de9e36;
+}
