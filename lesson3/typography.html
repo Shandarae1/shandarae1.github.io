@@ -1,69 +1,74 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Site Site Plan</title>
+    <meta
+      name="description"
+      content="THORcast.org - Up to date weather for all your weather planning needs in the Greater
+      Scandinavian area"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Hammersmith+One&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Weather Site Site Plan</title>
-  <meta name="description" content="THORcast.org - Up to date weather for all your weather planning needs in the Greater
-      Scandinavian area" />
-  <link rel="stylesheet" href="../css/normalize.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Hammersmith+One&family=Righteous&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/l3css.css" />
+    <link rel="stylesheet" href="css/l3medium.css" />
+    <link rel="stylesheet" href="css/l3large.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/l3css.css" />
-  <link rel="stylesheet" href="css/l3medium.css" />
-  <link rel="stylesheet" href="css/l3large.css" />
-</head>
+  <body>
+    <header>
+      <picture class="desktoplogo">
+        <img
+          src="images/thorcastheaderbluelightning.png"
+          alt="thorcast.com header"
+        />
+      </picture>
+      <picture class="mobilelogo">
+        <img src="images/hammer.png" alt="thorcast.com header" />
+      </picture>
+      <h1>THORcast.org</h1>
+      <h3>
+        Up-to-date forcasts for all your weather planning needs in the Greater
+        Scandinavian area.
+      </h3>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="target-audience.html">Target Audience</a></li>
+        <li><a href="color-scheme.html">Color Scheme</a></li>
+        <!-- <li><a href="typography.html">Typography</a></li> -->
+      </ul>
+    </nav>
 
-<body>
-  <header>
-    <picture class="desktoplogo">
-      <img src="images/thorcastheaderbluelightning.png" alt="thorcast.com header" />
-    </picture>
-    <picture class="mobilelogo">
-      <img src="images/hammer.png" alt="thorcast.com header" />
-    </picture>
-    <h1>THORcast.org</h1>
-    <h3>
-      Up-to-date forcasts for all your weather planning needs in the Greater
-      Scandinavian area.
-    </h3>
-  </header>
-  <nav>
+    <main>
+      <section>
+        <h2>Typography</h2>
 
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="target-audience.html">Target Audience</a></li>
-      <li><a href="color-scheme.html">Color Scheme</a></li>
-      <!-- <li><a href="typography.html">Typography</a></li> -->
-    </ul>
-  </nav>
+        <span class="logofont">logo Font: "Righteous"</span>
 
-  <main>
- 
-    <h3>Typography</h3>
-
-    <p>
-      logo Font: "Hammersmith One" <br>
-      h1 Font: "Hammersmith One" Color: #bfbdc1 <br>
-      h2 Font: "Righteous" Color: #DE9E36<br>
-      h3, p Font: "Comfortaa" Color: #BFBDC1<br>
-
-    </p>
-
-
-  </main>
-  <footer>
-    &copy; <span id="year"></span> | Shanda Aurich | Covington, WA |
-    <a href="https://www.byui.edu/online">BYUI Online Learning</a><br />Last
-    updated: <span id="date"></span>
-  </footer>
-  <script src="scripts/l3script.js"></script>
-</body>
-
+        <h1>h1 Font: "Hammersmith One" Color: #BFBDC1
+        </h1>
+        <h2>h2 Font: "Comfortaa" Color: #DE9E36</h2>
+        <h3>h3, p Font: "Comfortaa" Color: #BFBDC1</h3>
+      </section>
+    </main>
+    <footer>
+      &copy; <span id="year"></span> | Shanda Aurich | Covington, WA |
+      <a href="https://www.byui.edu/online">BYUI Online Learning</a><br />Last
+      updated: <span id="date"></span>
+    </footer>
+    <script src="scripts/l3script.js"></script>
+  </body>
 </html>
