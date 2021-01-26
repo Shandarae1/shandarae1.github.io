@@ -1,12 +1,21 @@
 /* Tablet Views ******************************/
 @media only screen and (min-width: 37.5em) {
 
-    nav ul {
+  /* Flex***************************** */
+    /* nav ul {
         display: flex;
       }
       nav ul li {
         flex: 1 1 100%;
+      } */
+
+      	/* Grid *********************/
+			nav ul { 
+				display: grid;
+				/*grid-template-columns: repeat(5, 1fr);*/
+				grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
       }
+      
       .desktoplogo {
         display: none;
     }

@@ -2,7 +2,7 @@ body {
   font-family: "comfortaa", "Cursive";
   color: #bfbdc1;
   background-color: #37323e;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   margin: 1rem auto;
   max-width: 840px;
@@ -11,8 +11,22 @@ body {
 
 /* phone or baseline view--------------*/
 
+header {
+  padding: 0.5rem;
+  font-size: 20px;
+  text-align: center;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+} 
+header img {
+    width: 200px;
+}
+
+
 main {
   margin: 0 auto;
+  padding: 1rem 0;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -25,15 +39,32 @@ nav a {
   display: block;
   padding: 0.5rem;
 }
+
 nav ul {
   list-style-type: none;
   text-align: center;
- 
+  margin: 0;
+  white-space: nowrap;
+  padding: 0;
+}
+
+nav ul li a {
+  font-family: "Hammersmith One";
+  color: #2bbade;
+  text-decoration: none;
+  font-size: 1.3rem;
+  display: block;
+  padding: 0.5rem;
 }
 
 nav a:hover {
   background-color: #de9e36;
   color: #37323e;
+}
+
+main h2 {
+  font-size: 2rem;
+  text-align: center;
 }
 
 footer {
@@ -42,37 +73,36 @@ footer {
   text-align: center;
   padding: 0.75rem;
 }
+
 footer a {
   color: #ffffff;
-}
-
-header {
-  padding: 0.5rem;
-  font-size: 20px;
-  text-align: center;
 }
 
 h1 {
   font-family: "Hammersmith One", sans-serif;
 }
+
 h2 {
   color: #de9e36;
 }
 
-p,
-picture {
-  padding: 1.5rem;
-}
-
-.desktoplogo {
-  display: none;
-}
-
-.logofont {
-  font-family: "Righteous";
-  font-size: 2rem;
-}
 
 .active {
   color: #de9e36;
 }
+
+.contentbox {
+  border: 2px solid #de9e36;
+  display: block;
+  margin: 5px;
+  font-size: 1.5rem;
+  padding: 15px;
+  background-color: #2bbade;
+  color: #37323e;
+}
+
+/* .clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}  */

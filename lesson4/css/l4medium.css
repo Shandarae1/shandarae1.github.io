@@ -1,0 +1,32 @@
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+
+
+  /* Flex***************************** */
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+  }
+
+  header {
+    padding: 0.5rem;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header img {
+      width: 250px;
+  }
+  .headings {
+    display: flex;
+    flex-direction: column;
+  }
+  header h1 {
+    font-size: 3rem;
+}
+}

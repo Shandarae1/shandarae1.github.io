@@ -2,11 +2,13 @@
 
 @media only screen and (min-width: 60em) {
 
-    .desktoplogo {
-        display: block;
-    }
+
 
     .mobilelogo {
-        display: none;
+        float: left;
+    }
+
+    nav ul li {
+        display: block;
     }
 }
