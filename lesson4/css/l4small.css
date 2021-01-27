@@ -19,12 +19,10 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* background-color: #bfbdc1; */
-} 
-header img {
-    width: 200px;
 }
-
+header img {
+  width: 200px;
+}
 
 main {
   margin: 0 auto;
@@ -34,11 +32,8 @@ main {
   max-width: 840px;
 }
 
-/*--------------from code pen----------------*/
-
 nav {
-  background-color:  #37323e;
-  font-family: Verdana, sans-serif;
+  background-color: #5e5c63;
 }
 
 nav ul {
@@ -51,18 +46,18 @@ nav a {
 }
 
 nav button {
-  margin: .2rem 2%;
+  margin: 0.2rem 2%;
   background-color: transparent;
   border: none;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #bfbdc1;
 }
 
 nav ul li a {
   display: block;
-  padding: .8rem 2%;
+  padding: 0.8rem 2%;
   text-decoration: none;
-  border-top: 1px solid  #bfbdc1;
+  border-top: 1px solid #bfbdc1;
 }
 
 nav ul li a:hover {
@@ -78,42 +73,10 @@ nav ul.hide {
   display: none;
 }
 .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-/*-------------end codePen-------------------*/
-
-/* nav a {
-  font-family: "Hammersmith One";
-  color: #2bbade;
-  text-decoration: none;
-  font-size: 1.3rem;
-  display: block;
-  padding: 0.5rem;
+  content: "";
+  display: table;
+  clear: both;
 }
-
-nav ul {
-  list-style-type: none;
-  text-align: center;
-  margin: 0;
-  white-space: nowrap;
-  padding: 0;
-}
-
-nav ul li a {
-  font-family: "Hammersmith One";
-  color: #2bbade;
-  text-decoration: none;
-  font-size: 1.3rem;
-  display: block;
-  padding: 0.5rem;
-}
-
-nav a:hover {
-  background-color: #de9e36;
-  color: #37323e;
-} */
 
 main h2 {
   font-size: 2rem;
@@ -125,6 +88,8 @@ footer {
   color: #ffffff;
   text-align: center;
   padding: 0.75rem;
+  max-width: 840px;
+  margin: auto;
 }
 
 footer a {
@@ -139,7 +104,6 @@ h2 {
   color: #de9e36;
 }
 
-
 .active {
   color: #de9e36;
 }
@@ -153,4 +117,3 @@ h2 {
   background-color: #2bbade;
   color: #37323e;
 }
-
