@@ -8,3 +8,9 @@ document.getElementById("year").textContent = new Date().toLocaleDateString(
 );
 document.getElementById("date").textContent = date;
 console.log(date);
+
+function toggleMenu() {
+    
+  document.getElementById("toggleNav").classList.toggle("hide");
+  
+}

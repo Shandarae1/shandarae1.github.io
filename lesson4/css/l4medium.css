@@ -1,13 +1,28 @@
 /* Tablet Views ******************************/
-@media only screen and (min-width: 37.5em) {
-
-
-  /* Flex***************************** */
+@media only screen and (min-width: 50em) {
   nav ul {
     display: flex;
+    white-space: nowrap;
+    text-align: center;
+    margin-left: 2%;
   }
+
   nav ul li {
     flex: 1 1 100%;
+    float: left;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul.hide {
+    display: flex;
+  }
+
+  nav ul li a {
+    border: none;
+    padding: 0.8rem 1rem;
   }
 
   header {
@@ -20,7 +35,7 @@
   }
 
   header img {
-      width: 250px;
+    width: 250px;
   }
   .headings {
     display: flex;
@@ -28,5 +43,5 @@
   }
   header h1 {
     font-size: 3rem;
-}
+  }
 }
