@@ -44,6 +44,7 @@ nav ul {
 }
 nav a {
   color: #ffffff;
+  font-size: 1.5rem;
 }
 
 nav button {
@@ -68,6 +69,7 @@ nav ul li a:hover {
 
 nav ul li .active {
   color: #f8ba57;
+
 }
 
 nav ul.hide {
