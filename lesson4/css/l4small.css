@@ -40,9 +40,10 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 nav a {
-  color: #bfbdc1;
+  color: #ffffff;
 }
 
 nav button {
@@ -50,8 +51,10 @@ nav button {
   background-color: transparent;
   border: none;
   font-size: 2rem;
-  color: #bfbdc1;
+  color: #ffffff;
+ 
 }
+
 
 nav ul li a {
   display: block;
@@ -116,4 +119,8 @@ h2 {
   padding: 15px;
   background-color: #2bbade;
   color: #37323e;
+}
+
+.hamButton {
+  text-align: center;
 }
