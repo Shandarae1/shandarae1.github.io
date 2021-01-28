@@ -1,7 +1,5 @@
 const year = { year: "numeric" };
 
-const date = document.lastModified;
-
 document.getElementById("year").textContent = new Date().toLocaleDateString(
   "en-US",
   year
@@ -15,6 +13,7 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 const datefield = document.getElementById("date");
 
 datefield.textContent = fulldate;
+
 function toggleMenu() {
   document.getElementById("toggleNav").classList.toggle("hide");
 }
