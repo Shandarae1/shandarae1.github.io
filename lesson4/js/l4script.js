@@ -9,14 +9,12 @@ document.getElementById("year").textContent = new Date().toLocaleDateString(
 
 const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-	now
+  now
 );
 
-const datefield = document.querySelector("date");
+const datefield = document.getElementById("date");
 
 datefield.textContent = fulldate;
 function toggleMenu() {
-    
   document.getElementById("toggleNav").classList.toggle("hide");
-  
 }

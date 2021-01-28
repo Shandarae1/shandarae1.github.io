@@ -28,22 +28,22 @@
 
   <body>
     <header>
-      
-        <picture class="mobilelogo">
-          <img src="images/hammer.png" alt="thorcast.com header" />
-        </picture>
+      <picture class="mobilelogo">
+        <img src="images/hammer.png" alt="thorcast.com header" />
+      </picture>
 
-        <section class="headings">
+      <section class="headings">
         <h1>THORcast.org</h1>
         <div>
           Up-to-date forcasts for all your weather planning needs in the Greater
           Scandinavian area.
         </div>
       </section>
-      
     </header>
     <nav class="clearfix">
-      <div class="hamButton"><button onclick="toggleMenu()">&#9776;</button></div>
+      <div class="hamButton">
+        <button onclick="toggleMenu()">&#9776;</button>
+      </div>
       <ul id="toggleNav" class="hide">
         <li><a href="#">Home</a></li>
         <li><a href="index.html" class="active">Preston</a></li>
@@ -65,8 +65,9 @@
     <footer>
       &copy; <span id="year"></span> | Shanda Aurich | Covington, WA |
       <a href="https://www.byui.edu/online">BYUI Online Learning</a><br />
-       
-       <date></date>
+      <span id="date"></span>
+      <!--        
+       <date></date> -->
     </footer>
     <script src="js/l4script.js"></script>
   </body>
