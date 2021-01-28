@@ -31,7 +31,13 @@ main {
   grid-template-columns: 1fr;
   max-width: 840px;
 }
-
+nav button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #ffffff;
+}
 nav {
   background-color: #5e5c63;
 }
@@ -45,14 +51,6 @@ nav ul {
 nav a {
   color: #ffffff;
   font-size: 1.5rem;
-}
-
-nav button {
-  margin: 0.2rem 2%;
-  background-color: transparent;
-  border: none;
-  font-size: 2rem;
-  color: #ffffff;
 }
 
 nav ul li a {
@@ -69,7 +67,6 @@ nav ul li a:hover {
 
 nav ul li .active {
   color: #f8ba57;
-
 }
 
 nav ul.hide {
@@ -123,4 +120,8 @@ h2 {
 
 .hamButton {
   text-align: center;
+  }
+
+.motto {
+  margin: .8rem 0;
 }
