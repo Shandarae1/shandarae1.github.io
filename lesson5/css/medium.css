@@ -1,0 +1,47 @@
+/* Tablet Views ******************************/
+@media only screen and (min-width: 50em) {
+    nav ul {
+      display: flex;
+      white-space: nowrap;
+      text-align: center;
+    }
+  
+    nav ul li {
+      flex: 1 1 100%;
+      float: left;
+    }
+  
+    nav button {
+      display: none;
+    }
+  
+    nav ul.hide {
+      display: flex;
+    }
+  
+    nav ul li a {
+      border: none;
+      padding: 0.8rem 1rem;
+    }
+  
+    header {
+      padding: 0.5rem;
+      font-size: 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    header img {
+      width: 250px;
+    }
+    .headings {
+      display: flex;
+      flex-direction: column;
+    }
+    header h1 {
+      font-size: 3rem;
+    }
+  }
+  

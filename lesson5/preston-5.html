@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THORcast.org</title>
+    <meta
+      name="description"
+      content="THORcast.org - Up to date weather for all your weather planning needs in the Greater
+      Scandinavian area"
+    />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Hammersmith+One&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/l4small.css" />
+    <link rel="stylesheet" href="css/l4medium.css" />
+    <link rel="stylesheet" href="css/l4large.css" />
+  </head>
+
+  <body>
+    <header>
+      <picture class="mobilelogo">
+        <img src="images/hammer.png" alt="thorcast.com header" />
+      </picture>
+
+      <section class="headings">
+        <h1>THORcast.org</h1>
+        <div class="motto">
+          Up-to-date forcasts for all your weather planning needs in the Greater
+          Scandinavian area.
+        </div>
+      </section>
+    </header>
+    <nav class="clearfix">
+      <div class="hamButton">
+        <button onclick="toggleMenu()">&#9776;</button>
+      </div>
+      <ul id="toggleNav" class="hide">
+        <li><a href="#">Home</a></li>
+        <li><a href="index.html" class="active">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Preston</h2>
+
+      <div class="contentbox">Hero w/weather summary</div>
+      <div class="contentbox">5 Day Forecast</div>
+      <div class="contentbox">Article</div>
+      <div class="contentbox">Contact Information</div>
+    </main>
+    <footer>
+      &copy; <span id="year"></span> | Shanda Aurich | Covington, WA |
+      <a href="https://www.byui.edu/online">BYUI Online Learning</a><br />
+      <span id="date"></span>
+
+    </footer>
+    <script src="js/l4script.js"></script>
+  </body>
+</html>

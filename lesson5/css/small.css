@@ -1,0 +1,127 @@
+body {
+    font-family: "comfortaa", "Cursive";
+    color: #bfbdc1;
+    background-color: #37323e;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 1rem auto;
+    /* max-width: 840px; */
+    padding: 1rem;
+  }
+  
+  /* phone or baseline view--------------*/
+  
+  header {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  header img {
+    width: 200px;
+  }
+  
+  main {
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 840px;
+  }
+  nav button {
+    margin: 0.2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  nav {
+    background-color: #5e5c63;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  nav a {
+    color: #ffffff;
+    font-size: 1.5rem;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 0.8rem 2%;
+    text-decoration: none;
+    border-top: 1px solid #bfbdc1;
+  }
+  
+  nav ul li a:hover {
+    background-color: #de9e36;
+    color: #37323e;
+  }
+  
+  nav ul li .active {
+    color: #f8ba57;
+  }
+  
+  nav ul.hide {
+    display: none;
+  }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  main h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #6d6a75;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.75rem;
+    max-width: 840px;
+    margin: auto;
+  }
+  
+  footer a {
+    color: #ffffff;
+  }
+  
+  h1 {
+    font-family: "Hammersmith One", sans-serif;
+  }
+  
+  h2 {
+    color: #de9e36;
+  }
+  
+  .active {
+    color: #de9e36;
+  }
+  
+  .contentbox {
+    border: 2px solid #de9e36;
+    display: block;
+    margin: 5px;
+    font-size: 1.5rem;
+    padding: 15px;
+    background-color: #2bbade;
+    color: #37323e;
+  }
+  
+  .hamButton {
+    text-align: center;
+    }
+  
+  .motto {
+    margin: .8rem 0;
+  }
