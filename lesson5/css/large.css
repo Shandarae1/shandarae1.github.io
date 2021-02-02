@@ -1,6 +1,6 @@
 /* Desktop Views ******************************/
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 1280px) {
     .mobilelogo {
       float: left;
     }
@@ -8,6 +8,10 @@
     nav ul li {
       display: block;
     }
+    nav ul li a {
+      font-size: 1.2rem;
+    }
+  
   
   }
   

@@ -17,3 +17,4 @@ datefield.textContent = fulldate;
 function toggleMenu() {
   document.getElementById("toggleNav").classList.toggle("hide");
 }
+
