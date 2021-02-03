@@ -1,123 +1,130 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>THORcast.org-Preston</title>
-    <meta
-      name="description"
-      content="THORcast.org - Up to date weather for all your weather planning needs in the Greater
-      Scandinavian area"
-    />
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Hammersmith+One&family=Righteous&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="css/small.css" />
-    <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THORcast.org-Preston</title>
+  <meta name="description" content="THORcast.org - Up to date weather for all your weather planning needs in the Greater
+      Scandinavian area" />
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Hammersmith+One&family=Righteous&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap" rel="stylesheet" />
 
-  <body>
-    <aside style="display: block;" id="announcement">Announcment</aside>
-    <header>
-      <picture class="mobilelogo">
-        <img src="images/hammer.png" alt="thorcast.com header" />
-      </picture>
+  <link rel="stylesheet" href="css/small.css" />
+  <link rel="stylesheet" href="css/medium.css" />
+  <link rel="stylesheet" href="css/large.css" />
+</head>
 
-      <section class="headings">
-        <h1>THORcast.org</h1>
-        <div class="motto">
-          Up-to-date forcasts for all your weather planning needs in the Greater
-          Scandinavian area.
+<body>
+  <aside id="announcement" class= "fridayAnnounce" style="display:none;">
+
+    "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion."</aside>
+  <header>
+    <picture class="mobilelogo">
+      <img src="images/hammer.png" alt="thorcast.com header" />
+    </picture>
+
+    <section class="headings">
+      <h1>THORcast.org</h1>
+      <div class="motto">
+        Up-to-date forcasts for all your weather planning needs in the Greater
+        Scandinavian area.
+      </div>
+    </section>
+  </header>
+  <nav class="clearfix">
+    <div class="hamButton">
+      <button onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <ul id="toggleNav" class="hide">
+      <li><a href="#">Home</a></li>
+      <li><a href="index.html" class="active">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Preston</h2>
+    <div class="herodiv">
+      <img class="prestonHero" src="images/prestonhero.jpg" alt="picture of town">
+      <section Class="weathersummary">
+        <h3 class="weatherH3">Weather Summary</h3>
+
+        <div class="leftSide">
+          <p><strong>Currently:</strong> <br>
+            <strong>High:<br>Windchill:<br>Humidity:<br>Wind Speed:
+          </p>
+          </p>
         </div>
+        <div class="rightSide">
+          <p>Partly Cloudy <br>
+            38&#176 F<br> -5&#176 F<br> 69%<br> 5 mph</p>
+        </div>
+
       </section>
-    </header>
-    <nav class="clearfix">
-      <div class="hamButton">
-        <button onclick="toggleMenu()">&#9776;</button>
-      </div>
-      <ul id="toggleNav" class="hide">
-        <li><a href="#">Home</a></li>
-        <li><a href="index.html" class="active">Preston</a></li>
-        <li><a href="#">Soda Springs</a></li>
-        <li><a href="#">Fish Haven</a></li>
-        <li><a href="#">Storm Center</a></li>
-        <li><a href="#">Gallery</a></li>
-      </ul>
-    </nav>
+    </div>
+    <div class="articleBox">
+      <img class="articleImg" src="images/skiing.jpg" alt="picture of family skiing">
+      <article class="article">
+        <h3>Article title</h3>
+        By: Article Author <br><br>
 
-    <main>
-      <h2>Preston</h2>
-      <div class="herodiv">
-        <img class="prestonHero" src="images/prestonhero.jpg" alt="picture of town">
-         <section Class="weathersummary">
-           <h3 class="weatherH3">Weather Summary</h3>
-           
-           <div class="leftSide">
-             <p><strong>Currently:</strong>  <br>
-              <strong>High:<br>Windchill:<br>Humidity:<br>Wind Speed:</p>
-            </p>
-           </div>
-           <div class="rightSide">
-             <p>Partly Cloudy <br>
-               38&#176 F<br> -5&#176 F<br> 69%<br> 5 mph</p>
-           </div>
-           
-         </section>
-      </div>
-      <div class="articleBox">
-        <img class="articleImg" src="images/skiing.jpg" alt="picture of family skiing">
-        <article class="article"> 
-          <h3>Article title</h3>
-          By: Article Author <br><br>
-          
-          Voluptate proident voluptate nostrud sit aliquip aliqua elit sit Lorem tempor cillum mollit occaecat. Mollit esse consectetur eiusmod fugiat. Amet culpa Lorem voluptate et incididunt laborum.
+        Voluptate proident voluptate nostrud sit aliquip aliqua elit sit Lorem tempor cillum mollit occaecat. Mollit
+        esse consectetur eiusmod fugiat. Amet culpa Lorem voluptate et incididunt laborum.
 
-Cillum pariatur non sunt nisi occaecat. Exercitation pariatur duis labore deserunt dolore et ipsum proident fugiat elit proident. Non mollit pariatur cillum do mollit veniam cupidatat laborum amet. Dolore laborum nisi commodo quis incididunt officia.
+        Cillum pariatur non sunt nisi occaecat. Exercitation pariatur duis labore deserunt dolore et ipsum proident
+        fugiat elit proident. Non mollit pariatur cillum do mollit veniam cupidatat laborum amet. Dolore laborum nisi
+        commodo quis incididunt officia.
 
-Ullamco quis sint est proident minim non duis ex. Eiusmod minim nulla dolor aute laborum amet sint culpa consectetur esse cillum mollit exercitation. Eu consectetur cillum nostrud Lorem qui voluptate fugiat elit eu qui. Veniam laboris ad nostrud officia ipsum quis consequat eiusmod sunt duis proident aute in esse. Fugiat eu magna consectetur elit cillum anim voluptate eu labore eiusmod dolore ut sunt labore. Proident cillum excepteur mollit duis esse elit Lorem et tempor esse. Deserunt consectetur eiusmod cillum non deserunt aliquip veniam ullamco magna fugiat ipsum nulla dolore.
-          
+        Ullamco quis sint est proident minim non duis ex. Eiusmod minim nulla dolor aute laborum amet sint culpa
+        consectetur esse cillum mollit exercitation. Eu consectetur cillum nostrud Lorem qui voluptate fugiat elit eu
+        qui. Veniam laboris ad nostrud officia ipsum quis consequat eiusmod sunt duis proident aute in esse. Fugiat eu
+        magna consectetur elit cillum anim voluptate eu labore eiusmod dolore ut sunt labore. Proident cillum excepteur
+        mollit duis esse elit Lorem et tempor esse. Deserunt consectetur eiusmod cillum non deserunt aliquip veniam
+        ullamco magna fugiat ipsum nulla dolore.
 
-        </article></div>
-      <div class="forcast5day">
-        <table id="forcast5day" >
-          <caption>5 Day Forcast</caption>
-          <tr class="weekdays">
-            <th>Wed</th>
-            <th>Thu</th> 
-            <th>Fri</th>
-            <th>Sat</th>
-            <th>Sun</th>
-          </tr>
-          <tr>
-            <td><img src="images/snowyicon.png" alt="snow icon">32&#176 F</td>
-            <td><img src="images/windyicon.png" alt="wind icon">35&#176 F</td>
-            <td><img src="images/storm100.png" alt="storm icon">33&#176 F</td>
-            <td><img src="images/sunny100.png" alt="sunny icon">35&#176 F</td>
-            <td><img src="images/sunny100.png" alt="sunny icon">36&#176 F</td>
-                      </tr>
- 
-         
-        </table>
-      </div>
-      <div class="contentbox">Contact Information</div>
-    </main>
-    <footer>
-      &copy; <span id="year"></span> | Shanda Aurich | Covington, WA |
-      <a href="https://www.byui.edu/online">BYUI Online Learning</a><br />
-      <span id="date"></span>
 
-    </footer>
-    <script src="js/script.js"></script>
-  </body>
+      </article>
+    </div>
+    <div class="forcast5day">
+      <table id="forcast5day">
+        <caption>5 Day Forcast</caption>
+        <tr class="weekdays">
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+          <th>Sun</th>
+        </tr>
+        <tr>
+          <td><img src="images/snowyicon.png" alt="snow icon">32&#176 F</td>
+          <td><img src="images/windyicon.png" alt="wind icon">35&#176 F</td>
+          <td><img src="images/storm100.png" alt="storm icon">33&#176 F</td>
+          <td><img src="images/sunny100.png" alt="sunny icon">35&#176 F</td>
+          <td><img src="images/sunny100.png" alt="sunny icon">36&#176 F</td>
+        </tr>
+
+
+      </table>
+    </div>
+    <div class="contentbox">Contact Information</div>
+  </main>
+  <footer>
+    &copy; <span id="year"></span> | Shanda Aurich | Covington, WA |
+    <a href="https://www.byui.edu/online">BYUI Online Learning</a><br />
+    <span id="date"></span>
+
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

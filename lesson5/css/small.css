@@ -82,6 +82,15 @@ main h2 {
   font-size: 2rem;
   text-align: center;
 }
+.fridayAnnounce {
+  display: block;
+  background: radial-gradient(#ffffff, #de9e36);
+  border: 1px solid #37323e;
+  padding: 0.7rem;
+  box-shadow: 0 0 30px #777;
+  color: #37323e;
+  max-height: 100%;
+}
 .herodiv {
   margin: 0 auto;
   position: relative;
