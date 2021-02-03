@@ -21,7 +21,7 @@ function toggleMenu() {
 function showhide() {
   var d = new Date();
   var s = document.getElementById("announcement");
-  if (d.getDay() == 5) {
+  if (d.getDay() == 3) {
     s.style.display = s.style.display == "block" ? "none" : "block";
   }
 }

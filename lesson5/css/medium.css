@@ -86,4 +86,21 @@
   .weekdays {
     background: radial-gradient(#ffffff, #de9e36);
   }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+  }
+
+
+  .mapImage {
+    display: block;
+    margin: 0 auto;
+    align-self: center;
+    border: 1px solid #37323e;
+  box-shadow: 0 0 30px rgb(48, 46, 46);
+  }
+
+
+
 }
