@@ -152,6 +152,11 @@ article {
   color: #37323e;
   padding: 0.5rem;
 }
+
+article a {
+  color: #37323e;
+  font-size: .9rem;
+}
 .forcast5day {
   display: none;
 }
