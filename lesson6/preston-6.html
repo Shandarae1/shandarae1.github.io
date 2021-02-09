@@ -2,162 +2,182 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>THORcast.org-Preston</title>
-  <meta name="description" content="THORcast.org - Up to date weather for all your weather planning needs in the Greater
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THORcast.org-Preston</title>
+    <meta name="description" content="THORcast.org - Up to date weather for all your weather planning needs in the Greater
       Scandinavian area" />
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="../css/normalize.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Hammersmith+One&family=Righteous&display=swap"
     rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap" rel="stylesheet" /> -->
 
-  <link rel="stylesheet" href="css/small.css" />
-  <link rel="stylesheet" href="css/medium.css" />
-  <link rel="stylesheet" href="css/large.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
 </head>
 
 <body>
-  <aside id="announcement" class="fridayAnnounce" style="display:none;">
+    <aside id="announcement" class="fridayAnnounce" style="display:none;">
 
-    <strong>Saturday</strong> = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
-  </aside>
-  <header>
-    <picture class="mobilelogo">
-      <img src="images/hammer.png" alt="thorcast.com header" />
-    </picture>
+        <strong>Saturday</strong> = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </aside>
+    <header>
+        <picture class="mobilelogo">
+            <img src="images/hammer.png" alt="thorcast.com header" />
+        </picture>
 
-    <section class="headings">
-      <h1>THORcast.org</h1>
-      <div class="motto">
-        Up-to-date forcasts for all your weather planning needs in the Greater
-        Scandinavian area.
-      </div>
-    </section>
-  </header>
-  <nav class="clearfix">
-    <div class="hamButton">
-      <button onclick="toggleMenu()">&#9776;</button>
-    </div>
-    <ul id="toggleNav" class="hide">
-      <li><a href="#">Home</a></li>
-      <li><a href="index.html" class="active">Preston</a></li>
-      <li><a href="#">Soda Springs</a></li>
-      <li><a href="#">Fish Haven</a></li>
-      <li><a href="#">Storm Center</a></li>
-      <li><a href="#">Gallery</a></li>
-    </ul>
-  </nav>
+        <section class="headings">
+            <h1>THORcast.org</h1>
+            <div class="motto">
+                Up-to-date forcasts for all your weather planning needs in the Greater
+                Scandinavian area.
+            </div>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <div class="hamButton">
+            <button onclick="toggleMenu()">&#9776;</button>
+        </div>
+        <ul id="toggleNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="index.html" class="active">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
 
-  <main>
-    <h2>Preston</h2>
-    <div class="herodiv">
-      <img class="prestonHero" src="images/prestonhero.jpg" alt="picture of town">
-      
-        <section Class="weathersummary">
-          <h3 class="weatherH3">Weather Summary</h3>
+    <main>
+        <h2>Preston</h2>
+        <div class="herodiv">
+            <picture>
+                <img srcset="" <img class="prestonHero" src="images/prestonhero.jpg" alt="picture of town">
+            </picture>
 
-          <div class="leftSide">
-            <p><strong>Currently:</strong> <br>
-              <strong>High:<br>Windchill:<br>Humidity:<br>Wind Speed:</strong>
+            <section Class="weathersummary">
+                <h3 class="weatherH3">Weather Summary</h3>
 
+                <div class="leftSide">
+                    <p><strong>Currently:</strong> <br>
+                        <strong>High:<br>Windchill:<br>Humidity:<br>Wind Speed:</strong>
+
+                    </p>
+
+                </div>
+                <div class="rightSide">
+                    <p>Partly Cloudy <br>
+                        38&#176; F<br> 33&#176; F<br> 69%<br> 5 mph</p>
+                </div>
+
+            </section>
+
+        </div>
+
+
+
+        <div class="forcast5day">
+            <table id="forcast5day">
+                <caption class="caption5day">5 Day Forcast</caption>
+                <tr class="weekdays">
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                </tr>
+                <tr>
+                    <td><img src="images/snowyicon.png" alt="snow icon">32&#176; F</td>
+                    <td><img src="images/windyicon.png" alt="wind icon">35&#176; F</td>
+                    <td><img src="images/storm100.png" alt="storm icon">33&#176; F</td>
+                    <td><img src="images/sunny100.png" alt="sunny icon">35&#176; F</td>
+                    <td><img src="images/sunny100.png" alt="sunny icon">36&#176; F</td>
+                </tr>
+
+
+            </table>
+        </div>
+        <div class="articleBox">
+            <img class="articleImg" src="images/northernlights.jpg" alt="picture of family skiing">
+            <article class="article">
+                <h3>Facts and fiction about the northern lights</h3>
+                <h4>Many are fascinated by the aurora borealis, but few know the science and myths related to the
+                    natural light
+                    show in the sky.</h4>
+
+                Aute tempor tempor et eu labore deserunt do Lorem cillum culpa culpa id. Consectetur ea incididunt
+                proident do incididunt sit minim fugiat. Amet proident voluptate ea ad minim. Et deserunt laborum nisi
+                eiusmod. Deserunt sunt eiusmod culpa laborum duis ipsum id Lorem amet dolore amet.
+
+                Laborum dolor culpa id minim sint laborum Lorem culpa aliqua. Commodo minim aute officia id ut irure
+                ipsum fugiat enim qui occaecat Lorem. Deserunt mollit velit ea ut fugiat non occaecat non ex laborum.
+
+                Duis sit minim non eu nostrud veniam proident sit culpa id. Officia tempor commodo occaecat minim
+                exercitation mollit mollit. Labore dolor ex aliquip qui voluptate ea commodo nulla est aute. Dolore
+                irure et laboris cupidatat anim exercitation incididunt velit cillum aliqua. Aliquip exercitation fugiat
+                aliquip amet dolor dolore ea ea eu reprehenderit. Lorem eiusmod cupidatat ad quis qui cupidatat eu
+                laborum et ad.
+
+                <a href="#"> Continue to full article...</a>
+
+
+            </article>
+        </div>
+
+
+    </main>
+
+    <div class="contact">
+        <img class="mapImage" src="images/prestonNorway.jpg" alt="map of preston norway" />
+        <section class="address">
+
+            <h3>THORcast.org</h3>
+            <p class="contactPara">
+
+                <a
+                    href="https://www.google.com/maps/place/Preston/@68.1802117,14.2103503,14z/data=!4m12!1m6!3m5!1s0x45de7b1db5e09cab:0xf0e199f6b567533a!2sPreston!8m2!3d68.1801972!4d14.2285998!3m4!1s0x45de7b1db5e09cab:0xf0e199f6b567533a!8m2!3d68.1801972!4d14.2285998">
+                    8310 Kabelvåg, Norway</a><br>
+                &#9743; +47 944 49 110<br>
+                &#x2709; email@thorcast.org
             </p>
 
-          </div>
-          <div class="rightSide">
-            <p>Partly Cloudy <br>
-              38&#176; F<br> 33&#176; F<br> 69%<br> 5 mph</p>
-          </div>
+            <div class="social">
+                <a href="https://www.facebook.com" target="blank">
+                    <img class="facebook" src="images/facebook.png" alt="Facebook icon" />
+                </a>
+                <a href="https://www.twitter.com" target="blank">
+                    <img class="twitter" src="images/twitter.png" alt="twitter icon" /></a>
 
+                <a href="https://www.wordpress.com" target="blank">
+                    <img class="wordpress" src="images/wordpress.png" alt="wordpress icon" /></a>
+            </div>
         </section>
-    
-    </div>
-
-   
-
-    <div class="forcast5day">
-      <table id="forcast5day">
-        <caption class="caption5day">5 Day Forcast</caption>
-        <tr class="weekdays">
-          <th>Wed</th>
-          <th>Thu</th>
-          <th>Fri</th>
-          <th>Sat</th>
-          <th>Sun</th>
-        </tr>
-        <tr>
-          <td><img src="images/snowyicon.png" alt="snow icon">32&#176; F</td>
-          <td><img src="images/windyicon.png" alt="wind icon">35&#176; F</td>
-          <td><img src="images/storm100.png" alt="storm icon">33&#176; F</td>
-          <td><img src="images/sunny100.png" alt="sunny icon">35&#176; F</td>
-          <td><img src="images/sunny100.png" alt="sunny icon">36&#176; F</td>
-        </tr>
-
-
-      </table>
-    </div>
-    <div class="articleBox">
-      <img class="articleImg" src="images/northernlights.jpg" alt="picture of family skiing">
-      <article class="article">
-        <h3>Facts and fiction about the northern lights</h3>
-        <h4>Many are fascinated by the aurora borealis, but few know the science and myths related to the natural light
-          show in the sky.</h4>
-          
-          Aute tempor tempor et eu labore deserunt do Lorem cillum culpa culpa id. Consectetur ea incididunt proident do incididunt sit minim fugiat. Amet proident voluptate ea ad minim. Et deserunt laborum nisi eiusmod. Deserunt sunt eiusmod culpa laborum duis ipsum id Lorem amet dolore amet.
-
-Laborum dolor culpa id minim sint laborum Lorem culpa aliqua. Commodo minim aute officia id ut irure ipsum fugiat enim qui occaecat Lorem. Deserunt mollit velit ea ut fugiat non occaecat non ex laborum.
-
-Duis sit minim non eu nostrud veniam proident sit culpa id. Officia tempor commodo occaecat minim exercitation mollit mollit. Labore dolor ex aliquip qui voluptate ea commodo nulla est aute. Dolore irure et laboris cupidatat anim exercitation incididunt velit cillum aliqua. Aliquip exercitation fugiat aliquip amet dolor dolore ea ea eu reprehenderit. Lorem eiusmod cupidatat ad quis qui cupidatat eu laborum et ad.
-        
-         <a href="#"> Continue to full article...</a>
-
-
-      </article>
     </div>
 
 
-  </main>
-
-  <div class="contact">
-    <img class="mapImage" src="images/prestonNorway.jpg" alt="map of preston norway" />
-    <section class="address">
-
-      <h3>THORcast.org</h3>
-      <p class="contactPara">
-
-        <a
-          href="https://www.google.com/maps/place/Preston/@68.1802117,14.2103503,14z/data=!4m12!1m6!3m5!1s0x45de7b1db5e09cab:0xf0e199f6b567533a!2sPreston!8m2!3d68.1801972!4d14.2285998!3m4!1s0x45de7b1db5e09cab:0xf0e199f6b567533a!8m2!3d68.1801972!4d14.2285998">
-          8310 Kabelvåg, Norway</a><br>
-        &#9743; +47 944 49 110<br>
-        &#x2709; email@thorcast.org
-      </p>
-
-      <div class="social">
-        <a href="https://www.facebook.com" target="blank">
-          <img class="facebook" src="images/facebook.png" alt="Facebook icon" />
-        </a>
-        <a href="https://www.twitter.com" target="blank">
-          <img class="twitter" src="images/twitter.png" alt="twitter icon" /></a>
-
-        <a href="https://www.wordpress.com" target="blank">
-          <img class="wordpress" src="images/wordpress.png" alt="wordpress icon" /></a>
-      </div>
-    </section>
-  </div>
+    <footer>
+        &copy; <span id="year"></span> | Shanda Aurich | Covington, WA |
+        <a href="https://www.byui.edu/online">BYUI Online Learning</a><br />
+        <span id="date"></span>
 
 
-  <footer>
-    &copy; <span id="year"></span> | Shanda Aurich | Covington, WA |
-    <a href="https://www.byui.edu/online">BYUI Online Learning</a><br />
-    <span id="date"></span>
-
-
-  </footer>
-  <script src="js/script.js"></script>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Comfortaa', 'Hammersmith One'
+                ]
+            }
+        });
+    </script>
 </body>
 
 </html>
