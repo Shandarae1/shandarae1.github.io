@@ -9,12 +9,7 @@
       Scandinavian area" />
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="../css/normalize.css" />
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Hammersmith+One&family=Righteous&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap" rel="stylesheet" /> -->
+
 
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
@@ -56,9 +51,10 @@
     <main>
         <h2>Preston</h2>
         <div class="herodiv">
-            <picture>
-                <img srcset="" <img class="prestonHero" src="images/prestonhero.jpg" alt="picture of town">
-            </picture>
+         
+               <img class="prestonHero" src="images/heroImgFranklin860.jpg"  
+ alt="picture of town">
+         
 
             <section Class="weathersummary">
                 <h3 class="weatherH3">Weather Summary</h3>
@@ -72,8 +68,11 @@
                 </div>
                 <div class="rightSide">
                     <p>Partly Cloudy <br>
-                        38&#176; F<br> 33&#176; F<br> 69%<br> 5 mph</p>
-                </div>
+                      <span id="temp">32</span>&#176; F<br>
+                    <span id="windChill" class="windOutput"></span>&#176; F<br>
+                    69%<br>
+                    <span id="windSpeed">5</span> mph</p>
+                  </div>
 
             </section>
 
