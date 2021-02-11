@@ -112,7 +112,20 @@
             </table>
         </div>
         <div class="articleBox">
-            <img class="articleImg" src="images/northernlights.jpg" alt="picture of family skiing">
+            <picture>
+                <source
+                srcset="images/northernlights.jpg"
+                media = "(min-width: 1060px)"
+                />
+                <source
+                srcset="images/northernLights500.jpg"
+                media="(min-width: 650px)"
+                />
+                <source
+                srcset="images/northernLights350.jpg"/>
+                <img class="articleImg" src="images/northernlights.jpg" alt="picture of northern lights>
+            </picture>
+
             <article class="article">
                 <h3>Facts and fiction about the northern lights</h3>
                 <h4>Many are fascinated by the aurora borealis, but few know the science and myths related to the
