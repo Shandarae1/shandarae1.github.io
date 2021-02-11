@@ -1,3 +1,5 @@
+/*----------- BODY --------------*/
+
 body {
   font-family: "comfortaa", "Cursive";
   color: #bfbdc1;
@@ -8,7 +10,7 @@ body {
 
   padding: 1rem;
 }
-
+/*----------- HEADER --------------*/
 /* phone or baseline view--------------*/
 
 header {
@@ -23,20 +25,20 @@ header {
 header img {
   width: 200px;
 }
-
-main {
-  margin: 0 auto;
-  padding: 1rem 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  max-width: 840px;
+.motto {
+  margin: 0.8rem 0;
 }
+
+/*----------- NAVIGATION --------------*/
 nav button {
   margin: 0.2rem 2%;
   background-color: transparent;
   border: none;
   font-size: 2rem;
   color: #ffffff;
+}
+.hamButton {
+  text-align: center;
 }
 nav {
   background-color: #5e5c63;
@@ -72,12 +74,24 @@ nav ul li .active {
 nav ul.hide {
   display: none;
 }
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+.active {
+  color: #de9e36;
+}
+/*----------- MAIN --------------*/
+h1 {
+  font-family: "Hammersmith One", sans-serif;
 }
 
+h2 {
+  color: #de9e36;
+}
+main {
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 840px;
+}
 main h2 {
   font-size: 2rem;
   text-align: center;
@@ -105,7 +119,8 @@ main h2 {
 .weathersummary {
   position: absolute;
   top: 20px;
-  left: 20px;
+  /* left: 20px; */
+  left: 70px;
   background: radial-gradient(#ffffff, #de9e36);
   border: 1px solid #37323e;
   padding: 0.7rem;
@@ -161,7 +176,7 @@ article a {
 .forcast5day {
   display: none;
 }
-
+/*----------- FOOTER --------------*/
 .address {
   display: flex;
   flex-direction: column;
@@ -188,35 +203,6 @@ footer a {
   color: #ffffff;
 }
 
-h1 {
-  font-family: "Hammersmith One", sans-serif;
-}
-
-h2 {
-  color: #de9e36;
-}
-
-.active {
-  color: #de9e36;
-}
-
-.contentbox {
-  border: 2px solid #de9e36;
-  display: block;
-  margin: 5px;
-  font-size: 1.5rem;
-  padding: 15px;
-  background-color: #2bbade;
-  color: #37323e;
-}
-
-.hamButton {
-  text-align: center;
-}
-
-.motto {
-  margin: 0.8rem 0;
-}
 .contact {
   background-color: #828089;
   color: #ffffff;
@@ -238,4 +224,10 @@ h2 {
 }
 .mapImage {
   display: none;
+}
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }

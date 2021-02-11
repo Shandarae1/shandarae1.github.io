@@ -51,28 +51,38 @@
     <main>
         <h2>Preston</h2>
         <div class="herodiv">
-         
-               <img class="prestonHero" src="images/heroImgFranklin860.jpg"  
- alt="picture of town">
-         
+            <picture>
+                <source
+                srcset="images/heroImgFranklin860.jpg"
+                media = "(min-width: 1060px)"
+                />
+                <source
+                srcset="images/heroImgFranklin600.jpg"
+                media="(min-width: 650px)"
+                />
+                <source
+                srcset="images/heroImgFranklin350.jpg"/>
+                <img class="prestonHero" src="images/heroImgFranklin860.jpg" alt="image of sunshine over field"/>
+            </picture>
 
             <section Class="weathersummary">
                 <h3 class="weatherH3">Weather Summary</h3>
 
                 <div class="leftSide">
                     <p><strong>Currently:</strong> <br>
-                        <strong>High:<br>Windchill:<br>Humidity:<br>Wind Speed:</strong>
+                        <strong>Temp:<br>Windchill:<br>Humidity:<br>Wind Speed:</strong>
 
                     </p>
 
                 </div>
                 <div class="rightSide">
                     <p>Partly Cloudy <br>
-                      <span id="temp">32</span>&#176; F<br>
-                    <span id="windChill" class="windOutput"></span>&#176; F<br>
-                    69%<br>
-                    <span id="windSpeed">5</span> mph</p>
-                  </div>
+                        <span id="temp">32</span>&#176; F<br>
+                        <span id="windChill" class="windOutput"></span>&#176; F<br>
+                        69%<br>
+                        <span id="windSpeed">5</span> mph
+                    </p>
+                </div>
 
             </section>
 
