@@ -58,9 +58,9 @@
   }
   .forcast5day {
     display: block;
-    margin: 5px;
+    /* margin: 5px; */
     font-size: 1.5rem;
-    padding: 15px;
+    /* padding: 15px; */
     color: #f8ba57;
   }
 

@@ -52,17 +52,10 @@
         <h2>Preston</h2>
         <div class="herodiv">
             <picture>
-                <source
-                srcset="images/heroImgFranklin860.jpg"
-                media = "(min-width: 1060px)"
-                />
-                <source
-                srcset="images/heroImgFranklin600.jpg"
-                media="(min-width: 650px)"
-                />
-                <source
-                srcset="images/heroImgFranklin350.jpg"/>
-                <img class="prestonHero" src="images/heroImgFranklin860.jpg" alt="image of sunshine over field"/>
+                <source srcset="images/heroImgFranklin860.jpg" media="(min-width: 960px)" />
+                <source srcset="images/heroImgFranklin600.jpg" media="(min-width: 600px)" />
+                <source srcset="images/heroImgFranklin350.jpg" />
+                <img class="prestonHero" src="images/heroImgFranklin860.jpg" alt="image of field" />
             </picture>
 
             <section Class="weathersummary">
@@ -78,7 +71,7 @@
                 <div class="rightSide">
                     <p>Partly Cloudy <br>
                         <span id="temp">32</span>&#176; F<br>
-                        <span id="windChill" class="windOutput"></span>&#176; F<br>
+                        <span id="windChill" class="windOutput"></span><br>
                         69%<br>
                         <span id="windSpeed">5</span> mph
                     </p>
@@ -113,16 +106,9 @@
         </div>
         <div class="articleBox">
             <picture>
-                <source
-                srcset="images/northernlights.jpg"
-                media = "(min-width: 1060px)"
-                />
-                <source
-                srcset="images/northernLights500.jpg"
-                media="(min-width: 650px)"
-                />
-                <source
-                srcset="images/northernLights350.jpg"/>
+                <source srcset="images/northernlights.jpg" media="(min-width: 1060px)" />
+                <source srcset="images/northernLights500.jpg" media="(min-width: 650px)" />
+                <source srcset="images/northernLights350.jpg" />
                 <img class="articleImg" src="images/northernlights.jpg" alt="picture of northern lights">
             </picture>
 
@@ -190,6 +176,7 @@
 
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
