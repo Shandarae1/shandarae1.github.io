@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+}
+picture img[data-src] {
+    filter: blur(0.2em);
+}
+
+
+picture img {  
+    margin: 0 auto; 
+    border: 1px solid #333;
+    padding: 2px;
+    display: block; 
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
