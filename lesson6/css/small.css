@@ -188,12 +188,12 @@ figure {
 figure img {
   max-width: 100%;
 }
-figure img [data-src] {
-  filter: blur(5px);
-  border: solid 2px white;
-}
+
 figcaption {
   text-align: center;
+}
+.shadow:hover {
+  box-shadow: 0 0 50px white;
 }
 /*----------- FOOTER --------------*/
 .address {
@@ -238,9 +238,7 @@ footer a {
   color: #f8ba57;
   font-weight: bold;
 }
-.social img {
-  max-width: 25px;
-}
+
 .mapImage {
   display: none;
 }
