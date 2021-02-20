@@ -197,9 +197,7 @@ figure img[data-src] {
 figcaption {
   text-align: center;
 }
-.shadow:hover {
-  box-shadow: 0 0 50px white;
-}
+
 /*----------- FOOTER --------------*/
 .address {
   display: flex;
