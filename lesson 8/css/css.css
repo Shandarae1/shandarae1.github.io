@@ -13,6 +13,7 @@ table, th, td {
       font-size: 2.5em;
       background-color: #7fb9c2 ;
   }
+ 
   td {
       font-size: 1.2em;
       font-weight: bold;
@@ -22,20 +23,22 @@ table, th, td {
     color: #d8ddd9;
     background-color: #628ca6;
 }
-  /* tr:nth-child(2) {
+  tr:nth-child(2) {
     color: white;
     font-size: 1.3em;
     background-color: #628ca6;
-  } */
-   tr:nth-child(2n+4) {
+  }
+   /* tr:nth-child(2n+4) {
     background-color: #d4f3e8;
+  } */
+  tr:nth-of-type(2n+4) {
+      background-color: #d4f3e8;
   }
   table {
     background-color: #d8ddd9;
     text-align: center;
     box-shadow:10px 10px 20px #628ca6;
     color: black;
-    /* font-style: italic; */
   }
  tfoot td {
      background-color: #7fb9c2 ;
