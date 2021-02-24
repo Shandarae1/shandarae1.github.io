@@ -1,3 +1,5 @@
+// Lazy loading images
+
 const realImages = document.querySelectorAll("[data-src]");
 
 function imgLoad(img) {

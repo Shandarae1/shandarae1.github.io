@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THORcast.org-Gallery</title>
+    <meta name="description" content="THORcast.org - Up to date weather for all your weather planning needs in the Greater
+      Scandinavian area" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css" />
+
+    <link rel="stylesheet" href="../lesson6/css/small.css" />
+    <link rel="stylesheet" href="../lesson6/css/medium.css" />
+    <link rel="stylesheet" href="../lesson6/css/large.css" />
+</head>
+
+<body>
+    <header>
+        <picture class="mobilelogo">
+            <img src="/lesson6/images/hammer.png" alt="thorcast.com header" />
+        </picture>
+
+        <section class="headings">
+            <h1>THORcast.org</h1>
+            <div class="motto">
+                Up-to-date forcasts for all your weather planning needs in the Greater
+                Scandinavian area.
+            </div>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <div class="hamButton">
+            <button onclick="toggleMenu()">&#9776;</button>
+        </div>
+        <ul id="toggleNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="/lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery-7.html" class="active">Gallery</a></li>
+        </ul>
+    </nav>
+    <main >
+        <h1>Course Proposal Application</h1>
+        <form method="GET" action="thanks.html">
+<fieldset>
+    <legend>
+        Aplicant Information
+    </legend>
+    <label class="top">First Name*<input type="text" name="fname" required></label>
+    <label class="top">Last Name*<input type="text" name="lname" required></label>
+    <label class="top">Phone<input type="tel" name="phone" placeholder="1235551234"></label>
+    <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+    <label class="top">Website<input type="url" name="url" placeholder="http://"></label>
+</fieldset>
+
+<fieldset>
+    <legend>
+        Course Information
+    </legend>
+    <div>Audience </div>
+       <label class="sbs"> <input type="radio" name="audience" value="beginner"> Beginner</label>
+       <label class="sbs"> <input type="radio" name="audience" value="intermediate"> Intermediate</label>
+       <label class="sbs"> <input type="radio" name="audience" value="advanced"> Advanced</label>
+   
+    <div> Software Needed</div>
+    <label class="sbs"> <input type="checkbox" name="editing" value="yes"> Photo Editing</label>
+    <label class="sbs"> <input type="checkbox" name="code" value="coding"> Coding</label>
+    <label class="sbs"> <input type="checkbox" name="process" value="preprocessor"> Preprocessor</label>
+    <label class="sbs"> <input type="checkbox" name="client" value="FTP Client"> FTP Client</label>
+</fieldset>
+<fieldset>
+    <legend>
+        Funding
+    </legend>
+    <label class="top">Anticipated Completion Date <input type="Date" name="Completed Date"></label>
+    <label class="top">Course Subject <select name="subject">
+        <option>Please Select &#9662;</option>
+        <option value="software">Software Development</option>
+        <option value="creative">Creative Professional</option>
+        <option value="info">Information Technology</option>
+        <option value="data">Data Professional</option>
+        <option value="construction">Construction</option>
+        <option value="manufacturing">Manufacturing</option>
+        <option value="business">Business Professional</option>
+        <option value="security">Cyber Security</option> > </select></label>
+
+        <label class="top">How Many Authors <input type="number" name="authors"></label>
+</fieldset>
+<input type="submit" value="Propose My Course" class="submitBtn">
+        </form>
+
+          
+        
+
+    </main>
+
+    <div class="contact">
+        <img class="mapImage" src="/lesson6/images/prestonNorway.jpg" alt="map of preston norway" />
+        <section class="address">
+
+            <h3>THORcast.org</h3>
+            <p class="contactPara">
+                8310 Kabelvåg, Norway<br>
+                &#9743; +47 944 49 110<br>
+                &#x2709; email@thorcast.org
+            </p>
+
+            <div class="social">
+                <a href="https://www.facebook.com" target="blank">
+                    <img class="facebook" src="/lesson6/images/facebook.png" alt="Facebook icon" />
+                </a>
+                <a href="https://www.twitter.com" target="blank">
+                    <img class="twitter" src="/lesson6/images/twitter.png" alt="twitter icon" /></a>
+
+                <a href="https://www.wordpress.com" target="blank">
+                    <img class="wordpress" src="/lesson6/images/wordpress.png" alt="wordpress icon" /></a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; <span id="year"></span> | Shanda Aurich | Covington, WA |
+        <a href="https://www.byui.edu/online">BYUI Online Learning</a><br />
+        <span id="date"></span>
+
+
+    </footer>
+    <script src="../lesson6/js/script.js"></script>
+    <script src="javascript/javascript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Comfortaa', 'Hammersmith One'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
