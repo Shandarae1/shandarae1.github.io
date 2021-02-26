@@ -34,5 +34,19 @@ const datefield = document.getElementById("date");
 
 datefield.textContent = fulldate;
 
+/* -------------STORM CENTER PAGE--------------- */
+
+function adjustRating(rating) {
+  document.getElementById("ratingvalue").innerHTML = rating;
+}
+
+function selectRegion() {
+	const s = document.querySelector('#selected')
+	const sel = document.querySelector('#stormRegion');
+	s.style.display = "block";
+	s.textContent = sel.value;
+	
+}
+/* ---------------------------- */
 
 

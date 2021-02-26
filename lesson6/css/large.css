@@ -11,16 +11,20 @@
     nav ul li a {
       font-size: 1.2rem;
     }
+
+    /* -------------GALLERY PAGE--------------- */
     #galleryDiv {
-      /* border: 1px solid white; */
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      /* max-width: 960px; */
       margin: 0 auto;
     }
     .shadow:hover {
       box-shadow: 0 0 50px white;
     }
-  
+  /* -------------STORM CENTER PAGE--------------- */
+
+  form label.stormInfo {
+    padding: .5rem 0;
+}
   }
   

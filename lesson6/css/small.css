@@ -176,6 +176,8 @@ article a {
   margin: 0 0 0.5rem 0;
   padding: 0;
 }
+
+/* -------------GALLERY PAGE--------------- */
 #galleryDiv {
   display: grid;
   grid-template-columns: 1fr;
@@ -197,6 +199,96 @@ figure img[data-src] {
 figcaption {
   text-align: center;
 }
+/* ---------------------------- */
+
+
+/* -------------STORM CENTER PAGE--------------- */
+form fieldset {
+  margin: .5rem;
+  border: 2px solid #de9e36;
+  border-radius: 5px;
+  padding: 0.5rem 2%;
+}
+
+form legend {
+  color: #bfbdc1;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
+}
+form label.contactForm,
+form div {
+  display: block;
+  padding-top: 1rem;
+}
+form label.contactForm input,
+form label.contactForm select {
+    -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 5px;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 20rem;
+}
+form label.stormInfo input,
+form label.stormInfo datalist,
+form label #stormRegion {
+  display: block;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 20rem;
+  margin: 0 0 1.5rem 0;
+}
+#ratingvalue {
+  color: #de9e36;
+  font-size: 1.5rem;
+}
+input[type=range] {  
+color: white;
+display: block;
+width: 100%;
+max-width: 20rem;
+border-radius: 5px;
+padding: .75rem 0;
+}
+
+form input.formButton {
+  border: none;
+  background-color: #de9e36;
+  color: #37323e;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.danger {
+  display: block;
+  padding: .2rem;
+}
+.comments textarea {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  max-width: 20rem;
+  border-radius: 5px;
+}
+
+form label.contactForm input:required {
+  border-bottom: red solid 6px;
+}
+form label.contactForm input:required:valid {
+  border-bottom: none;
+}
+
+/* ---------------------------- */
+
 
 /*----------- FOOTER --------------*/
 .address {

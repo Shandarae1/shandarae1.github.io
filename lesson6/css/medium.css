@@ -112,6 +112,8 @@
     border: 1px solid #37323e;
     box-shadow: 0 0 30px rgb(48, 46, 46);
   }
+    
+    /* -------------GALLERY PAGE--------------- */
   #galleryDiv {
     display: grid;
     grid-template-columns: 1fr 1fr;
