@@ -315,6 +315,10 @@ form label.contactForm input:required:valid {
   text-decoration: none;
 }
 
+.social img {
+  max-width: 35px;
+  padding: 0.5rem;
+}
 .stormSocial img {
   max-width: 35px;
   padding: 0.5rem;
