@@ -53,9 +53,10 @@
                         pattern="[A-Za-z]{5,}"></label>
                 <label class="contactForm">Last Name*<input type="text" name="lname" required
                         pattern="[A-Za-z]{5,}"></label>
-                <label class="contactForm">Email<input type="email" name="email" placeholder="someone@gmail.com"
-                        ></label>
-                <label class="contactForm">Phone*<input type="tel" name="phone" placeholder="12068675309" required></label>
+                <label class="contactForm">Email<input type="email" name="email"
+                        placeholder="someone@thormail.com"></label>
+                <label class="contactForm">Phone*<input type="tel" name="phone" placeholder="12068675309"
+                        required></label>
 
             </fieldset>
 
@@ -75,9 +76,10 @@
                     <option value="Tornado">Tornado</option>
                 </datalist>
 
-                <label class= "slider" for="rating">Severity Rating: &nbsp; <span id="ratingvalue">5</span>&nbsp;&nbsp; <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                <label class="slider" for="rating">Severity Rating: &nbsp; <span id="ratingvalue">5</span>&nbsp;&nbsp;
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
                         oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    
+
                 </label>
                 <datalist id="tickmarks">
                     <option value="0">
@@ -112,8 +114,9 @@
                 <legend>
                     Additional Information
                 </legend>
-                <label class="comments">Add additional comments or information: <textarea name="comments" placeholder="Comments here:"></textarea></label>
-                
+                <label class="comments">Add additional comments or information: <textarea name="comments"
+                        placeholder="Comments here:"></textarea></label>
+
             </fieldset>
             <input type="submit" value="Report Storm Event" class="formButton">
         </form>
@@ -123,18 +126,19 @@
 
     </main>
 
-    <div class="contact">
-        <img class="mapImage" src="../lesson6/images/prestonNorway.jpg" alt="map of preston norway" />
-        <section class="address">
+    <div class="stormContact">
+        <!-- <img class="mapImage" src="../lesson6/images/prestonNorway.jpg" alt="map of preston norway" /> -->
+        <section class="stormAddress">
 
-            <h3>THORcast.org</h3>
-            <p class="contactPara">
-                8310 Kabelvåg, Norway<br>
-                &#9743; +47 944 49 110<br>
+           <div class="stormContactPara1"> <h3>THORcast.org</h3>
+            <p >
+                8310 Kabelvåg, Norway </p></div> 
+
+            <div class="stormContactPara2"><p> &#9743; +47 944 49 110<br>
                 &#x2709; email@thorcast.org
-            </p>
+            </p></div> 
 
-            <div class="social">
+            <div class="stormSocial">
                 <a href="https://www.facebook.com" target="blank">
                     <img class="facebook" src="../lesson6/images/facebook.png" alt="Facebook icon" />
                 </a>

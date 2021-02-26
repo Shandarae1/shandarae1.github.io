@@ -26,5 +26,8 @@
   form label.stormInfo {
     padding: .5rem 0;
 }
+.formButton {
+  margin: 2rem;
+}
   }
   
