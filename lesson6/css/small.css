@@ -201,15 +201,14 @@ figcaption {
 }
 /* ---------------------------- */
 
-
 /* -------------STORM CENTER PAGE--------------- */
 form fieldset {
-  margin: .5rem;
+  margin: 0.5rem;
   border: 2px solid #de9e36;
   border-radius: 5px;
   padding: 0.5rem 2%;
 }
- 
+
 form legend {
   color: #bfbdc1;
   margin: 0 1rem;
@@ -223,7 +222,7 @@ form div {
 }
 form label.contactForm input,
 form label.contactForm select {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
   display: block;
   font-size: 1rem;
   border: solid 1px #999;
@@ -247,13 +246,12 @@ form label #stormRegion {
   color: #de9e36;
   font-size: 1.5rem;
 }
-input[type=range] {  
-color: white;
-display: block;
-width: 100%;
-max-width: 20rem;
-border-radius: 5px;
-/* padding: .75rem 0; */
+input[type="range"] {
+  color: #bfbdc1;
+  display: block;
+  width: 100%;
+  max-width: 20rem;
+  border-radius: 5px;
 }
 
 form input.formButton {
@@ -262,7 +260,7 @@ form input.formButton {
   color: #37323e;
   border-radius: 5px;
   padding: 0.75rem 1.5rem;
-  margin: 2rem 0 2rem 1rem;
+  margin: 2rem 0 2rem 2rem;
   width: 96%;
   max-width: 20rem;
   font-size: 1.2rem;
@@ -270,7 +268,7 @@ form input.formButton {
 }
 .danger {
   display: block;
-  padding: .2rem;
+  padding: 0.2rem;
 }
 .comments textarea {
   display: block;
@@ -294,13 +292,9 @@ form label.contactForm input:required:valid {
   max-width: 960px;
   margin: 0 auto;
   border: 2px solid #070708;
-  display: grid;
-  grid-template-columns: 1fr ;
 }
 
-
 /* ---------------------------- */
-
 
 /*----------- FOOTER --------------*/
 .address {
@@ -309,7 +303,6 @@ form label.contactForm input:required:valid {
   padding: 0.5rem;
   justify-content: center;
 }
-
 
 .address a {
   text-decoration: none;
