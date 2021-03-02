@@ -35,3 +35,4 @@ card.appendChild(image);
   } 
 
 });
+
