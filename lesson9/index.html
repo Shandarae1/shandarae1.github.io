@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        THORcast.org Home
+    </title>
+    <meta name="description" content="THORcast.org - Up to date weather for all your weather planning needs in the Greater
+      Scandinavian area" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css" />
+
+    <link rel="stylesheet" href="../lesson6/css/small.css" />
+    <link rel="stylesheet" href="../lesson6/css/medium.css" />
+    <link rel="stylesheet" href="../lesson6/css/large.css" />
+</head>
+
+<body>
+    <header>
+        <picture class="mobilelogo">
+            <img src="../lesson6/images/hammer.png" alt="thorcast.com header" />
+        </picture>
+
+        <section class="headings">
+            <h1>THORcast.org</h1>
+            <div class="motto">
+                Up-to-date forcasts for all your weather planning needs in the Greater
+                Scandinavian area.
+            </div>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <div class="hamButton">
+            <button onclick="toggleMenu()">&#9776;</button>
+        </div>
+        <ul id="toggleNav" class="hide">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="../lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="indexCards">
+            <article class="indexCards">
+
+                <img src="https://placekitten.com/200/200" data-src="images/weathergallery12.jpg"
+                    class="prestonHomeImage" alt="Image of Preston">
+
+                <div>
+                    <h2>Preston</h2>
+                    <p> ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, laboriosam! Rerum, optio.</p>
+                </div>
+            </article>
+            <article class="indexCards">
+
+                <img src="https://placekitten.com/200/200" data-src="images/weathergallery8.jpg"
+                    class="prestonHomeImage" alt="Image of Fish Haven">
+                <div>
+                    <h2>Fish Haven</h2>
+                    <p> ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, laboriosam! Rerum, optio</p>
+                </div>
+            </article>
+            <article class="indexCards">
+                <img src="https://placekitten.com/200/200" data-src="images/weathergallery5.jpg"
+                    class="prestonHomeImage" alt="Image of Soda Springs">
+                <div>
+                    <h2>Soda Springs</h2>
+                    <p> ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, laboriosam! Rerum, optio.</p>
+                </div>
+            </article>
+
+        </section>
+
+
+
+
+    </main>
+
+    <div class="stormContact">
+        <img class="mapImage" src="../lesson6/images/prestonNorway.jpg" alt="map of preston norway" />
+        <section class="stormAddress">
+
+            <div class="stormContactPara1">
+                <h3>THORcast.org</h3>
+                <p>
+                    8310 Kabelvåg, Norway </p>
+            </div>
+
+            <div class="stormContactPara2">
+                <p> &#9743; +47 944 49 110<br>
+                    &#x2709; email@thorcast.org
+                </p>
+            </div>
+
+            <div class="stormSocial">
+                <a href="https://www.facebook.com" target="blank">
+                    <img class="facebook" src="../lesson6/images/facebook.png" alt="Facebook icon" />
+                </a>
+                <a href="https://www.twitter.com" target="blank">
+                    <img class="twitter" src="../lesson6/images/twitter.png" alt="twitter icon" /></a>
+
+                <a href="https://www.wordpress.com" target="blank">
+                    <img class="wordpress" src="../lesson6/images/wordpress.png" alt="wordpress icon" /></a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; <span id="year"></span> | Shanda Aurich | Covington, WA |
+        <a href="https://www.byui.edu/online">BYUI Online Learning</a><br />
+        <span id="date"></span>
+
+
+    </footer>
+    <script src="../lesson6/js/script.js"></script>
+    <script src="javascript/javascript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Comfortaa', 'Hammersmith One'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -294,7 +294,35 @@ form label.contactForm input:required:valid {
   border: 2px solid #070708;
 }
 
-/* ---------------------------- */
+/* ------------Index---------------- */
+
+section.indexCards {
+  margin: 0 auto;
+}
+article.indexCards {
+  max-width: 600px;
+  margin: 0.5rem;
+  align-items: center;
+}
+article.indexCards p {
+  margin: 0.5rem;
+  text-align: center;
+}
+article.indexCards h2 {
+  color: #37323e;
+}
+article.indexCards img[data-src] {
+  filter: blur(0.2em);
+}
+article.indexCards img {
+  border: 1px solid #333;
+  padding: 2px;
+  display: block;
+  filter: blur(0em);
+  transition: filter 0.5s;
+  margin: 0 auto;
+  max-width: 100%;
+}
 
 /*----------- FOOTER --------------*/
 .address {

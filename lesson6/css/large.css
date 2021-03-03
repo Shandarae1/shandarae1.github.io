@@ -12,6 +12,21 @@
       font-size: 1.2rem;
     }
 
+    /* ------Index page------ */
+
+    section.indexCards {
+      margin: 0 auto;
+      max-width: 1000px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+       grid-template-rows: 1fr 1fr;
+    }
+    article.indexCards {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+
     /* -------------GALLERY PAGE--------------- */
     #galleryDiv {
       display: grid;
