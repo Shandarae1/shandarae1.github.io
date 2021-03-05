@@ -14,18 +14,20 @@
 
     /* ------Index page------ */
 
-    section.indexCards {
-      margin: 0 auto;
-      max-width: 1000px;
+    div.indexCards {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-       grid-template-rows: 1fr 1fr;
     }
-    article.indexCards {
+    div.indexCards section {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
+      grid-template-rows: 1fr 1fr;
     }
+    div.indexCards img {
+      grid-row: 2;
+      grid-column: 1/2;
+    }
+
 
     /* -------------GALLERY PAGE--------------- */
     #galleryDiv {

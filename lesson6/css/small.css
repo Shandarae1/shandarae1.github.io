@@ -296,31 +296,33 @@ form label.contactForm input:required:valid {
 
 /* ------------Index---------------- */
 
-section.indexCards {
+div.indexCards {
   margin: 0 auto;
-}
-article.indexCards {
-  max-width: 600px;
-  margin: 0.5rem;
   align-items: center;
+  border: solid 2px #333;
+  display: grid;
+  grid-template-columns: 1fr;
 }
-article.indexCards p {
+
+div.indexCards section {
+  text-align: center;
+  background-color: #bfbdc1;
+  padding: 10px;
+  margin: 10px;
+}
+
+div.indexCards p {
   margin: 0.5rem;
   text-align: center;
-}
-article.indexCards h2 {
   color: #37323e;
 }
-article.indexCards img[data-src] {
-  filter: blur(0.2em);
+div.indexCards h2 {
+  color: #37323e;
 }
-article.indexCards img {
+
+div.indexCards img {
   border: 1px solid #333;
   padding: 2px;
-  display: block;
-  filter: blur(0em);
-  transition: filter 0.5s;
-  margin: 0 auto;
   max-width: 100%;
 }
 

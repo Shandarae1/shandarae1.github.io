@@ -7,36 +7,140 @@ const reqURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 // -----Fetch-----
 
 fetch(reqURL)
-  .then(function (response) {
-    return response.json();
+  .then(function (townresponse) {
+    return townresponse.json();
   })
   .then(function (jsonObject) {
     console.table(jsonObject);
 
     //   -----store converted results into array -----
 
-    const towns = jsonObject["towns"];
+    // ------preston cards------
 
-    let Card = document.createElement("section");
+    const towns = jsonObject["towns"];
+    const preston = document.querySelector('div.indexCards');
+
+    const prestonfilter = towns.filter(prestonTown => prestonTown.name === "Preston");
+    console.log(prestonfilter);
+
+    prestonfilter.forEach(prestonTown => {
+
+    let prestoncard = document.createElement("section");
+    let particle = document.createElement("article");
     let h2 = document.createElement("h2");
     let motto = document.createElement("p");
     let yearFounded = document.createElement("p");
+    let population = document.createElement("p");
     let averageRainfall = document.createElement("p");
+    let pimg = document.createElement("img");
 
-    h2.textContent = towns[5].name;
-    motto.textContent = '"' + towns[5].motto + '"';
-    yearFounded.textContent = "Year Founded: " + towns[5].yearFounded;
-    averageRainfall.textContent =
-      "Annual Rain Fall: " + towns[5].averageRainfall + " inches.";
 
-    Card.appendChild(h2);
-    Card.appendChild(motto);
-    Card.appendChild(yearFounded);
-    Card.appendChild(averageRainfall);
+    h2.innerHTML = `${prestonTown.name}`;
+    motto.innerHTML =   `"${prestonTown.motto}"`;
+    yearFounded.innerHTML = `Year Founded: ${prestonTown.yearFounded}`;
+    population.innerHTML = `Population: ${prestonTown.currentPopulation}`;
+    averageRainfall.innerHTML = `Annual Rain Fall: ${prestonTown.averageRainfall} inches`;
+    prestoncard.setAttribute('class', 'psection')
+    pimg.setAttribute('src', 'images/weathergallery12.jpg');
+    pimg.setAttribute('alt', `picture of ${prestonTown.name}` );
+    pimg.setAttribute("loading", "lazy");
+    pimg.setAttribute('class', 'pimg');
+    pimg.style.boxShadow = '0 0 30px #777';
 
-    document.querySelector("div.prestonCard", "div.fishCard").appendChild(Card);
+      
+      preston.append(prestoncard);
+      prestoncard.appendChild(pimg);
+      prestoncard.appendChild(particle);
+      particle.appendChild(h2);
+      particle.appendChild(motto);
+      particle.appendChild(yearFounded);
+      particle.appendChild(population);
+      particle.appendChild(averageRainfall);
+      
   });
 
+  // ------Fish Haven Cards------
+
+  const fishfilter = towns.filter(fishTown => fishTown.name === "Fish Haven");
+  console.log(fishfilter);
+  
+  const fish = document.querySelector('div.indexCards');
+
+  fishfilter.forEach(fishTown => {
+
+  let fishcard = document.createElement("section");
+  let farticle = document.createElement("article");
+  let h2 = document.createElement("h2");
+  let motto = document.createElement("p");
+  let yearFounded = document.createElement("p");
+  let population = document.createElement("p");
+  let averageRainfall = document.createElement("p");
+  let fimg = document.createElement("img");
+
+
+  h2.innerHTML = `${fishTown.name}`;
+  motto.innerHTML =   `"${fishTown.motto}"`;
+  yearFounded.innerHTML = `Year Founded: ${fishTown.yearFounded}`;
+  population.innerHTML = `Population: ${fishTown.currentPopulation}`;
+  averageRainfall.innerHTML = `Annual Rain Fall: ${fishTown.averageRainfall} inches`;
+  fimg.setAttribute('src', 'images/weathergallery8.jpg');
+  fimg.setAttribute('alt', `picture of ${fishTown.name}` );
+  fimg.setAttribute("loading", "lazy");
+  fimg.setAttribute('class', 'fimg')
+  fimg.style.boxShadow = '0 0 30px #777';
+
+    
+  fish.append(fishcard);
+  fishcard.appendChild(fimg);
+  fishcard.appendChild(farticle);
+  farticle.appendChild(h2);
+  farticle.appendChild(motto);
+  farticle.appendChild(yearFounded);
+  farticle.appendChild(population);
+  farticle.appendChild(averageRainfall);
+});
+    
+  // ------Soda Springs Cards------
+
+  const Sodafilter = towns.filter(SodaTown => SodaTown.name === "Soda Springs")
+  console.log(Sodafilter);
+  
+  const soda = document.querySelector('div.indexCards');
+
+  Sodafilter.forEach(SodaTown => {
+
+  let sodacard = document.createElement("section");
+  let sarticle = document.createElement("article");
+  let h2 = document.createElement("h2");
+  let motto = document.createElement("p");
+  let yearFounded = document.createElement("p");
+  let population = document.createElement("p");
+  let averageRainfall = document.createElement("p");
+  let simg = document.createElement("img");
+
+  h2.innerHTML = `${SodaTown.name}`;
+  motto.innerHTML =   `"${SodaTown.motto}"`;
+  yearFounded.innerHTML = `Year Founded: ${SodaTown.yearFounded}`;
+  population.innerHTML = `Population: ${SodaTown.currentPopulation}`;
+  averageRainfall.innerHTML = `Annual Rain Fall: ${SodaTown.averageRainfall} inches`;
+  simg.setAttribute('src', 'images/weathergallery5.jpg');
+  simg.setAttribute("loading", "lazy");
+  simg.setAttribute('alt', `picture of ${SodaTown.name}` );
+  simg.setAttribute('class', 'simg')
+  simg.style.boxShadow = '0 0 30px #777';
+    
+  soda.append(sodacard);
+  sodacard.appendChild(simg);
+  sodacard.appendChild(sarticle);
+  sarticle.appendChild(h2);
+  sarticle.appendChild(motto);
+  sarticle.appendChild(yearFounded);
+  sarticle.appendChild(population);
+  sarticle.appendChild(averageRainfall);
+});
+
+  });
+  
 // ------PROPHETS JSON FETCH------
 
 // -----storing resource-----
@@ -50,7 +154,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);
+
     //   -----store converted results into array -----
     const prophets = jsonObject["prophets"];
     const cards = document.querySelector("div.cards");

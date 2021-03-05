@@ -114,19 +114,25 @@
   }
 
   /* ----------Index Page---------*/
-
-  article.indexCards {
+ 
+  div.indexCards section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
   }
 
-  article.indexCards:nth-child(odd) img {
-    grid-column: 1/2;
+  div.indexCards :nth-child(odd) img {
+    grid-column: 2;
+  }
+  div.indexCards :nth-child(even) img {
+    grid-column: 1;
     grid-row: 1;
   }
-  article.indexCards:nth-child(even) div {
-    grid-column: 1/2;
+  div.indexCards :nth-child(odd) article {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  div.indexCards :nth-child(even) article {
+    grid-column: 2;
     grid-row: 1;
   }
 
