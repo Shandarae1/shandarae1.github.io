@@ -36,7 +36,7 @@ fetch(reqURL)
 
 
     h2.innerHTML = `${prestonTown.name}`;
-    motto.innerHTML =   `"${prestonTown.motto}"`;
+    motto.innerHTML =   `<strong>"${prestonTown.motto}"</strong>`;
     yearFounded.innerHTML = `Year Founded: ${prestonTown.yearFounded}`;
     population.innerHTML = `Population: ${prestonTown.currentPopulation}`;
     averageRainfall.innerHTML = `Annual Rain Fall: ${prestonTown.averageRainfall} inches`;
@@ -79,7 +79,7 @@ fetch(reqURL)
 
 
   h2.innerHTML = `${fishTown.name}`;
-  motto.innerHTML =   `"${fishTown.motto}"`;
+  motto.innerHTML =   `<strong>"${fishTown.motto}"</strong>`;
   yearFounded.innerHTML = `Year Founded: ${fishTown.yearFounded}`;
   population.innerHTML = `Population: ${fishTown.currentPopulation}`;
   averageRainfall.innerHTML = `Annual Rain Fall: ${fishTown.averageRainfall} inches`;
@@ -119,7 +119,7 @@ fetch(reqURL)
   let simg = document.createElement("img");
 
   h2.innerHTML = `${SodaTown.name}`;
-  motto.innerHTML =   `"${SodaTown.motto}"`;
+  motto.innerHTML =   `<strong>"${SodaTown.motto}"</strong>`;
   yearFounded.innerHTML = `Year Founded: ${SodaTown.yearFounded}`;
   population.innerHTML = `Population: ${SodaTown.currentPopulation}`;
   averageRainfall.innerHTML = `Annual Rain Fall: ${SodaTown.averageRainfall} inches`;

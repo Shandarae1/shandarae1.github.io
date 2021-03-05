@@ -176,7 +176,9 @@ article a {
   margin: 0 0 0.5rem 0;
   padding: 0;
 }
-
+.communityNews article{
+  padding: 20px;
+}
 /* -------------GALLERY PAGE--------------- */
 #galleryDiv {
   display: grid;
@@ -296,13 +298,13 @@ form label.contactForm input:required:valid {
 
 /* ------------Index---------------- */
 
-div.indexCards {
+/* div.indexCards {
   margin: 0 auto;
   align-items: center;
   border: solid 2px #333;
   display: grid;
   grid-template-columns: 1fr;
-}
+}*/
 
 div.indexCards section {
   text-align: center;
@@ -318,7 +320,7 @@ div.indexCards p {
 }
 div.indexCards h2 {
   color: #37323e;
-}
+} 
 
 div.indexCards img {
   border: 1px solid #333;

@@ -116,8 +116,13 @@
   /* ----------Index Page---------*/
  
   div.indexCards section {
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  div.indexCards img {
+    margin: 0 auto;
   }
 
   div.indexCards :nth-child(odd) img {
