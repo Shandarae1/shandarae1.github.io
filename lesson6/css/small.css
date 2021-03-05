@@ -76,6 +76,7 @@ nav ul.hide {
 }
 .active {
   color: #de9e36;
+  font-size: 1.2em;
 }
 /*----------- MAIN --------------*/
 h1 {
@@ -114,6 +115,7 @@ main h2 {
 }
 .prestonHero {
   max-width: 100%;
+  box-shadow: 0 0 30px #777;
 }
 
 .weathersummary {
@@ -298,13 +300,6 @@ form label.contactForm input:required:valid {
 
 /* ------------Index---------------- */
 
-/* div.indexCards {
-  margin: 0 auto;
-  align-items: center;
-  border: solid 2px #333;
-  display: grid;
-  grid-template-columns: 1fr;
-}*/
 
 div.indexCards section {
   text-align: center;
@@ -326,6 +321,9 @@ div.indexCards img {
   border: 1px solid #333;
   padding: 2px;
   max-width: 100%;
+}
+.communityNews img {
+  box-shadow: 0 0 30px #777;
 }
 
 /*----------- FOOTER --------------*/
@@ -362,6 +360,7 @@ footer a {
 .contact {
   background-color: #828089;
   color: #ffffff;
+  font-size: large;
   text-align: center;
   max-width: 960px;
   margin: auto;
