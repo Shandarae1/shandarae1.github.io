@@ -4,8 +4,10 @@ function showhide() {
   var d = new Date();
   var s = document.getElementById("announcement");
   if (d.getDay() == 5) {
-    s.style.display = s.style.display == "block" ? "none" : "block";
+    s.style.display = 
+    s.style.display == "block" ? "none" : "block";
   }
+  
 }
 showhide();
 
@@ -24,7 +26,8 @@ document.getElementById("year").textContent = new Date().toLocaleDateString(
   year
 );
 
-//current date footer
+// current date footer
+
 const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
   now
@@ -33,6 +36,8 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 const datefield = document.getElementById("date");
 
 datefield.textContent = fulldate;
+
+
 
 /* -------------STORM CENTER PAGE--------------- */
 

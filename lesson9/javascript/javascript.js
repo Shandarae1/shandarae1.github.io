@@ -1,3 +1,23 @@
+//footer year
+
+const year = { year: "numeric" };
+console.log(year);
+
+document.getElementById("year").textContent = new Date().toLocaleDateString(
+  "en-US",
+  year
+);
+
+//current date footer
+const now = new Date();
+const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
+  now
+);
+
+const datefield = document.getElementById("date");
+
+datefield.textContent = fulldate;
+
 // ------HOMEPAGE JSON FETCH------
 
 // ------storing resource------
