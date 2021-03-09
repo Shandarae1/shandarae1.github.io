@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="../css/normalize.css" />
 
 
-    <link rel="stylesheet" href="css/small.css" />
-    <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />
+    <link rel="stylesheet" href="../lesson6/css/small.css" />
+    <link rel="stylesheet" href="../lesson6/css/medium.css" />
+    <link rel="stylesheet" href="../lesson6/css/large.css" />
 </head>
 
 <body>
@@ -40,7 +40,7 @@
         </div>
         <ul id="toggleNav" class="hide">
             <li><a href="../lesson9/index.html">Home</a></li>
-            <li><a href="preston-6.html" class="active">Preston</a></li>
+            <li><a href="preston-10.html" class="active">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
@@ -52,10 +52,7 @@
         <h2>Preston</h2>
         <div class="herodiv">
             <picture>
-                <source srcset="images/heroImgFranklin860.jpg" media="(min-width: 960px)" />
-                <source srcset="images/heroImgFranklin600.jpg" media="(min-width: 600px)" />
-                <source srcset="images/heroImgFranklin350.jpg" />
-                <img class="prestonHero" src="images/heroImgFranklin860.jpg" alt="image of field" />
+                <img class="prestonHero" src="images/prestonhero.jpg" loading="lazy" alt="image of field" />
             </picture>
 
             <section Class="weathersummary">
@@ -70,12 +67,12 @@
                 </div>
                 <div class="rightSide">
                     <p>
-                        <span id="currently"></span> <br>
-                            <span id="temp"></span>&#176; F<br>
-                            <span id="windChill" class="windOutput"></span><br>
-                            <span id="humidity"></span> %<br>
-                            <span id="wndSpeed"></span> mph
-                        </p>
+                    <span id="currently"></span> <br>
+                        <span id="temp"></span>&#176; F<br>
+                        <span id="windChill" class="windOutput"></span><br>
+                        <span id="humidity"></span> %<br>
+                        <span id="wndSpeed"></span> mph
+                    </p>
                 </div>
 
             </section>
@@ -176,8 +173,7 @@
 
 
     </footer>
-    <script src="../lesson6/js/script.js"></script>
-    <!-- <script src="js/windchill.js"></script> -->
+    <script src=../lesson6/js/script.js></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
