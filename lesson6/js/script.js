@@ -50,7 +50,7 @@ function selectRegion() {
 /* --------------PRESTON 10 PAGE WEATHER API-------------- */
 
 const apiURL =
-  "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=946ee3e55995e79e2d6f02d00a3dce79&units=imperial";
+  "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=946ee3e55995e79e2d6f02d00a3dce79&units=imperial";
 
 fetch(apiURL)
   .then((response) => response.json())
@@ -128,7 +128,7 @@ fetch(forecastURL)
       tableimg.setAttribute("src", tableimgURL);
       tableimg.setAttribute("alt", `${filtered.weather[0].description}`);
 
-      tabledata.innerHTML = `${tableimg}` + '<br>' + `${filtered.main.temp.toFixed(0)}&deg;F`;
+      tabledata.innerHTML = `${filtered.main.temp.toFixed(0)}&deg;F`;
       console.log(tableimgURL);
 
       table.appendChild(tabledata);
