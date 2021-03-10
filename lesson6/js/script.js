@@ -102,7 +102,7 @@ fetch(apiURL)
 // ------Preston 10 5 day forecast------
 
 const forecastURL =
-  "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=946ee3e55995e79e2d6f02d00a3dce79&units=imperial";
+  "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=946ee3e55995e79e2d6f02d00a3dce79&units=imperial";
 
 fetch(forecastURL)
   .then((response) => response.json())
