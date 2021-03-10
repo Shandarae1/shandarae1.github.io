@@ -55,28 +55,28 @@ const apiURL =
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    // console.log(jsObject);
 
     const temp = jsObject["main"];
     const wind = jsObject["wind"];
-    console.log(wind);
+    // console.log(wind);
     const tempOutput = document.querySelector("#temp");
     const currently = document.querySelector("#currently");
     const humidity = document.querySelector("#humidity");
     const wndSpeed = document.querySelector("#wndSpeed");
 
-    tempOutput.innerHTML = `${temp.temp}`;
+    tempOutput.innerHTML = `${temp.temp.toFixed(0)}`;
     currently.innerHTML = `${jsObject.weather[0].description}`;
     humidity.innerHTML = `${temp.humidity}`;
-    console.log(humidity);
+    // console.log(humidity);
     wndSpeed.innerHTML = `${wind.speed}`;
 
     // -------Windchill Preston 10-------
 
     var tempF = `${temp.temp}`;
     var windS = `${wind.speed}`;
-    console.log(tempF);
-    console.log(windS);
+    // console.log(tempF);
+    // console.log(windS);
     var f = windChill(tempF, windS);
 
     document.getElementById("windChill").innerHTML =
@@ -99,35 +99,38 @@ fetch(apiURL)
     }
   });
 
-  // ------Preston 10 5 day forecast------
+// ------Preston 10 5 day forecast------
 
-  const forecastURL =
+const forecastURL =
   "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=946ee3e55995e79e2d6f02d00a3dce79&units=imperial";
 
-  fetch(forecastURL)
+fetch(forecastURL)
   .then((response) => response.json())
   .then((forecastObject) => {
     console.log(forecastObject);
 
-    const forcast = forecastObject["list"];
+    const forecast = forecastObject["list"];
+    const table = document.querySelector("#forcast5day");
 
-    const dayOneimg = 'https://openweathermap.org/img/w/' + forecastObject.list[0].weather[0].icon + '.png'; // variable with image address stored concatenated with the API ico code value result
-    const dayOneDesc = forecastObject.list[0].weather[0].description;  //  weather array referencing index of icon
-    document.getElementById('dayOneIcon').setAttribute('src', dayOneimg);  // setAttribute() src specified by const variable set above
-    document.getElementById('dayOneIcon').setAttribute('alt', dayOneDesc);
+    const forecastfilter = forecast.filter((x) =>
+      x.dt_txt.includes("18:00:00")
+    );
+    console.log(forecastfilter);
 
-    const dayOne = document.querySelector("#dayOne");
+    forecastfilter.forEach((filtered) => {
+      let tableimg = document.createElement("img");
+      let tabledata = document.createElement("td");
 
-    dayOne.innerHTML = `${forecastObject.list[0].main.temp.toFixed(0)}`;
+      let tableimgURL =
+        "https://openweathermap.org/img/w/" +
+        `${filtered.weather[0].icon}` +
+        ".png";
+      tableimg.setAttribute("src", tableimgURL);
+      tableimg.setAttribute("alt", `${filtered.weather[0].description}`);
 
-    // -------second day-----
+      tabledata.innerHTML = `${tableimg}` + '<br>' + `${filtered.main.temp.toFixed(0)}&deg;F`;
+      console.log(tableimgURL);
 
-    const dayTwoimg = 'https://openweathermap.org/img/w/' + forecastObject.list[1].weather[0].icon + '.png'; // variable with image address stored concatenated with the API ico code value result
-    const dayTwoDesc = forecastObject.list[1].weather[0].description;  //  weather array referencing index of icon
-    document.getElementById('dayTwoIcon').setAttribute('src', dayTwoimg);  // setAttribute() src specified by const variable set above
-    document.getElementById('dayTwoIcon').setAttribute('alt', dayTwoDesc);
-
-    const dayTwo = document.querySelector("#dayTwo");
-
-    dayTwo.innerHTML = `${forecastObject.list[1].main.temp.toFixed(0)}`;
+      table.appendChild(tabledata);
+    });
   });
