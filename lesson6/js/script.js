@@ -55,8 +55,6 @@ const apiURL =
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    // console.log(jsObject);
-
     const temp = jsObject["main"];
     const wind = jsObject["wind"];
 
@@ -98,16 +96,15 @@ fetch(apiURL)
 
 // ------Preston 10 5 day forecast------
 
-const weekdays = document.querySelector('#weekdays')
+const weekdays = document.querySelector("#weekdays");
 
 function day() {
   let day = new Date();
   let week = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
   for (i = 0; i < 5; i++) {
-    console.log(week[(day.getDay() + 1 + i) % 7]);
-    let tablehead = document.createElement('th');
-    tablehead.innerHTML = (week[(day.getDay() + 1 + i) % 7]);
+    let tablehead = document.createElement("th");
+    tablehead.innerHTML = week[(day.getDay() + 1 + i) % 7];
     weekdays.appendChild(tablehead);
   }
 }
@@ -120,24 +117,18 @@ const forecastURL =
 fetch(forecastURL)
   .then((response) => response.json())
   .then((forecastObject) => {
-    console.log(forecastObject);
-
     const forecast = forecastObject["list"];
     const table = document.querySelector("#forcast5day");
-
-
 
     const forecastfilter = forecast.filter((x) =>
       x.dt_txt.includes("18:00:00")
     );
-    console.log(forecastfilter);
-
-    
 
     forecastfilter.forEach((filtered) => {
- 
+      console.log(filtered);
       let tableimg = document.createElement("img");
       let tabledata = document.createElement("td");
+      let tabledescription = document.createElement("p");
 
       let tableimgURL =
         "https://openweathermap.org/img/w/" +
@@ -146,10 +137,11 @@ fetch(forecastURL)
       tableimg.setAttribute("src", tableimgURL);
       tableimg.setAttribute("alt", `${filtered.weather[0].description}`);
 
+      tabledescription = `${filtered.weather[0].description}`;
       tabledata.innerHTML = `${filtered.main.temp.toFixed(0)}&deg;F`;
-      console.log(tableimgURL);
 
       table.appendChild(tabledata);
       tabledata.append(tableimg);
+      tabledata.append(tabledescription);
     });
   });
