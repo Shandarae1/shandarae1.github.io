@@ -59,7 +59,7 @@ fetch(apiURL)
 
     const temp = jsObject["main"];
     const wind = jsObject["wind"];
-    // console.log(wind);
+
     const tempOutput = document.querySelector("#temp");
     const currently = document.querySelector("#currently");
     const humidity = document.querySelector("#humidity");
@@ -68,15 +68,12 @@ fetch(apiURL)
     tempOutput.innerHTML = `${temp.temp.toFixed(0)}`;
     currently.innerHTML = `${jsObject.weather[0].description}`;
     humidity.innerHTML = `${temp.humidity}`;
-    // console.log(humidity);
     wndSpeed.innerHTML = `${wind.speed}`;
 
     // -------Windchill Preston 10-------
 
     var tempF = `${temp.temp}`;
     var windS = `${wind.speed}`;
-    // console.log(tempF);
-    // console.log(windS);
     var f = windChill(tempF, windS);
 
     document.getElementById("windChill").innerHTML =
@@ -101,6 +98,22 @@ fetch(apiURL)
 
 // ------Preston 10 5 day forecast------
 
+const weekdays = document.querySelector('#weekdays')
+
+function day() {
+  let day = new Date();
+  let week = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+
+  for (i = 0; i < 5; i++) {
+    console.log(week[(day.getDay() + 1 + i) % 7]);
+    let tablehead = document.createElement('th');
+    tablehead.innerHTML = (week[(day.getDay() + 1 + i) % 7]);
+    weekdays.appendChild(tablehead);
+  }
+}
+
+day();
+
 const forecastURL =
   "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=946ee3e55995e79e2d6f02d00a3dce79&units=imperial";
 
@@ -112,12 +125,17 @@ fetch(forecastURL)
     const forecast = forecastObject["list"];
     const table = document.querySelector("#forcast5day");
 
+
+
     const forecastfilter = forecast.filter((x) =>
       x.dt_txt.includes("18:00:00")
     );
     console.log(forecastfilter);
 
+    
+
     forecastfilter.forEach((filtered) => {
+ 
       let tableimg = document.createElement("img");
       let tabledata = document.createElement("td");
 
@@ -132,5 +150,6 @@ fetch(forecastURL)
       console.log(tableimgURL);
 
       table.appendChild(tabledata);
+      tabledata.append(tableimg);
     });
   });
