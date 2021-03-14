@@ -1,0 +1,44 @@
+/* Desktop Views ******************************/
+
+@media only screen and (min-width: 1280px) {
+    .mobilelogo {
+      float: left;
+    }
+  
+    nav ul li {
+      display: block;
+    }
+    nav ul li a {
+      font-size: 1.2rem;
+    }
+
+    /* ------Index page------ */
+
+    div.indexCards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    div.indexCards section {
+      display: block;
+    }
+
+
+    /* -------------GALLERY PAGE--------------- */
+    #galleryDiv {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 0 auto;
+    }
+    .shadow:hover {
+      box-shadow: 0 0 50px white;
+    }
+  /* -------------STORM CENTER PAGE--------------- */
+
+  form label.stormInfo {
+    padding: .5rem 0;
+}
+.formButton {
+  margin: 2rem;
+}
+  }
+  
