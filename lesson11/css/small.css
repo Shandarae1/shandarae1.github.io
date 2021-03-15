@@ -164,6 +164,9 @@ body {
     box-shadow: 0 0 30px #777;
   }
 
+  .article figure {
+    float: right;
+  }
 
   .articleImg {
     max-width: 50%;
@@ -179,7 +182,7 @@ body {
   
   article a {
     color: #37323e;
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
   }
   .forcast5day {
     display: none;
@@ -366,8 +369,8 @@ body {
   }
   
   .contact {
-    background-color: #828089;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #37323e;
     font-size: large;
     text-align: center;
     max-width: 960px;
@@ -379,7 +382,7 @@ body {
     display: block;
   }
   .contact a {
-    color: white;
+    color: #37323e;
     font-weight: bold;
   }
   
