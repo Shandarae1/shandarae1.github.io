@@ -68,10 +68,23 @@
       padding: 0.5rem;
       font-size: 1.8rem;
     }
+
+    .articleBox {
+      text-align: left;
+    }
     .articleImg {
-      max-width: 400px;
+      max-width: 300px;
       float: right;
       margin: 15px;
+    }
+
+    .iframe {
+      text-align: center;
+      padding: 0.5rem;
+    }
+    .sodaiframe {
+      width: 680px;
+      height: 480px;
     }
   
     table,

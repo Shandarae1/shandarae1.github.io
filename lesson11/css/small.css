@@ -153,11 +153,20 @@ body {
     background-color: #bfbdc1;
     color: #37323e;
     padding: 0.5rem;
+    text-align: center;
   }
   
   .article img {
     max-width: 75%;
     display: block;
+    margin: 0 auto;
+    border: 1px solid #37323e;
+    box-shadow: 0 0 30px #777;
+  }
+
+
+  .articleImg {
+    max-width: 50%;
     margin: 0 auto;
     border: 1px solid #37323e;
     box-shadow: 0 0 30px #777;
