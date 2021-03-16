@@ -14,6 +14,54 @@ function showhide() {
 function toggleMenu() {
     document.getElementById("toggleNav").classList.toggle("hide");
   }
+
+  // ------Fish Haven Events JSON FETCH------
+
+// ------storing resource------
+
+const procureURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+// -----Fetch-----
+
+fetch(procureURL)
+  .then(function (eventresponse) {
+    return eventresponse.json();
+  })
+  .then(function (jsnObject) {
+
+    //   -----store converted results into array -----
+
+
+    const towns = jsnObject["towns"];
+    const upcomingEvents = document.querySelector('div.events');
+
+    const eventfilter = towns.filter(town => town.name === "Fish Haven");
+
+    eventfilter.forEach(town => {
+
+    let eventBox = document.createElement("section")
+      let eventH3 = document.createElement("h3");
+    let eventhr = document.createElement("hr");
+    let eventP0 = document.createElement("p");
+    let eventP1 = document.createElement("p");
+    let eventP2 = document.createElement("p");
+
+      eventH3.innerHTML = `Upcoming Events:`;
+      eventP0.innerHTML = `${town.events[0]}`;
+      eventP1.innerHTML = `${town.events[1]}`;
+      eventP2.innerHTML = `${town.events[2]}`;
+
+
+      upcomingEvents.append(eventBox);
+      eventBox.appendChild(eventH3);
+      eventBox.appendChild(eventhr);
+      eventBox.appendChild(eventP0)
+      eventBox.appendChild(eventP1);
+      eventBox.appendChild(eventP2);
+
+      
+  });
+  });
   
   //footer year
   

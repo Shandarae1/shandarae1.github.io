@@ -38,6 +38,10 @@ body {
   .hamButton {
     text-align: center;
   }
+
+  .hamButton:hover {
+    background-color: #f8ba57;
+  }
   nav {
     background-color: #5e5c63;
   }
@@ -108,7 +112,7 @@ body {
   }
   .herodiv {
     margin: 0 auto;
-    position: relative;
+    /* position: relative; */
     max-width: 100%;
     border: 1px solid #37323e;
   }
@@ -133,6 +137,25 @@ body {
     grid-gap: 10px;
     font-size: 0.9rem;
   }
+
+  .events {
+    display: flex;
+    bottom: 20px;
+    right: 20px;
+    background: radial-gradient(#6fdaf5, #1985A1);
+    border: 1px solid #37323e;
+    padding: 0.7rem;
+    box-shadow: 0 0 30px #777;
+    opacity: 0.95;
+    color: #37323e;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+ .events section {
+   margin: 0 auto;
+ }
   .weatherH3 {
     margin: 0;
     grid-column: 1/ 3;

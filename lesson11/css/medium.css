@@ -1,163 +1,170 @@
 /* Tablet Views ******************************/
 @media only screen and (min-width: 700px) {
-    nav ul {
-      display: flex;
-      white-space: nowrap;
-      text-align: center;
-    }
-  
-    nav ul li {
-      flex: 1 1 100%;
-      float: left;
-    }
-  
-    nav button {
-      display: none;
-    }
-  
-    nav ul.hide {
-      display: flex;
-    }
-  
-    nav ul li a {
-      border: none;
-      padding: 0.8rem 1rem;
-      font-size: 1rem;
-    }
-  
-    header {
-      padding: 0.5rem;
-      font-size: 20px;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    header img {
-      width: 250px;
-    }
-    .headings {
-      display: flex;
-      flex-direction: column;
-    }
-    header h1 {
-      font-size: 3rem;
-    }
-  
-    .herodiv {
-      margin: 0 auto;
-      position: relative;
-    }
-  
-    .weathersummary {
-      font-size: 100%;
-      position: absolute;
-      top: 40px;
-      left: 40px;
-    }
-    .forcast5day {
-      display: block;
-      font-size: 1.5rem;
-      color: #f8ba57;
-    }
-  
-    .caption5day {
-      background: radial-gradient(#ffffff, #de9e36);
-      color: #37332e;
-      padding: 0.5rem;
-      font-size: 1.8rem;
-    }
-
-    .articleBox {
-      text-align: left;
-    }
-    .articleImg {
-      max-width: 300px;
-      float: right;
-      margin: 15px;
-    }
-
-    .iframe {
-      text-align: center;
-      padding: 0.5rem;
-    }
-    .sodaiframe {
-      width: 680px;
-      height: 480px;
-    }
-  
-    table,
-    th,
-    td {
-      border: 1px solid#37323e;
-      border-collapse: collapse;
-    }
-    th,
-    td {
-      padding: 15px;
-      color: #37323e;
-      text-align: center;
-      font-size: 80%;
-    }
-  
-    td img {
-      display: flex;
-      margin: 0 auto;
-    }
-    #forcast5day {
-      width: 100%;
-      background-color: #ffffff;
-    }
-    .weekdays {
-      background-color: #de9e36;
-    }
-  
-    .contact {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .mapImage {
-      display: block;
-      margin: 0 auto;
-      align-self: center;
-      border: 1px solid #37323e;
-      box-shadow: 0 0 30px rgb(48, 46, 46);
-    }
-  
-    /* ----------Index Page---------*/
-   
-    div.indexCards section {
-      align-items: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    div.indexCards img {
-      margin: 0 auto;
-    }
-  
-    div.indexCards :nth-child(odd) img {
-      grid-column: 2;
-    }
-    div.indexCards :nth-child(even) img {
-      grid-column: 1;
-      grid-row: 1;
-    }
-    div.indexCards :nth-child(odd) article {
-      grid-column: 1;
-      grid-row: 1;
-    }
-    div.indexCards :nth-child(even) article {
-      grid-column: 2;
-      grid-row: 1;
-    }
-  
-    /* -------------GALLERY PAGE--------------- */
-    #galleryDiv {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
+  nav ul {
+    display: flex;
+    white-space: nowrap;
+    text-align: center;
   }
-  
+
+  nav ul li {
+    flex: 1 1 100%;
+    float: left;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul.hide {
+    display: flex;
+  }
+
+  nav ul li a {
+    border: none;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+
+  header {
+    padding: 0.5rem;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header img {
+    width: 250px;
+  }
+  .headings {
+    display: flex;
+    flex-direction: column;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
+
+  .herodiv {
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .weathersummary {
+    font-size: 100%;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+
+  .events {
+    margin: 0.5rem;
+    font-size: 100%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  .forcast5day {
+    display: block;
+    font-size: 1.5rem;
+    color: #f8ba57;
+  }
+
+  .caption5day {
+    background: radial-gradient(#ffffff, #de9e36);
+    color: #37332e;
+    padding: 0.5rem;
+    font-size: 1.8rem;
+  }
+
+  .articleBox {
+    text-align: left;
+  }
+  .articleImg {
+    max-width: 300px;
+    float: right;
+    margin: 15px;
+  }
+
+  .iframe {
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .sodaiframe {
+    width: 680px;
+    height: 480px;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid#37323e;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    padding: 15px;
+    color: #37323e;
+    text-align: center;
+    font-size: 80%;
+  }
+
+  td img {
+    display: flex;
+    margin: 0 auto;
+  }
+  #forcast5day {
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .weekdays {
+    background-color: #de9e36;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mapImage {
+    display: block;
+    margin: 0 auto;
+    align-self: center;
+    border: 1px solid #37323e;
+    box-shadow: 0 0 30px rgb(48, 46, 46);
+  }
+
+  /* ----------Index Page---------*/
+
+  div.indexCards section {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  div.indexCards img {
+    margin: 0 auto;
+  }
+
+  div.indexCards :nth-child(odd) img {
+    grid-column: 2;
+  }
+  div.indexCards :nth-child(even) img {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  div.indexCards :nth-child(odd) article {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  div.indexCards :nth-child(even) article {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  /* -------------GALLERY PAGE--------------- */
+  #galleryDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
