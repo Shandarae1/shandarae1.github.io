@@ -70,12 +70,12 @@ fetch(reqURL)
     let pimg = document.createElement("img");
 
 
-    h2.innerHTML = `${prestonTown.name}`;
+    h2.innerHTML = `<a href = "preston.html">${prestonTown.name}</a>`;
     motto.innerHTML =   `<strong>"${prestonTown.motto}"</strong>`;
     yearFounded.innerHTML = `Year Founded: ${prestonTown.yearFounded}`;
     population.innerHTML = `Population: ${prestonTown.currentPopulation}`;
     averageRainfall.innerHTML = `Annual Rain Fall: ${prestonTown.averageRainfall} inches`;
-    prestoncard.setAttribute('class', 'psection')
+    prestoncard.setAttribute('class', 'psection');
     pimg.setAttribute('src', 'images/weathergallery12.jpg');
     pimg.setAttribute('alt', `picture of ${prestonTown.name}` );
     pimg.setAttribute("loading", "lazy");
@@ -112,7 +112,7 @@ fetch(reqURL)
   let fimg = document.createElement("img");
 
 
-  h2.innerHTML = `${fishTown.name}`;
+  h2.innerHTML = `<a href = "fishhaven.html">${fishTown.name}</a>`;
   motto.innerHTML =   `<strong>"${fishTown.motto}"</strong>`;
   yearFounded.innerHTML = `Year Founded: ${fishTown.yearFounded}`;
   population.innerHTML = `Population: ${fishTown.currentPopulation}`;
@@ -151,7 +151,7 @@ fetch(reqURL)
   let averageRainfall = document.createElement("p");
   let simg = document.createElement("img");
 
-  h2.innerHTML = `${SodaTown.name}`;
+  h2.innerHTML = `<a href = "sodasprings.html">${SodaTown.name}</a>`;
   motto.innerHTML =   `<strong>"${SodaTown.motto}"</strong>`;
   yearFounded.innerHTML = `Year Founded: ${SodaTown.yearFounded}`;
   population.innerHTML = `Population: ${SodaTown.currentPopulation}`;
@@ -173,3 +173,4 @@ fetch(reqURL)
 });
 
   });
+
