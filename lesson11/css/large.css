@@ -29,8 +29,7 @@
       grid-template-columns: 1fr 1fr 1fr;
       margin: 0 auto;
     }
-    .shadow:hover {
-      box-shadow: 0 0 50px white;
+
     }
   /* -------------STORM CENTER PAGE--------------- */
 
@@ -40,5 +39,5 @@
 .formButton {
   margin: 2rem;
 }
-  }
+  
   
