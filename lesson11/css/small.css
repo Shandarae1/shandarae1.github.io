@@ -36,6 +36,8 @@ nav button {
   color: #ffffff;
 }
 .hamButton {
+  display: block;
+  width: 100%;
   text-align: center;
 }
 
@@ -344,18 +346,20 @@ form label.contactForm input:required:valid {
 /* ------------Index---------------- */
 
 div.indexCards section {
+  box-shadow: 0 0 5px white;
   text-align: center;
   background-color: #bfbdc1;
   padding: 10px;
   margin: 10px;
 }
 
-div.indexCards section a {
+div.indexCards section a{
   font-size: 1.7rem;
 }
 
-div.indexCards section {
-  box-shadow: 0 0 5px white;
+
+div.indexCards a{
+  text-decoration: none;
 }
 
 div.indexCards p {
