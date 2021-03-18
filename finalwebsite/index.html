@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Covington, WA Chamber
+    </title>
+    <meta name="description" content="Covington Washington Chamber of Commerce" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css" />
+
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+</head>
+
+<body>
+    <header>
+        <picture class="mobilelogo">
+            <img src="images/hammer.png" alt="thorcast.com header" />
+        </picture>
+
+        <section class="headings">
+            <h1>THORcast.org</h1>
+            <div class="motto">
+                Up-to-date forcasts for all your weather planning needs in the Greater
+                Scandinavian area.
+            </div>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <div class="hamButton">
+            <button onclick="toggleMenu()">&#9776;</button>
+        </div>
+        <ul id="toggleNav" class="hide">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="herodiv">
+            <picture>
+                <img class="prestonHero" src="images/indexHero.jpg" alt="image of city park" loading="lazy" />
+            </picture>
+        </div>
+
+
+        <div class="indexCards"></div>
+
+        <div class="communityNews">
+            <h2>
+                News Around the Community
+            </h2>
+            <article>
+                <figure>
+                    <img src="images/newsimage.jpg" alt="News of Record Header" loading="lazy">
+                    <figcaption><a
+                            href="https://www.hjnews.com/preston/news-of-record-march-3-2021/article_cca25514-f725-52d7-a3ac-843b5e9fecad.html">
+                            image credit</a> </figcaption>
+                </figure>
+                <h3>
+                    City honors hospital staff for service to community
+                </h3>
+                <p>
+                    At the Preston City Council meeting on February 22, Mayor Dan Keller and the council presented
+                    Preston City’s 2020 Citizen Of the Year Award. Mayor Dan Keller explained that the council had been
+                    unable to select just one individual to receive the award. Instead, the decision was made to bestow
+                    the award upon the entire staff — 332 individuals — of the Franklin County Medical Center for their
+                    tireless efforts to serve and care for our community through the COVID-19 pandemic.<br><br>
+
+                    Councilmen Brent Dodge and Terry Larsen presented the award to Darin Dransfield, CEO of Franklin
+                    County Medical Center, and the several members of the hospital staff and board, attending the
+                    meeting: Heidi Kirkbride, Xochi Frankman, LaRadene Murphy, John Buker, Rachelle Oliverson, Samantha
+                    Robinson, Richard Westerberg. <a
+                        href="https://www.hjnews.com/preston/city-honors-hospital-staff-for-service-to-community/article_fba085f4-d6ef-547d-aed4-16f4338a6934.html#tncms-source=article-nav-next"><em>Continue
+                            reding here...</em></a>
+                </p>
+            </article>
+
+        </div>
+
+
+    </main>
+
+    <div class="contact">
+        <img class="mapImage" src="images/prestonNorway.jpg" alt="map of preston norway" />
+        <section class="stormAddress">
+
+            <div class="stormContactPara1">
+                <h3>THORcast.org</h3>
+                <p>8310 Kabelvåg, Norway </p>
+            </div>
+
+            <div class="stormContactPara2">
+                <p> &#9743; +47 944 49 110<br>
+                    &#x2709; email@thorcast.org
+                </p>
+            </div>
+
+            <div class="stormSocial">
+                <a href="https://www.facebook.com" target="blank">
+                    <img class="facebook" src="images/facebook.png" alt="Facebook icon" />
+                </a>
+                <a href="https://www.twitter.com" target="blank">
+                    <img class="twitter" src="images/twitter.png" alt="twitter icon" /></a>
+
+                <a href="https://www.wordpress.com" target="blank">
+                    <img class="wordpress" src="images/wordpress.png" alt="wordpress icon" /></a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; <span id="year"></span> | Shanda Aurich | Covington, WA |
+        <a href="https://www.byui.edu/online">BYUI Online Learning</a><br />
+        <span id="date"></span>
+
+
+    </footer>
+    <script src="javascript/indexjs.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Comfortaa', 'Hammersmith One'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
