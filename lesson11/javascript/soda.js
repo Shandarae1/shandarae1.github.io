@@ -1,3 +1,14 @@
+// Friday banner pop up
+
+function showhide() {
+  var d = new Date();
+  var s = document.getElementById("announcement");
+  if (d.getDay() == 5) {
+    s.style.display = s.style.display == "block" ? "none" : "block";
+  }
+}
+showhide();
+
 //hamburger menu
   
 function toggleMenu() {

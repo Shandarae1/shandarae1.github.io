@@ -60,7 +60,6 @@ fetch(reqURL)
       let population = document.createElement("p");
       let averageRainfall = document.createElement("p");
       let pimg = document.createElement("img");
-      let a = document.createElement("a");
 
       h2.innerHTML = `<a href = "preston.html">${prestonTown.name}</a>`;
       motto.innerHTML = `<strong>"${prestonTown.motto}"</strong>`;
@@ -73,11 +72,8 @@ fetch(reqURL)
       pimg.setAttribute("loading", "lazy");
       pimg.setAttribute("class", "pimg");
       pimg.style.boxShadow = "0 0 30px #777";
-      a.setAttribute("href",`../${prestonTown.photo}.html`);
-      console.log(a);
 
-      preston.append(a);
-      a.appendChild(prestoncard);
+      preston.append(prestoncard);
       prestoncard.appendChild(pimg);
       prestoncard.appendChild(particle);
       particle.appendChild(h2);
