@@ -61,14 +61,14 @@ fetch(reqURL)
       let averageRainfall = document.createElement("p");
       let pimg = document.createElement("img");
 
-      h2.innerHTML = `<a href = "preston.html">${prestonTown.name}</a>`;
+      h2.innerHTML = `${prestonTown.name}`;
       motto.innerHTML = `<strong>"${prestonTown.motto}"</strong>`;
       yearFounded.innerHTML = `Year Founded: ${prestonTown.yearFounded}`;
       population.innerHTML = `Population: ${prestonTown.currentPopulation}`;
       averageRainfall.innerHTML = `Annual Rain Fall: ${prestonTown.averageRainfall} inches`;
       prestoncard.setAttribute("class", `${prestonTown.photo}`);
-      pimg.setAttribute("src", `${prestonTown.photo}`);
       pimg.setAttribute("src", `images/${prestonTown.photo}`);
+      pimg.setAttribute("alt", `${prestonTown.name} image`)
       pimg.setAttribute("loading", "lazy");
       pimg.setAttribute("class", "pimg");
       pimg.style.boxShadow = "0 0 30px #777";
