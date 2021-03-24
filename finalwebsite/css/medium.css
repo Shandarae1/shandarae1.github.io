@@ -71,7 +71,7 @@
     }
   
     .caption5day {
-      background: radial-gradient(#ffffff, #de9e36);
+      background: radial-gradient(#ffffff, #D09D06);
       color: #37332e;
       padding: 0.5rem;
       font-size: 1.8rem;
@@ -122,7 +122,7 @@
       background-color: #ffffff;
     }
     .weekdays {
-      background-color: #de9e36;
+      background-color: #D09D06;
     }
   
     .contact {

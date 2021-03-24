@@ -1,0 +1,66 @@
+{
+    "Companies": [
+        {
+        "No": "1",
+        "Name": "The Royal Bee Florist",
+        "address": "27116 167th Pl SE, Ste 104",
+        "city": "Covington, WA 98042",
+        "phone": "(253) 630-7673",
+        "logo": "beesflorist.jpg",
+        "weblink": "http://www.theroyalbeeflorist.com/"
+         },
+         {
+            "No": "2",
+            "Name": "Red Canoe Credit Union",
+            "address": "27022 176th Pl SE",
+            "city": "Covington, WA 98042",
+            "phone": "(360) 425-2130",
+            "logo": "redcanoe.png",
+            "weblink": "https://www.redcanoecu.com/locations/covington-branch/"
+             },
+             {
+                "No": "3",
+                "Name": "Advanced Eye Care",
+                "address": "17224 SE 272nd St Ste B",
+                "city": "Covington, WA 98042",
+                "phone": "(253) 528-3939",
+                "logo": "advancedeye.png",
+                "weblink": "https://covingtonadvancedeye.com/"
+                 },
+                 {
+                    "No": "4",
+                    "Name": "Barre3",
+                    "address": "27116 167th PL SE",
+                    "city": "Covington, WA 98042",
+                    "phone": "(253) 981-3781",
+                    "logo": "barre3.png",
+                    "weblink": "https://online.barre3.com/studio-locations/covington"
+                     },
+                     {
+                        "No": "5",
+                        "Name": "Daniel Ross Salon",
+                        "address": "17407 SE WAX ROAD",
+                        "city": "Covington, WA 98042",
+                        "phone": "(253) 630-9423 ",
+                        "logo": "danielross.png",
+                        "weblink": "https://www.danielrosssalon.com/"
+                         },
+                         {
+                            "No": "6",
+                            "Name": "Valley Automotive Repair and Electric",
+                            "address": "17621 SE 272nd St",
+                            "city": "Covington, WA 98042",
+                            "phone": "(425) 310-4788",
+                            "logo": "valleyauto.png",
+                            "weblink": "https://valleyautoelectric.com/"
+                             },
+                             {
+                                "No": "7",
+                                "Name": "Sena Iron Grill",
+                                "address": "17017 SE 270th Place Suite 101",
+                                "city": "Covington, WA 98042",
+                                "phone": "(253) 631-0101",
+                                "logo": "irongrill.jpg",
+                                "weblink": "https://www.facebook.com/theirongrill/"
+                                 }
+    ]}

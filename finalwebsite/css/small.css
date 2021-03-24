@@ -1,10 +1,10 @@
 /*----------- BODY --------------*/
 
 body {
-    font-family: "comfortaa", "Cursive";
-    color: #bfbdc1;
-    background-color: #37323e;
-    font-size: 18px;
+    font-family: "Lato", "sans-serif";
+    color: #12395A;
+    background-color: #f0eef1;
+    font-size: 16px;
     line-height: 1.5;
     margin: 1rem auto;
     padding: 1rem;
@@ -23,8 +23,8 @@ body {
   header img {
     width: 200px;
   }
-  .motto {
-    margin: 0.8rem 0;
+  .motto h2 {
+    margin: 0.5rem 0;
   }
   
   /*----------- NAVIGATION --------------*/
@@ -42,10 +42,10 @@ body {
   }
   
   .hamButton:hover {
-    background-color: #f8ba57;
+    background-color: #D09D06;
   }
   nav {
-    background-color: #5e5c63;
+    background-color: #01395a;
   }
   
   nav ul {
@@ -67,29 +67,28 @@ body {
   }
   
   nav ul li a:hover {
-    background-color: #de9e36;
-    color: #37323e;
+    background-color: #84d2e1;
+    color: #01395a;
+    border: 3px solid #01395a;
   }
   
   nav ul li .active {
-    color: #f8ba57;
+    color: #D09D06;
     font-weight: bold;
   }
   
   nav ul.hide {
     display: none;
   }
-  .active {
-    color: #de9e36;
-    font-size: 1.2em;
-  }
+
   /*----------- MAIN --------------*/
   h1 {
-    font-family: "Hammersmith One", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    margin: 0.5rem 0;
   }
   
   h2 {
-    color: #de9e36;
+    color: #D09D06;
   }
   main {
     margin: 0 auto;
@@ -102,15 +101,23 @@ body {
     font-size: 2rem;
     text-align: center;
   }
-  .fridayAnnounce {
+  .callToAction {
     display: block;
     text-align: center;
-    background: radial-gradient(#ffffff, #de9e36);
+    font-size: 1.5rem;
+    background: radial-gradient(#ffffff, #D09D06);
     border: 1px solid #37323e;
     padding: 0.7rem;
     box-shadow: 0 0 30px #777;
-    color: #070708;
+    color: #01395a;
     max-height: 100%;
+    margin: .5rem 0;
+  }
+
+  .callToAction a {
+    color: #01395a;
+    display: block;
+    text-decoration: none;
   }
   .herodiv {
     margin: 0 auto;
@@ -118,7 +125,7 @@ body {
     max-width: 100%;
     border: 1px solid #37323e;
   }
-  .prestonHero {
+  .mtRainierHero {
     max-width: 100%;
     box-shadow: 0 0 30px #777;
   }
@@ -127,7 +134,7 @@ body {
     display: flex;
     top: 20px;
     left: 20px;
-    background: radial-gradient(#ffffff, #de9e36);
+    background: radial-gradient(#ffffff, #D09D06);
     border: 1px solid #37323e;
     padding: 0.7rem;
     box-shadow: 0 0 30px #777;
@@ -175,8 +182,8 @@ body {
   }
   
   .articleBox {
-    background-color: #bfbdc1;
-    color: #37323e;
+    background-color: #ffffff;
+    color: #01395a;
     padding: 0.5rem;
     text-align: center;
   }
@@ -197,13 +204,13 @@ body {
     box-shadow: 0 0 30px #777;
   }
   article {
-    background-color: #bfbdc1;
-    color: #37323e;
+    background-color: #ffffff;
+    color: #01395a;
     padding: 0.5rem;
   }
   
   article a, figure a {
-    color: #37323e;
+    color: #01395a;
     font-size: 0.9rem;
   }
   .forcast5day {
@@ -253,7 +260,7 @@ body {
   
   form fieldset {
     margin: 0.5rem;
-    border: 2px solid #de9e36;
+    border: 2px solid #D09D06;
     border-radius: 5px;
     padding: 0.5rem 2%;
   }
@@ -292,7 +299,7 @@ body {
     margin: 0 0 1.5rem 0;
   }
   #ratingvalue {
-    color: #de9e36;
+    color: #D09D06;
     font-size: 1.5rem;
   }
   input[type="range"] {
@@ -305,7 +312,7 @@ body {
   
   form input.formButton {
     border: none;
-    background-color: #de9e36;
+    background-color: #D09D06;
     color: #37323e;
     border-radius: 5px;
     padding: 0.75rem 1.5rem;
@@ -346,9 +353,9 @@ body {
   /* ------------Index---------------- */
   
   div.indexCards section {
-    box-shadow: 0 0 5px white;
+    box-shadow: 0 0 5px #777;
     text-align: center;
-    background-color: #bfbdc1;
+    background-color: #ffffff;
     padding: 10px;
     margin: 10px;
   }
@@ -402,7 +409,7 @@ body {
     padding: 0.5rem;
   }
   footer {
-    background-color: #5e5c63;
+    background-color: #01395a;
     color: #ffffff;
     text-align: center;
     padding: 0.75rem;
@@ -414,19 +421,19 @@ body {
   
   .contact {
     background-color: #ffffff;
-    color: #37323e;
+    color: #01395a;
     font-size: large;
     text-align: center;
     max-width: 960px;
     margin: auto;
-    border: 2px solid #070708;
+    border: 2px solid #01395a;
   }
   
   .contactPara {
     display: block;
   }
   .contact a {
-    color: #37323e;
+    color: #01395a;
     font-weight: bold;
   }
   
