@@ -123,11 +123,11 @@ body {
     margin: 0 auto;
     /* position: relative; */
     max-width: 100%;
-    border: 1px solid #37323e;
   }
   .mtRainierHero {
     max-width: 100%;
     box-shadow: 0 0 30px #777;
+    border: 1px solid #37323e;
   }
   
   .weathersummary {
