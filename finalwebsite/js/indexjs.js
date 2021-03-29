@@ -195,32 +195,24 @@ const forecastURL =
 fetch(forecastURL)
   .then((response) => response.json())
   .then((forecastObject) => {
+
     const forecast = forecastObject["daily"];
     const table = document.querySelector("#forcast3day");
 
-    
+    console.log(forecast[0].temp.day);
+    console.log(forecast[1].temp.day);
+    console.log(forecast[2].temp.day);
+  
+      let tabledata0 = document.createElement("td");
+      let tabledata1 = document.createElement("td");
+      let tabledata2 = document.createElement("td");
 
-    const threedayfilter = forecast.filter((day) => day[0].weather[0] || day[1].weather[0] || day[2].weather[0]);
+      tabledata0.innerHTML = `${forecast[0].temp.day.toFixed(0)}&deg;F`;
+      tabledata1.innerHTML = `${forecast[1].temp.day.toFixed(0)}&deg;F`;
+      tabledata2.innerHTML = `${forecast[2].temp.day.toFixed(0)}&deg;F`;
 
-    console.log(threedayfilter);
 
-threedayfilter.forEach((day) => {
-      let tableimg = document.createElement("img");
-      let tabledata = document.createElement("td");
-      let tabledescription = document.createElement("p");
-
-      let tableimgURL =
-        "https://openweathermap.org/img/w/" +
-        `${threedayfilter.weather.icon}` +
-        ".png";
-      tableimg.setAttribute("src", tableimgURL);
-      tableimg.setAttribute("alt", `${threedayfilter.weather.description}`);
-
-      tabledescription = `${threedayfilter.weather.description}`;
-      tabledata.innerHTML = `${threedayfilter.temp.day.toFixed(0)}&deg;F`;
-
-      table.appendChild(tabledata);
-      tabledata.append(tableimg);
-      tabledata.append(tabledescription);
-});
-  });
+      table.appendChild(tabledata0);
+      table.appendChild(tabledata1);
+      table.appendChild(tabledata2);
+})
