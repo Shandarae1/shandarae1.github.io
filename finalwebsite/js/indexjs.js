@@ -176,7 +176,7 @@ const weekdays = document.querySelector("#weekdays");
 
 function day() {
   let day = new Date();
-  let week = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+  let week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
   for (i = 0; i < 3; i++) {
     let tablehead = document.createElement("th");
@@ -198,10 +198,6 @@ fetch(forecastURL)
 
     const forecast = forecastObject["daily"];
     const table = document.querySelector("#forcast3day");
-
-    console.log(forecast[0].temp.day);
-    console.log(forecast[1].temp.day);
-    console.log(forecast[2].temp.day);
   
       let tabledata0 = document.createElement("td");
       let tabledata1 = document.createElement("td");
