@@ -51,58 +51,23 @@ fetch(reqURL)
       let companyarticle = document.createElement("article");
       let companylogo = document.createElement("img");
       let companyName = document.createElement("h2");
+      let companyAddress = document.createElement("p");
       let companyWeb = document.createElement("p");
 
       a.setAttribute("href", `${company.weblink}`);
       companyName.innerHTML = `${company.Name}`;
+      companyAddress.innerHTML = `${company.address} <br>${company.city} <br>${company.phone}`;
       companyWeb.innerHTML = `${company.weblink}`;
       companylogo.setAttribute("src", `images/${company.logo}`);
-      companylogo.setAttribute("alt", `${company.name} logo`);
+      companylogo.setAttribute("alt", `${company.Name} logo`);
       companylogo.setAttribute("loading", "lazy");
 
       directory.append(companycard);
       companycard.appendChild(a);
       a.appendChild(companyarticle);
       companyarticle.appendChild(companyName);
+      companyarticle.appendChild(companyAddress);
       companyarticle.appendChild(companylogo);
-      companyarticle.appendChild(companyWeb);
-    });
-  });
-
-
-// ------EVENTS JSON FETCH------
-
-const getURL =
-  "https://raw.githubusercontent.com/Shandarae1/shandarae1.github.io/master/finalwebsite/JSON/index.json";
-
-fetch(getURL)
-  .then(function (eventresponse) {
-    return eventresponse.json();
-  })
-  .then(function (jsnObject) {
-    const events = jsnObject["Events"];
-    const eventBox = document.querySelector("div.events");
-
-
-    events.forEach((event) => {
-      let eventcard = document.createElement("section");
-      let eventh3 = document.createElement("h3");
-      let eventhr = document.createElement("hr");
-      let eventp1 = document.createElement("p");
-      let eventp2 = document.createElement("p");
-      let eventp3 = document.createElement("p");
-      
-      eventh3.innerHTML = `${event.Title}`;
-      eventp1.innerHTML = `${event.Date}`;
-      eventp2.innerHTML = `${event.Time}`;
-      eventp3.innerHTML = `${event.Location}`;
-
-      eventBox.append(eventcard);
-      eventcard.appendChild(eventh3);
-      eventcard.appendChild(eventhr);
-      eventcard.appendChild(eventp1);
-      eventcard.appendChild(eventp2);
-      eventcard.appendChild(eventp3);
     });
   });
 
@@ -197,7 +162,9 @@ fetch(forecastURL)
   .then((forecastObject) => {
 
     const forecast = forecastObject["daily"];
-    const table = document.querySelector("#forcast3day");
+    const table = document.querySelector("#forecast3day");
+
+    console.log(forecast);
   
       let tabledata0 = document.createElement("td");
       let tabledata1 = document.createElement("td");

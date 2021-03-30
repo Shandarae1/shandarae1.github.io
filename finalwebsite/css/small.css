@@ -1,449 +1,488 @@
 /*----------- BODY --------------*/
 
 body {
-    font-family: "Lato", "sans-serif";
-    color: #12395A;
-    background-color: #f0eef1;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 1rem auto;
-    padding: 1rem;
-  }
-  /*----------- HEADER --------------*/
-  /* phone or baseline view--------------*/
-  
-  header {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  header img {
-    width: 200px;
-  }
-  .motto h2 {
-    margin: 0.5rem 0;
-  }
-  
-  /*----------- NAVIGATION --------------*/
-  nav button {
-    margin: 0.2rem 2%;
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-    color: #ffffff;
-  }
-  .hamButton {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .hamButton:hover {
-    background-color: #D09D06;
-  }
-  nav {
-    background-color: #01395a;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-  }
-  nav a {
-    color: #ffffff;
-    font-size: 1.5rem;
-  }
-  
-  nav ul li a {
-    display: block;
-    padding: 0.8rem 2%;
-    text-decoration: none;
-    border-top: 1px solid #bfbdc1;
-  }
-  
-  nav ul li a:hover {
-    background-color: #84d2e1;
-    color: #01395a;
-    border: 3px solid #01395a;
-  }
-  
-  nav ul li .active {
-    color: #D09D06;
-    font-weight: bold;
-  }
-  
-  nav ul.hide {
-    display: none;
-  }
+  font-family: "Lato", "sans-serif";
+  color: #12395a;
+  background-color: #f0eef1;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+/*----------- HEADER --------------*/
+/* phone or baseline view--------------*/
 
-  /*----------- MAIN --------------*/
-  h1 {
-    font-family: "Montserrat", sans-serif;
-    margin: 0.5rem 0;
-  }
-  
-  h2 {
-    color: #D09D06;
-  }
-  main {
-    margin: 0 auto;
-    padding: 1rem 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 960px;
-  }
-  main h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
-  .callToAction {
-    display: block;
-    text-align: center;
-    font-size: 1.5rem;
-    background: radial-gradient(#ffffff, #D09D06);
-    border: 1px solid #37323e;
-    padding: 0.7rem;
-    box-shadow: 0 0 30px #777;
-    color: #01395a;
-    max-height: 100%;
-    margin: .5rem 0;
-  }
+header {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+header img {
+  width: 200px;
+}
+.motto h2 {
+  margin: 0.5rem 0;
+}
 
-  .callToAction a {
-    color: #01395a;
-    display: block;
-    text-decoration: none;
-  }
-  .herodiv {
-    margin: 0 auto;
-    /* position: relative; */
-    max-width: 100%;
-  }
-  .mtRainierHero {
-    max-width: 100%;
-    box-shadow: 0 0 30px #777;
-    border: 1px solid #37323e;
-  }
-  
-  .weathersummary {
-    display: flex;
-    top: 20px;
-    left: 20px;
-    background: radial-gradient(#ffffff, #D09D06);
-    border: 1px solid #37323e;
-    padding: 0.7rem;
-    box-shadow: 0 0 30px #777;
-    opacity: 0.9;
-    color: #37323e;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-gap: 10px;
-    font-size: 0.9rem;
-  }
-  
-  .events {
-    display: flex;
-    bottom: 20px;
-    right: 20px;
-    background: radial-gradient(#6fdaf5, #1985a1);
-    border: 1px solid #37323e;
-    padding: 0.7rem;
-    box-shadow: 0 0 30px #777;
-    opacity: 0.95;
-    color: #37323e;
-    font-size: 0.9rem;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .events section {
-    margin: 0 auto;
-  }
-  .weatherH3 {
-    margin: 0;
-    grid-column: 1/ 3;
-    text-align: center;
-    text-decoration: underline;
-  }
-  .leftSide {
-    margin: 0;
-    grid-row: 2/3;
-    text-align: right;
-  }
-  .rightSide {
-    margin: 0;
-    text-align: left;
-  }
-  
-  .articleBox {
-    background-color: #ffffff;
-    color: #01395a;
-    padding: 0.5rem;
-    text-align: center;
-  }
-  
-  .article img {
-    max-width: 75%;
-    display: block;
-    margin: 0 auto;
-    border: 1px solid #37323e;
-    box-shadow: 0 0 30px #777;
-  }
-  
-  
-  .articleImg {
-    max-width: 50%;
-    margin: 0 auto;
-    border: 1px solid #37323e;
-    box-shadow: 0 0 30px #777;
-  }
-  article {
-    background-color: #ffffff;
-    color: #01395a;
-    padding: 0.5rem;
-  }
-  
-  article a, figure a {
-    color: #01395a;
-    font-size: 0.9rem;
-  }
-  .forcast5day {
-    display: none;
-    margin: 0 0 0.5rem 0;
-    padding: 0;
-  }
-  .communityNews article {
-    padding: 20px;
-    box-shadow: 0 0 30px #777;
-  }
-  /* -------------GALLERY PAGE--------------- */
-  #galleryDiv {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  figure {
-    padding: 0.5em;
-    grid-column: auto;
-    margin: 0 auto;
-  }
-  figure img {
-    max-width: 100%;
-    filter: blur(0em);
-    transition: filter 0.5s;
-  }
-  figure img[data-src] {
-    filter: blur(5px);
-  }
-  
-  .shadow:hover {
-    box-shadow: 0 0 50px white;
-  }
-  
-  figcaption {
-    text-align: center;
-  }
-  /* ---------------------------- */
-  
-  /* -------------STORM CENTER PAGE--------------- */
-  
-  form {
-    margin: 0 auto;
-    width: 90%;
-    max-width: 400px;
-  }
-  
-  form fieldset {
-    margin: 0.5rem;
-    border: 2px solid #D09D06;
-    border-radius: 5px;
-    padding: 0.5rem 2%;
-  }
-  
-  form legend {
-    color: #bfbdc1;
-    margin: 0 1rem;
-    padding: 0 0.5rem;
-    font-size: 1.5rem;
-  }
-  form label.contactForm,
-  form div {
-    display: block;
-    padding-top: 1rem;
-  }
-  form label.contactForm input,
-  form label.contactForm select {
-    -webkit-appearance: none;
-    display: block;
-    font-size: 1rem;
-    border: solid 1px #999;
-    border-radius: 5px;
-    padding: 0.75rem;
-    width: 100%;
-    max-width: 20rem;
-  }
-  form label.stormInfo input,
-  form label.stormInfo datalist,
-  form label #stormRegion {
-    display: block;
-    padding: 0.75rem 0;
-    font-size: 1rem;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 20rem;
-    margin: 0 0 1.5rem 0;
-  }
-  #ratingvalue {
-    color: #D09D06;
-    font-size: 1.5rem;
-  }
-  input[type="range"] {
-    color: #bfbdc1;
-    display: block;
-    width: 100%;
-    max-width: 20rem;
-    border-radius: 5px;
-  }
-  
-  form input.formButton {
-    border: none;
-    background-color: #D09D06;
-    color: #37323e;
-    border-radius: 5px;
-    padding: 0.75rem 1.5rem;
-    margin: 2rem 0 2rem 2rem;
-    width: 96%;
-    max-width: 20rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  .danger {
-    display: block;
-    padding: 0.2rem;
-  }
-  .comments textarea {
-    display: block;
-    width: 100%;
-    height: 3rem;
-    max-width: 20rem;
-    border-radius: 5px;
-  }
-  
-  form label.contactForm input:required {
-    border-bottom: red solid 3px;
-  }
-  form label.contactForm input:required:valid {
-    border-bottom: none;
-  }
-  
-  .stormContact {
-    background-color: #828089;
-    color: #ffffff;
-    text-align: center;
-    max-width: 960px;
-    margin: 0 auto;
-    border: 2px solid #070708;
-  }
-  
-  /* ------------Index---------------- */
-  
-  div.indexCards section {
-    box-shadow: 0 0 5px #777;
-    text-align: center;
-    background-color: #ffffff;
-    padding: 10px;
-    margin: 10px;
-  }
-  
-  div.indexCards section a{
-    font-size: 1.7rem;
-  }
-  
-  
-  div.indexCards a{
-    text-decoration: none;
-  }
-  
-  div.indexCards p {
-    margin: 0.5rem;
-    text-align: center;
-    color: #37323e;
-  }
-  div.indexCards h2 {
-    color: #37323e;
-  
-  }
-  
-  div.indexCards img {
-    border: 1px solid #333;
-    padding: 2px;
-    max-width: 100%;
-  }
-  .communityNews img {
-    box-shadow: 0 0 30px #777;
-  }
-  
-  /*----------- FOOTER --------------*/
-  .address {
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
-    justify-content: center;
-  }
-  
-  .address a {
-    text-decoration: none;
-  }
-  
-  .social img {
-    max-width: 35px;
-    padding: 0.5rem;
-  }
-  .covSocial img {
-    max-width: 35px;
-    padding: 0.5rem;
-  }
-  footer {
-    background-color: #01395a;
-    color: #ffffff;
-    text-align: center;
-    padding: 0.75rem;
-  }
-  
-  footer a {
-    color: #ffffff;
-  }
-  
-  .contact {
-    background-color: #ffffff;
-    color: #01395a;
-    font-size: large;
-    text-align: center;
-    max-width: 960px;
-    margin: auto;
-    border: 2px solid #01395a;
-  }
-  
-  .contactPara {
-    display: block;
-  }
-  .contact a {
-    color: #01395a;
-    font-weight: bold;
-  }
-  
-  .mapImage {
-    display: none;
-  }
-  /*----- Clearfix: Force an Element not to collapse -----*/
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
+/*----------- NAVIGATION --------------*/
+nav button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #ffffff;
+}
+.hamButton {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.hamButton:hover {
+  background-color: #d09d06;
+}
+nav {
+  background-color: #01395a;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+nav a {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.8rem 2%;
+  text-decoration: none;
+  border-top: 1px solid #bfbdc1;
+}
+
+nav ul li a:hover {
+  background-color: #84d2e1;
+  color: #01395a;
+  border: 3px solid #01395a;
+}
+
+nav ul li .active {
+  color: #d09d06;
+  font-weight: bold;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+/*----------- MAIN --------------*/
+h1 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0.5rem 0;
+}
+
+h2 {
+  color: #d09d06;
+}
+main {
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 960px;
+}
+main h2 {
+  text-align: center;
+}
+.callToAction {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  background: radial-gradient(#ffffff, #d09d06);
+  border: 1px solid #01395a;
+  padding: 0.7rem;
+  box-shadow: 0 0 30px #777;
+  color: #01395a;
+  max-height: 100%;
+  margin: 0.5rem 0;
+}
+
+.callToAction a {
+  color: #01395a;
+  display: block;
+  text-decoration: none;
+}
+.herodiv {
+  margin: 0 auto;
+  max-width: 100%;
+}
+.mtRainierHero {
+  max-width: 100%;
+  box-shadow: 0 0 30px #777;
+  border: 1px solid #01395a;
+}
+.weatherDiv {  
+  width: 350;
+  margin: 0 auto;
+}
+.summaryDiv{
+  margin: .5rem 0;
+}
+.weathersummary {
+  display: flex;
+  background: radial-gradient(#ffffff, #d09d06);
+  border: 1px solid #01395a;
+  padding: 0.7rem;
+  box-shadow: 0 0 30px #777;
+  opacity: 0.9;
+  color: #01395a;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  font-size: 0.9rem;
+}
+.weatherH3 {
+  margin: 0;
+  grid-column: 1/ 3;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.leftSide {
+  margin: 0;
+  grid-row: 2/3;
+  text-align: right;
+}
+.rightSide {
+  margin: 0;
+  text-align: left;
+}
+
+.caption3day {
+  background: radial-gradient(#ffffff, #d09d06);
+  color: #01395a;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: 1px solid #01395a;
+}
+.forecast3day {
+  margin: .5rem 0;
+}
+#forecast3day {
+  width: 350px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+.weekdays {
+  background-color: #D09D06;
+}
+table,
+th,
+td {
+  border: 1px solid #01395a;
+  border-collapse: collapse;
+}
+.events {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 350px;
+  margin: 0 auto;
+  bottom: 20px;
+  right: 20px;
+  background: radial-gradient(#ffffff, #84d2e1);
+  border: 1px solid #01395a;
+  box-shadow: 0 0 30px #777;
+  opacity: 0.9;
+  color: #01395a;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+}
+.events h2 {
+  color: #01395a;
+}
+.companyAds {
+  width: 350px;
+  margin: 0 auto;
+}
+.companyAds section {
+  border: 1px solid #01395a;
+  margin: .5rem 0;
+  text-align: center;
+}
+.companyAds section article p {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+.events section {
+  margin: 0 auto;
+}
+
+.articleBox {
+  background-color: #ffffff;
+  color: #01395a;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.article img {
+  max-width: 75%;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #01395a;
+  box-shadow: 0 0 30px #777;
+}
+
+.articleImg {
+  max-width: 50%;
+  margin: 0 auto;
+  border: 1px solid #01395a;
+  box-shadow: 0 0 30px #777;
+}
+article {
+  background-color: #ffffff;
+  color: #01395a;
+  padding: 0.5rem;
+}
+
+article a,
+figure a {
+  color: #01395a;
+  font-size: 0.9rem;
+}
+
+.communityNews article {
+  padding: 20px;
+  box-shadow: 0 0 30px #777;
+}
+/* -------------GALLERY PAGE--------------- */
+#galleryDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+figure {
+  padding: 0.5em;
+  grid-column: auto;
+  margin: 0 auto;
+}
+figure img {
+  max-width: 100%;
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+figure img[data-src] {
+  filter: blur(5px);
+}
+
+.shadow:hover {
+  box-shadow: 0 0 50px white;
+}
+
+figcaption {
+  text-align: center;
+}
+/* ---------------------------- */
+
+/* -------------STORM CENTER PAGE--------------- */
+
+form {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 400px;
+}
+
+form fieldset {
+  margin: 0.5rem;
+  border: 2px solid #d09d06;
+  border-radius: 5px;
+  padding: 0.5rem 2%;
+}
+
+form legend {
+  color: #bfbdc1;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
+}
+form label.contactForm,
+form div {
+  display: block;
+  padding-top: 1rem;
+}
+form label.contactForm input,
+form label.contactForm select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 5px;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 20rem;
+}
+form label.stormInfo input,
+form label.stormInfo datalist,
+form label #stormRegion {
+  display: block;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 20rem;
+  margin: 0 0 1.5rem 0;
+}
+#ratingvalue {
+  color: #d09d06;
+  font-size: 1.5rem;
+}
+input[type="range"] {
+  color: #bfbdc1;
+  display: block;
+  width: 100%;
+  max-width: 20rem;
+  border-radius: 5px;
+}
+
+form input.formButton {
+  border: none;
+  background-color: #d09d06;
+  color: #01395a;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  margin: 2rem 0 2rem 2rem;
+  width: 96%;
+  max-width: 20rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.danger {
+  display: block;
+  padding: 0.2rem;
+}
+.comments textarea {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  max-width: 20rem;
+  border-radius: 5px;
+}
+
+form label.contactForm input:required {
+  border-bottom: red solid 3px;
+}
+form label.contactForm input:required:valid {
+  border-bottom: none;
+}
+
+.stormContact {
+  background-color: #828089;
+  color: #ffffff;
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+  border: 2px solid #070708;
+}
+
+/* ------------Index---------------- */
+
+div.indexCards section {
+  box-shadow: 0 0 5px #777;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+}
+
+div.indexCards section a {
+  font-size: 1.7rem;
+}
+
+div.indexCards a {
+  text-decoration: none;
+}
+
+div.indexCards p {
+  margin: 0.5rem;
+  text-align: center;
+  color: #01395a;
+}
+div.indexCards h2 {
+  color: #01395a;
+}
+
+div.indexCards img {
+  border: 1px solid #333;
+  padding: 2px;
+  max-width: 100%;
+}
+.communityNews img {
+  box-shadow: 0 0 30px #777;
+}
+
+/*----------- FOOTER --------------*/
+.address {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  justify-content: center;
+}
+
+.address a {
+  text-decoration: none;
+}
+
+.social img {
+  max-width: 35px;
+  padding: 0.5rem;
+}
+.covSocial img {
+  max-width: 35px;
+  padding: 0.5rem;
+}
+footer {
+  background-color: #01395a;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.75rem;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+.contact {
+  background-color: #ffffff;
+  color: #01395a;
+  font-size: large;
+  text-align: center;
+  max-width: 960px;
+  margin: auto;
+  border: 2px solid #01395a;
+}
+
+.contactPara {
+  display: block;
+}
+.contact a {
+  color: #01395a;
+  font-weight: bold;
+}
+
+.mapImage {
+  display: none;
+}
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

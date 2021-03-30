@@ -47,34 +47,36 @@
   
     .herodiv {
       margin: 0 auto;
+      max-width: 100%;
       position: relative;
     }
   
     .weathersummary {
-      font-size: 100%;
-      position: absolute;
-      top: 40px;
-      left: 40px;
+      font-size: 1.2rem;
     }
   
     .events {
       margin: 0.5rem;
-      font-size: 100%;
+      font-size: 1.0rem;
       position: absolute;
       bottom: 20px;
       right: 20px;
+      width: 300px;
     }
-    .forcast5day {
-      display: block;
+
+    #forecast3day {
+      max-width: 100%;
       font-size: 1.5rem;
-      color: #f8ba57;
+      padding: 0;
+      text-align: center;
     }
   
-    .caption5day {
+    .caption3day {
       background: radial-gradient(#ffffff, #D09D06);
-      color: #37332e;
+      color: #01395a;
       padding: 0.5rem;
       font-size: 1.8rem;
+      margin: .5rem 0 0 0;
     }
   
     .articleBox {
@@ -98,17 +100,30 @@
       width: 680px;
       height: 480px;
     }
-  
-    table,
-    th,
-    td {
-      border: 1px solid#37323e;
-      border-collapse: collapse;
+    .weatherDiv {
+      width: 600px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
+    .summaryDiv{
+      margin: 0 .5rem 0 0;
+    }
+  .weathersummary {
+    grid-column: 1/2;
+  }
+  .forecast3day {
+    margin: 0;
+    grid-column: 2/3;
+  }
+#forecast3day {
+  width: 430px;
+}
+ 
     th,
     td {
       padding: 15px;
-      color: #37323e;
+      color: #01395a;
       text-align: center;
       font-size: 80%;
     }
@@ -117,12 +132,29 @@
       display: flex;
       margin: 0 auto;
     }
-    #forcast5day {
-      width: 100%;
-      background-color: #ffffff;
+    .companyAds {
+      width: 600px;
     }
-    .weekdays {
-      background-color: #D09D06;
+    .companyAds section {
+      background-color: #ffffff;
+      margin: .5rem 0;
+    }
+    .companyAds section article {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .companyAds section img {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+    .companyAds section article h2 {
+      grid-column: 1/3;
+    }
+    .companyAds section article p {
+      display: block;
+      grid-column: 1/2;
+      grid-row: 2/3;
     }
   
     .contact {
@@ -134,7 +166,7 @@
       display: block;
       margin: 0 auto;
       align-self: center;
-      border: 1px solid #37323e;
+      border: 1px solid #01395a;
       box-shadow: 0 0 30px rgb(48, 46, 46);
     }
   

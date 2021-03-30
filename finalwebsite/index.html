@@ -53,16 +53,60 @@
     <main>
         <div class="herodiv">
             <picture>
-                <source srcset="images/mountrainierhero860.jpg" media="(min-width: 960px)" />
-                <source srcset="images/mountrainierhero600.jpg" media="(min-width: 600px)" />
+                <source srcset="images/mountrainierhero860.jpg" media="(min-width: 1280px)" />
+                <source srcset="images/mountrainierhero600.jpg" media="(min-width: 700px)" />
                 <source srcset="images/mountrainierhero350.jpg" />
                 <img class="mtRainierHero" src="images/mountrainierhero.jpg" alt="image of Mt Rainier" loading="lazy" />
             </picture>
+            <div class="events">
+                <section>
+                    <h2>Upcoming Events</h2>
+                    <p>Feb. 15th: Sweetheart Swim</p>
+                    <p>April 4th: Daddy Daughter Spring Fling</p>
+                    <p>April 12th: Underwater Egg Hunt</p>
+                    <p>April 24th: Arbor Day Celebrations</p>
+                </section>
+            </div>
         </div>
 
-        <div class="events"></div>
+        <div class="weatherDiv">
+            <div class="summaryDiv">
+                <section class="weathersummary">
+                    <h3 class="weatherH3">Covington Weather</h3>
 
-        <div class="companyAds"></div>
+                    <div class="leftSide">
+                        <p><strong>Currently:</strong> <br>
+                            <strong>Temp:<br>Humidity:</strong>
+
+                        </p>
+
+                    </div>
+                    <div class="rightSide">
+                        <p>
+                            <span id="currently"></span> <br>
+                            <span id="temp"></span>&#176; F<br>
+                            <span id="humidity"></span> %<br>
+                        </p>
+                    </div>
+
+                </section>
+            </div>
+
+            <div class="forecast3day">
+                <table id="forecast3day">
+                    <caption class="caption3day">3 Day Forecast</caption>
+                    <tr class="weekdays" id="weekdays">
+
+                    </tr>
+
+
+                </table>
+            </div>
+        </div>
+
+        <h2>Local Company Highlights:</h2>
+        <div class="companyAds">
+        </div>
 
         <div class="chamberPurpose">
             <article>
@@ -74,35 +118,7 @@
                 </p>
             </article>
         </div>
-        <section class="weathersummary">
-            <h3 class="weatherH3">Covington Weather</h3>
 
-            <div class="leftSide">
-                <p><strong>Currently:</strong> <br>
-                    <strong>Temp:<br>Humidity:</strong>
-
-                </p>
-
-            </div>
-            <div class="rightSide">
-                <p>
-                    <span id="currently"></span> <br>
-                    <span id="temp"></span>&#176; F<br>
-                    <span id="humidity"></span> %<br>
-                </p>
-            </div>
-
-        </section>
-        <div class="forcast3day">
-            <table id="forcast3day">
-                <caption class="caption3day">3 Day Forecast</caption>
-                <tr class="weekdays" id="weekdays">
-
-                </tr>
-
-
-            </table>
-        </div>
     </main>
 
     <div class="contact">
