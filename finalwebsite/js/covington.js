@@ -47,15 +47,13 @@ fetch(getURL)
       let eventp3 = document.createElement("p");
       
       eventh3.innerHTML = `${event.Title}`;
-      eventp1.innerHTML = `${event.Date}`;
+      eventp1.innerHTML = `${event.Date} ${event.Time}`;
       eventp2.innerHTML = `${event.Time}`;
       eventp3.innerHTML = `${event.Location}`;
 
       eventBox.append(eventcard);
       eventcard.appendChild(eventh3);
-      eventcard.appendChild(eventhr);
       eventcard.appendChild(eventp1);
-      eventcard.appendChild(eventp2);
       eventcard.appendChild(eventp3);
     });
   });

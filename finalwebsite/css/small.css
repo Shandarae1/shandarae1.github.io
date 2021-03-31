@@ -264,6 +264,17 @@ figure a {
   padding: 20px;
   box-shadow: 0 0 30px #777;
 }
+
+/* ------Covington Page------*/
+
+.currentdemo picture {
+  margin: 0 auto;
+}
+.cityinfo {
+  /* max-width: 100%; */
+  box-shadow: 0 0 30px #777;
+  border: 1px solid #01395a;
+}
 /* -------------GALLERY PAGE--------------- */
 #galleryDiv {
   display: grid;

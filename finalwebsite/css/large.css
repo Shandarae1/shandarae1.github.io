@@ -26,6 +26,10 @@
   .forecast3day {
     grid-column: 2/3;
   }
+  #forecast3day {
+    width: 100%;
+    height: fit-content;
+  }
 .companyAds {
   width: 860px;
   display: grid;

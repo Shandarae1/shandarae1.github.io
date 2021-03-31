@@ -65,10 +65,10 @@
     }
 
     #forecast3day {
-      max-width: 100%;
       font-size: 1.5rem;
       padding: 0;
       text-align: center;
+      margin: 0;
     }
   
     .caption3day {
@@ -116,9 +116,7 @@
     margin: 0;
     grid-column: 2/3;
   }
-#forecast3day {
-  width: 430px;
-}
+
  
     th,
     td {
