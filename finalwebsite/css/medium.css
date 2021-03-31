@@ -64,19 +64,14 @@
       width: 300px;
     }
 
-    #forecast3day {
-      font-size: 1.5rem;
-      padding: 0;
-      text-align: center;
-      margin: 0;
-    }
+
   
     .caption3day {
       background: radial-gradient(#ffffff, #D09D06);
       color: #01395a;
       padding: 0.5rem;
       font-size: 1.8rem;
-      margin: .5rem 0 0 0;
+      /* margin: .5rem 0 0 0; */
     }
   
     .articleBox {
@@ -112,15 +107,19 @@
   .weathersummary {
     grid-column: 1/2;
   }
-  .forecast3day {
+   .forecast3day {
     margin: 0;
-    grid-column: 2/3;
   }
-
+ #forecast3day {
+    font-size: 1.5rem;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+  }
  
     th,
     td {
-      padding: 15px;
+      padding: 1.0rem;
       color: #01395a;
       text-align: center;
       font-size: 80%;
@@ -153,11 +152,6 @@
       display: block;
       grid-column: 1/2;
       grid-row: 2/3;
-    }
-  
-    .contact {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
     }
   
     .mapImage {

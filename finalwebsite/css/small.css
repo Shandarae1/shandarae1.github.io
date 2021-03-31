@@ -138,7 +138,7 @@ main h2 {
   display: flex;
   background: radial-gradient(#ffffff, #d09d06);
   border: 1px solid #01395a;
-  padding: 0.7rem;
+  padding: 0.4rem;
   box-shadow: 0 0 30px #777;
   opacity: 0.9;
   color: #01395a;
@@ -188,6 +188,7 @@ th,
 td {
   border: 1px solid #01395a;
   border-collapse: collapse;
+  padding: 1.0rem;
 }
 .events {
   display: grid;
