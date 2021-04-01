@@ -1,3 +1,5 @@
+/* phone or baseline view--------------*/
+
 /*----------- BODY --------------*/
 
 body {
@@ -10,7 +12,6 @@ body {
   padding: 1rem;
 }
 /*----------- HEADER --------------*/
-/* phone or baseline view--------------*/
 
 header {
   padding: 0;
@@ -121,24 +122,32 @@ main h2 {
 .herodiv {
   margin: 0 auto;
   max-width: 100%;
+  text-align: center;
+  position: relative;
 }
 .mtRainierHero {
   max-width: 100%;
   box-shadow: 0 0 30px #777;
   border: 1px solid #01395a;
 }
-.weatherDiv {  
-  width: 350;
+.weatherDiv {
+  max-width: 100%;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
 }
-.summaryDiv{
-  margin: .5rem 0;
+.summaryDiv {
+  grid-row: 1/2;
+  margin: 0.5rem 0;
+}
+.forecast3day {
+  grid-row: 2/3;
 }
 .weathersummary {
   display: flex;
   background: radial-gradient(#ffffff, #d09d06);
   border: 1px solid #01395a;
-  padding: 0.4rem;
+  padding: 0.4rem 0.4rem 0.2rem 0.4rem;
   box-shadow: 0 0 30px #777;
   opacity: 0.9;
   color: #01395a;
@@ -171,9 +180,10 @@ main h2 {
   font-size: 1.5rem;
   border: 1px solid #01395a;
 }
-.forecast3day {
-  margin: .5rem 0;
-}
+
+/* .forecast3day {
+    margin: .5rem 0;
+  } */
 #forecast3day {
   width: 350px;
   margin: 0 auto;
@@ -181,18 +191,20 @@ main h2 {
   text-align: center;
 }
 .weekdays {
-  background-color: #D09D06;
+  background-color: #d09d06;
 }
 table,
 th,
 td {
   border: 1px solid #01395a;
   border-collapse: collapse;
-  padding: 1.0rem;
+  padding: 1rem;
+}
+
+table {
+  box-shadow: 0 0 30px #777;
 }
 .events {
-  display: grid;
-  grid-template-columns: 1fr;
   width: 350px;
   margin: 0 auto;
   bottom: 20px;
@@ -206,48 +218,26 @@ td {
   font-weight: bold;
   text-align: center;
 }
-.events h2 {
-  color: #01395a;
-}
+
 .companyAds {
   width: 350px;
   margin: 0 auto;
 }
 .companyAds section {
   border: 1px solid #01395a;
-  margin: .5rem 0;
+  box-shadow: 0 0 30px #777;
+  margin: 0.5rem 0;
   text-align: center;
 }
 .companyAds section article p {
   display: none;
 }
+.chamberPurpose {
+  border: 1px solid #01395a;
+  box-shadow: 0 0 30px #777;
+}
 a {
   text-decoration: none;
-}
-.events section {
-  margin: 0 auto;
-}
-
-.articleBox {
-  background-color: #ffffff;
-  color: #01395a;
-  padding: 0.5rem;
-  text-align: center;
-}
-
-.article img {
-  max-width: 75%;
-  display: block;
-  margin: 0 auto;
-  border: 1px solid #01395a;
-  box-shadow: 0 0 30px #777;
-}
-
-.articleImg {
-  max-width: 50%;
-  margin: 0 auto;
-  border: 1px solid #01395a;
-  box-shadow: 0 0 30px #777;
 }
 article {
   background-color: #ffffff;
@@ -255,207 +245,8 @@ article {
   padding: 0.5rem;
 }
 
-article a,
-figure a {
-  color: #01395a;
-  font-size: 0.9rem;
-}
-
-.communityNews article {
-  padding: 20px;
-  box-shadow: 0 0 30px #777;
-}
-
-/* ------Covington Page------*/
-
-.currentdemo picture {
-  margin: 0 auto;
-}
-.cityinfo {
-  /* max-width: 100%; */
-  box-shadow: 0 0 30px #777;
-  border: 1px solid #01395a;
-}
-/* -------------GALLERY PAGE--------------- */
-#galleryDiv {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-figure {
-  padding: 0.5em;
-  grid-column: auto;
-  margin: 0 auto;
-}
-figure img {
-  max-width: 100%;
-  filter: blur(0em);
-  transition: filter 0.5s;
-}
-figure img[data-src] {
-  filter: blur(5px);
-}
-
-.shadow:hover {
-  box-shadow: 0 0 50px white;
-}
-
-figcaption {
-  text-align: center;
-}
-/* ---------------------------- */
-
-/* -------------STORM CENTER PAGE--------------- */
-
-form {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 400px;
-}
-
-form fieldset {
-  margin: 0.5rem;
-  border: 2px solid #d09d06;
-  border-radius: 5px;
-  padding: 0.5rem 2%;
-}
-
-form legend {
-  color: #bfbdc1;
-  margin: 0 1rem;
-  padding: 0 0.5rem;
-  font-size: 1.5rem;
-}
-form label.contactForm,
-form div {
-  display: block;
-  padding-top: 1rem;
-}
-form label.contactForm input,
-form label.contactForm select {
-  -webkit-appearance: none;
-  display: block;
-  font-size: 1rem;
-  border: solid 1px #999;
-  border-radius: 5px;
-  padding: 0.75rem;
-  width: 100%;
-  max-width: 20rem;
-}
-form label.stormInfo input,
-form label.stormInfo datalist,
-form label #stormRegion {
-  display: block;
-  padding: 0.75rem 0;
-  font-size: 1rem;
-  border-radius: 5px;
-  width: 100%;
-  max-width: 20rem;
-  margin: 0 0 1.5rem 0;
-}
-#ratingvalue {
-  color: #d09d06;
-  font-size: 1.5rem;
-}
-input[type="range"] {
-  color: #bfbdc1;
-  display: block;
-  width: 100%;
-  max-width: 20rem;
-  border-radius: 5px;
-}
-
-form input.formButton {
-  border: none;
-  background-color: #d09d06;
-  color: #01395a;
-  border-radius: 5px;
-  padding: 0.75rem 1.5rem;
-  margin: 2rem 0 2rem 2rem;
-  width: 96%;
-  max-width: 20rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-.danger {
-  display: block;
-  padding: 0.2rem;
-}
-.comments textarea {
-  display: block;
-  width: 100%;
-  height: 3rem;
-  max-width: 20rem;
-  border-radius: 5px;
-}
-
-form label.contactForm input:required {
-  border-bottom: red solid 3px;
-}
-form label.contactForm input:required:valid {
-  border-bottom: none;
-}
-
-.stormContact {
-  background-color: #828089;
-  color: #ffffff;
-  text-align: center;
-  max-width: 960px;
-  margin: 0 auto;
-  border: 2px solid #070708;
-}
-
-/* ------------Index---------------- */
-
-div.indexCards section {
-  box-shadow: 0 0 5px #777;
-  text-align: center;
-  background-color: #ffffff;
-  padding: 10px;
-  margin: 10px;
-}
-
-div.indexCards section a {
-  font-size: 1.7rem;
-}
-
-div.indexCards a {
-  text-decoration: none;
-}
-
-div.indexCards p {
-  margin: 0.5rem;
-  text-align: center;
-  color: #01395a;
-}
-div.indexCards h2 {
-  color: #01395a;
-}
-
-div.indexCards img {
-  border: 1px solid #333;
-  padding: 2px;
-  max-width: 100%;
-}
-.communityNews img {
-  box-shadow: 0 0 30px #777;
-}
-
 /*----------- FOOTER --------------*/
-.address {
-  display: flex;
-  flex-direction: column;
-  padding: 0.5rem;
-  justify-content: center;
-}
 
-.address a {
-  text-decoration: none;
-}
-
-.social img {
-  max-width: 35px;
-  padding: 0.5rem;
-}
 .covSocial img {
   max-width: 35px;
   padding: 0.5rem;
@@ -481,17 +272,14 @@ footer a {
   border: 2px solid #01395a;
 }
 
-.contactPara {
-  display: block;
-}
-.contact a {
-  color: #01395a;
-  font-weight: bold;
-}
+/* .contactPara {
+    display: block;
+  } */
+/* .contact a {
+    color: #01395a;
+    font-weight: bold;
+  } */
 
-.mapImage {
-  display: none;
-}
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";

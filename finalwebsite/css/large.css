@@ -1,81 +1,39 @@
 /* Desktop Views ******************************/
 
 @media only screen and (min-width: 1280px) {
-    .mobilelogo {
-      float: left;
-    }
-  
-    nav ul li {
-      display: block;
-    }
-    nav ul li a {
-      font-size: 1.2rem;
-    }
-
-
-
-    /* ------Index page------ */
-    .weatherDiv {
-      width: 860px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    }
-  .weathersummary {
-    grid-column: 1/2;
+  nav ul li a {
+    font-size: 1.2rem;
   }
-  .forecast3day {
-    grid-column: 2/3;
+
+  /* ------Index page------ */
+  .weatherDiv {
+    width: 860px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
   #forecast3day {
     width: 100%;
     height: fit-content;
   }
-.companyAds {
-  width: 860px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  .companyAds {
+    width: 860px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .5rem;
+  }
+
+  .companyAds section article {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: .5rem;
+  }
+  .companyAds section img {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .companyAds section article p {
+    display: block;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
 }
-
-.companyAds section article {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: .5rem;
-}
-
-.companyAds section img {
-  grid-column: 1/2;
-  grid-row: 3/4;
-}
-
-.companyAds section article p {
-  display: block;
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-    /* div.indexCards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    }
-    div.indexCards section {
-      display: block;
-    } */
-
-
-    /* -------------GALLERY PAGE--------------- */
-    #galleryDiv {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      margin: 0 auto;
-    }
-
-    }
-  /* -------------STORM CENTER PAGE--------------- */
-
-  form label.stormInfo {
-    padding: .5rem 0;
-}
-.formButton {
-  margin: 2rem;
-}
-  
-  

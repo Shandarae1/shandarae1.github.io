@@ -98,35 +98,35 @@ fetch(aquireURL)
 
     // ------weather alert JSON fetch------
 
-//     const accioURL =
-//     "https://api.openweathermap.org/data/2.5/onecall?lat=47.35896&lon=-122.11796&appid=946ee3e55995e79e2d6f02d00a3dce79&units=imperial";
+    const accioURL =
+    "https://api.openweathermap.org/data/2.5/onecall?lat=47.35896&lon=-122.11796&appid=946ee3e55995e79e2d6f02d00a3dce79&units=imperial";
   
   
-//   fetch(accioURL)
-//     .then(function (alertresponse) {
-//       return alertresponse.json();
-//     })
-//     .then(function (jObject) {
-//       const wthrAlert = jObject["alerts"];
-//       const weatherBox = document.getElementById("weatherAlert");
+  fetch(accioURL)
+    .then(function (alertresponse) {
+      return alertresponse.json();
+    })
+    .then(function (jObject) {
+      const wthrAlert = jObject["alerts"];
+      const weatherBox = document.getElementById("weatherAlert");
 
-//       console.log(wthrAlert);
+      console.log(wthrAlert);
 
 
 
-//   let alertSection = document.createElement("section");
-//   let alertP = document.createElement("p")
-//   let button = document.createElement("button");
+  let alertSection = document.createElement("section");
+  let alertP = document.createElement("p")
+  let button = document.createElement("button");
 
-//   button.setAttribute('onclick', 'closeAlert()')
-//   button.setAttribute('class', 'closeButton')
-//   button.innerHTML = `close`;
-//   alertP.innerHTML = `<strong>Weather Alert!</strong> ${wthrAlert.events}`;
+  button.setAttribute('onclick', 'closeAlert()')
+  button.setAttribute('class', 'closeButton')
+  button.innerHTML = `close`;
+  alertP.innerHTML = `<strong>Weather Alert!</strong> ${wthrAlert.events}`;
 
-//   weatherBox.append(alertSection);
-//   alertSection.appendChild(alertP);
-//   alertSection.appendChild(button);
-// })
+  weatherBox.append(alertSection);
+  alertSection.appendChild(alertP);
+  alertSection.appendChild(button);
+})
 
 // ------WEATHER ALERT CLOSE Button------
 
@@ -163,8 +163,6 @@ fetch(forecastURL)
 
     const forecast = forecastObject["daily"];
     const table = document.querySelector("#forecast3day");
-
-    console.log(forecast);
   
       let tabledata0 = document.createElement("td");
       let tabledata1 = document.createElement("td");
