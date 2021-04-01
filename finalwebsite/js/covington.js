@@ -35,7 +35,7 @@ fetch(getURL)
   })
   .then(function (jsnObject) {
     const events = jsnObject["Events"];
-    const eventBox = document.querySelector("div.events");
+    const eventBox = document.querySelector("div.covevents");
 
 
     events.forEach((event) => {
@@ -52,6 +52,7 @@ fetch(getURL)
       eventp3.innerHTML = `${event.Location}`;
 
       eventBox.append(eventcard);
+      eventcard.appendChild(eventhr);
       eventcard.appendChild(eventh3);
       eventcard.appendChild(eventp1);
       eventcard.appendChild(eventp3);

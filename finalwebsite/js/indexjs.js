@@ -110,10 +110,6 @@ fetch(aquireURL)
       const wthrAlert = jObject["alerts"];
       const weatherBox = document.getElementById("weatherAlert");
 
-      console.log(wthrAlert);
-
-
-
   let alertSection = document.createElement("section");
   let alertP = document.createElement("p")
   let button = document.createElement("button");

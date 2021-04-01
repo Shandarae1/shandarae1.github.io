@@ -101,6 +101,9 @@ main {
 main h2 {
   text-align: center;
 }
+
+/* ------Index page ------ */
+
 .callToAction {
   display: block;
   text-align: center;
@@ -180,10 +183,6 @@ main h2 {
   font-size: 1.5rem;
   border: 1px solid #01395a;
 }
-
-/* .forecast3day {
-    margin: .5rem 0;
-  } */
 #forecast3day {
   width: 350px;
   margin: 0 auto;
@@ -217,6 +216,7 @@ table {
   font-size: 0.9rem;
   font-weight: bold;
   text-align: center;
+  padding: 0 .5rem;
 }
 
 .companyAds {
@@ -245,6 +245,55 @@ article {
   padding: 0.5rem;
 }
 
+/* ------Covington page ------ */
+
+.covdemo {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.covevents {
+  width: 350px;
+  margin: 0 auto;
+  bottom: 20px;
+  right: 20px;
+  background: radial-gradient(#84d2e1, #4bb1c5);
+  border: 1px solid #01395a;
+  box-shadow: 0 0 30px #777;
+  opacity: 0.9;
+  color: #01395a;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 .5rem;
+}
+.covevents h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+/* ------Directory page ------ */
+
+.listButton {
+  display: none;
+}
+.gridButton {
+  display: none;
+}
+.cards {
+  width: 350px;
+  margin: 0 auto;
+}
+.cards section {
+  border: 1px solid #01395a;
+  box-shadow: 0 0 30px #777;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+.cards section article p {
+  display: none;
+}
+
 /*----------- FOOTER --------------*/
 
 .covSocial img {
@@ -271,14 +320,6 @@ footer a {
   margin: auto;
   border: 2px solid #01395a;
 }
-
-/* .contactPara {
-    display: block;
-  } */
-/* .contact a {
-    color: #01395a;
-    font-weight: bold;
-  } */
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

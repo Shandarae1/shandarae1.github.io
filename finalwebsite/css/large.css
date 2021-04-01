@@ -36,4 +36,37 @@
     grid-column: 1/2;
     grid-row: 2/3;
   }
+
+    /* ------Directory page------ */
+
+    .bigH2 {
+      text-align: left;
+    }
+    .listButton {
+      display: inline;
+    }
+    .gridButton {
+      display: inline;
+    }
+    .gridview {
+      width: 860px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: .5rem;
+    }
+  
+    .gridview section article {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: .5rem;
+    }
+    .gridview section img {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+    .gridview section article p {
+      display: block;
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
 }
