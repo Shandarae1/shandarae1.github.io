@@ -46,12 +46,12 @@
     #gridButton {
       display: inline;
       border: 1px solid #01395a;
-      background-color: #D09D06;
+      background-color: #ffffff;
       color: #01395a;
       border-radius: 5px;
       font-size: 1.7rem;
       font-weight: bold;
-      padding: .3rem 0;
+      padding: .3rem .3rem;
     }
     .gridview {
       width: 860px;

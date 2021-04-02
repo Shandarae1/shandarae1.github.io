@@ -58,6 +58,7 @@ fetch(getURL)
       eventimg.setAttribute("alt", `photo of ${event.Title}`);
       eventimg.setAttribute("loading", "lazy");
       eventa.setAttribute("href", `${event.credit}`);
+      eventa.setAttribute("target", "blank");
       eventcredit.innerHTML = `image credit`;
 
 
