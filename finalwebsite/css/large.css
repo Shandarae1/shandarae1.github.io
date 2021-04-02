@@ -39,13 +39,11 @@
 
     /* ------Directory page------ */
 
-    .bigH2 {
-      text-align: left;
-    }
+   
     .listButton {
       display: inline;
     }
-    .gridButton {
+    #gridButton {
       display: inline;
     }
     .gridview {

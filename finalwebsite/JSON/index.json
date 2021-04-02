@@ -5,28 +5,32 @@
        "Title": "Sweetheart Swim",
        "Date": "Feb. 15th",
        "Time": "1-3 p.m.",
-       "Location": "Located at the Covington Aquatic Center"
+       "Location": "Located at the Covington Aquatic Center",
+       "photo": "images/sweetheartswim.jpg"
     },
     {  
        "No": "2",
        "Title": "Daddy Daughter Spring Fling ",
        "Date": "Saturday, April 4",
        "Time": "6-8:30 p.m.",
-       "Location": "Located in the Kentwood High School Commons"
+       "Location": "Located in the Kentwood High School Commons",
+       "photo": "images/daddydaughter.jpg"
     },
     {  
        "No": "3",
        "Title": "Underwater Egg Hunt",
        "Date": "Sunday, April 12",
        "Time": "1-2 p.m. & 3:30-4:30 p.m.",
-       "Location": "Located at the Covington Aquatic Center"
+       "Location": "Located at the Covington Aquatic Center",
+       "photo": "images/egghunt.jpg"
     },
     {  
        "No": "4",
        "Title": "Arbor Day Celebrations",
        "Date": "Friday, April 24",
        "Time": "10-11 a.m.",
-       "Location": "Located at Jenkins Creek Park "
+       "Location": "Located at Jenkins Creek Park ",
+       "photo": "images/arborday.jpg"
     }
  ]
 

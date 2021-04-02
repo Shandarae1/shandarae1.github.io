@@ -45,16 +45,22 @@ fetch(getURL)
       let eventp1 = document.createElement("p");
       let eventp2 = document.createElement("p");
       let eventp3 = document.createElement("p");
+      let eventimg = document.createElement("img");
+      
       
       eventh3.innerHTML = `${event.Title}`;
       eventp1.innerHTML = `${event.Date} ${event.Time}`;
       eventp2.innerHTML = `${event.Time}`;
       eventp3.innerHTML = `${event.Location}`;
+      eventimg.setAttribute("src", `${event.photo}`);
+      eventimg.setAttribute("alt", `photo of ${event.Title}`);
+      companylogo.setAttribute("loading", "lazy");
 
       eventBox.append(eventcard);
       eventcard.appendChild(eventhr);
       eventcard.appendChild(eventh3);
       eventcard.appendChild(eventp1);
       eventcard.appendChild(eventp3);
+      eventcard.appendChild(eventimg);
     });
   });

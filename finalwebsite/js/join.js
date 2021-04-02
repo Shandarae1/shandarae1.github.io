@@ -23,3 +23,12 @@ function toggleMenu() {
   const datefield = document.getElementById("date");
   
   datefield.textContent = fulldate;
+
+  // ------Join dropdown------
+
+  function selectLevel() {
+    const s = document.querySelector("#selected");
+    const sel = document.querySelector("#memberLevel");
+    s.style.display = "block";
+    s.textContent = sel.value;
+  }

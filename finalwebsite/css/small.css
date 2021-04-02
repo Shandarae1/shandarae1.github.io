@@ -36,6 +36,7 @@ nav button {
   font-size: 2rem;
   color: #ffffff;
 }
+
 .hamButton {
   display: block;
   width: 100%;
@@ -148,7 +149,7 @@ main h2 {
 }
 .weathersummary {
   display: flex;
-  background: radial-gradient(#ffffff, #d09d06);
+  background: radial-gradient(#ffffff, #84d2e1);
   border: 1px solid #01395a;
   padding: 0.4rem 0.4rem 0.2rem 0.4rem;
   box-shadow: 0 0 30px #777;
@@ -177,7 +178,7 @@ main h2 {
 }
 
 .caption3day {
-  background: radial-gradient(#ffffff, #d09d06);
+  background: radial-gradient(#ffffff, #84d2e1);
   color: #01395a;
   padding: 0.5rem;
   font-size: 1.5rem;
@@ -190,7 +191,7 @@ main h2 {
   text-align: center;
 }
 .weekdays {
-  background-color: #d09d06;
+  background-color: #84d2e1;
 }
 table,
 th,
@@ -208,17 +209,19 @@ table {
   margin: 0 auto;
   bottom: 20px;
   right: 20px;
-  background: radial-gradient(#ffffff, #84d2e1);
+  background: radial-gradient(#ffffff, #D09D06);
   border: 1px solid #01395a;
   box-shadow: 0 0 30px #777;
-  opacity: 0.9;
+  opacity: 0.85;
   color: #01395a;
   font-size: 0.9rem;
   font-weight: bold;
   text-align: center;
-  padding: 0 .5rem;
 }
-
+.events h2 {
+  color: #01395a;
+  text-decoration: underline;
+}
 .companyAds {
   width: 350px;
   margin: 0 auto;
@@ -272,12 +275,93 @@ article {
   font-size: 2rem;
 }
 
+/* ------Join page ------ */
+
+form {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 400px;
+}
+  
+form fieldset {
+  margin: 0.5rem;
+  border: 2px solid #01395a;
+  border-radius: 5px;
+  padding: 0.5rem 2%;
+}  
+form legend {
+  color: #01395a;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
+}
+form label.contactForm,
+form div {
+  display: block;
+  padding-top: 1rem;
+}
+form label.contactForm input,
+form label.contactForm select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 5px;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 20rem;
+} 
+form label.contactForm input,
+form label.contactForm datalist,
+form label #memberLevel {
+  display: block;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 20rem;
+  margin: 0 0 0.5rem 0;
+}
+form input.formButton {
+  border: none;
+  background-color: #D09D06;
+  color: #01395a;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  margin: 2rem 0 2rem 2rem;
+  width: 96%;
+  max-width: 20rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.levelsh3 {
+  padding: .5rem;
+}
+.levelsh3 h3{
+  margin: 0;
+}
+.comments textarea {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  max-width: 20rem;
+  border-radius: 5px;
+}
+
+form label.contactForm input:required {
+  border-bottom: #ff5c3e solid 3px;
+}
+form label.contactForm input:required:valid {
+  border-bottom: none;
+}
+
 /* ------Directory page ------ */
 
 .listButton {
   display: none;
 }
-.gridButton {
+#gridButton {
   display: none;
 }
 .cards {
