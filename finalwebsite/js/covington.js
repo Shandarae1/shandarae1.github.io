@@ -46,6 +46,8 @@ fetch(getURL)
       let eventp2 = document.createElement("p");
       let eventp3 = document.createElement("p");
       let eventimg = document.createElement("img");
+      let eventa = document.createElement("a");
+      let eventcredit = document.createElement("p");
       
       
       eventh3.innerHTML = `${event.Title}`;
@@ -55,6 +57,9 @@ fetch(getURL)
       eventimg.setAttribute("src", `${event.photo}`);
       eventimg.setAttribute("alt", `photo of ${event.Title}`);
       eventimg.setAttribute("loading", "lazy");
+      eventa.setAttribute("src", `${event.credit}`);
+      eventcredit.innerHTML = `image credit`;
+
 
       eventBox.append(eventcard);
       eventcard.appendChild(eventhr);
@@ -62,5 +67,7 @@ fetch(getURL)
       eventcard.appendChild(eventp1);
       eventcard.appendChild(eventp3);
       eventcard.appendChild(eventimg);
+      eventcard.appendChild(eventa);
+      eventa.appendChild(eventcredit);
     });
   });

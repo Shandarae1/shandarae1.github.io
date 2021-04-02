@@ -103,7 +103,13 @@ main h2 {
   text-align: center;
   font-size: 2rem;
 }
-
+figcaption {
+  text-align: center;
+}
+figcaption a {
+  color: #01395a;
+  font-size: 0.9rem;
+}
 
 /* ------Index page ------ */
 
