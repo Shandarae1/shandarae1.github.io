@@ -39,12 +39,19 @@
 
     /* ------Directory page------ */
 
-   
-    .listButton {
-      display: inline;
-    }
+   .gridButton {
+    margin: 0 auto;
+
+   }
     #gridButton {
       display: inline;
+      border: 1px solid #01395a;
+      background-color: #D09D06;
+      color: #01395a;
+      border-radius: 5px;
+      font-size: 1.7rem;
+      font-weight: bold;
+      padding: .3rem 0;
     }
     .gridview {
       width: 860px;

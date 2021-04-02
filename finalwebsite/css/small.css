@@ -101,7 +101,9 @@ main {
 }
 main h2 {
   text-align: center;
+  font-size: 2rem;
 }
+
 
 /* ------Index page ------ */
 
@@ -323,7 +325,7 @@ form label #memberLevel {
   margin: 0 0 0.5rem 0;
 }
 form input.formButton {
-  border: none;
+  border: 1px solid #01395a;
   background-color: #D09D06;
   color: #01395a;
   border-radius: 5px;
@@ -333,6 +335,10 @@ form input.formButton {
   max-width: 20rem;
   font-size: 1.2rem;
   font-weight: bold;
+}
+.formButton:hover {
+  color:#ffffff;
+  background-color: #01395a;
 }
 
 .levelsh3 {
@@ -358,9 +364,7 @@ form label.contactForm input:required:valid {
 
 /* ------Directory page ------ */
 
-.listButton {
-  display: none;
-}
+
 #gridButton {
   display: none;
 }
@@ -378,6 +382,21 @@ form label.contactForm input:required:valid {
   display: none;
 }
 
+/* ------Contact Page------ */
+
+.covcontact {
+  background-color: #ffffff;
+  color: #01395a;
+  font-size: large;
+  text-align: center;
+  border: 1px solid #01395a;
+  margin: .5rem;
+}
+.boarddiv {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
 /*----------- FOOTER --------------*/
 
 .covSocial img {

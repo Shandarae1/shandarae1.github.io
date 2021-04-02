@@ -54,7 +54,7 @@ fetch(getURL)
       eventp3.innerHTML = `${event.Location}`;
       eventimg.setAttribute("src", `${event.photo}`);
       eventimg.setAttribute("alt", `photo of ${event.Title}`);
-      companylogo.setAttribute("loading", "lazy");
+      eventimg.setAttribute("loading", "lazy");
 
       eventBox.append(eventcard);
       eventcard.appendChild(eventhr);
