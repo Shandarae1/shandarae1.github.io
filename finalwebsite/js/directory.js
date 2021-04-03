@@ -19,16 +19,15 @@ document.getElementById("year").textContent = new Date().toLocaleDateString(
   year
 );
 
-// current date footer
+// Last Updated footer
 
-const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-  now
+const date = document.lastModified;
+
+document.getElementById("year").textContent = new Date().toLocaleDateString(
+  "en-US",
+  year
 );
-
-const datefield = document.getElementById("date");
-
-datefield.textContent = fulldate;
+document.getElementById("date").textContent = date;
 
 
 // ------DIRECTORY JSON FETCH------

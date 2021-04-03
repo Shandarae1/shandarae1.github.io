@@ -13,16 +13,15 @@ function toggleMenu() {
     year
   );
   
-  // current date footer
-  
-  const now = new Date();
-  const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-    now
-  );
-  
-  const datefield = document.getElementById("date");
-  
-  datefield.textContent = fulldate;
+// Last Updated footer
+
+const date = document.lastModified;
+
+document.getElementById("year").textContent = new Date().toLocaleDateString(
+  "en-US",
+  year
+);
+document.getElementById("date").textContent = date;
 
   // ------Join dropdown------
 
