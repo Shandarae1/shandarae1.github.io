@@ -113,11 +113,39 @@ figcaption a {
 
 /* ------Index page ------ */
 
+.alert {
+  display: block;
+  background: radial-gradient(#ffffff, #ff5c3e);
+  border: 1px solid #01395a;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+  box-shadow: 0 0 30px #777;
+  color: #01395a;
+  margin: 0.5rem 0;
+  /* display: grid;
+  grid-template-columns: 1.5fr .5fr; */
+  text-align: center;
+}
+.alert p {
+  margin: 0;
+}
+.closeButton {
+  color: #034972;
+  padding: .5rem;
+  font-size: 1.2rem;
+  border: none;
+  background-color: transparent;
+  justify-self: right;
+}
+.closeButton:hover {
+  background-color: #d09d06;
+}
+
 .callToAction {
   display: block;
   text-align: center;
   font-size: 1.5rem;
-  background: radial-gradient(#ffffff, #d09d06);
+  background: radial-gradient(#ffffff, #84d2e1);
   border: 1px solid #01395a;
   padding: 0.7rem;
   box-shadow: 0 0 30px #777;
@@ -130,6 +158,9 @@ figcaption a {
   color: #01395a;
   display: block;
   text-decoration: none;
+}
+.callToAction:hover {
+  font-size: 2rem;
 }
 .herodiv {
   margin: 0 auto;
@@ -265,7 +296,7 @@ article {
 }
 .covevents {
   width: 350px;
-  margin: 0 auto;
+  margin: .5rem auto;
   bottom: 20px;
   right: 20px;
   background: radial-gradient(#84d2e1, #4bb1c5);
@@ -282,7 +313,19 @@ article {
   color: white;
   font-size: 2rem;
 }
+.covevents a {
+  color: #01395a;
+}
+.covevents a:hover {
+  color: #1770a3;
+}
 
+video{
+  max-width: 100%;
+  margin: .5rem auto;
+  border: 2px solid #01395a;
+  border-radius: 2%;
+}
 /* ------Join page ------ */
 
 form {

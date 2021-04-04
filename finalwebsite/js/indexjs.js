@@ -43,7 +43,6 @@ fetch(reqURL)
         companyAd.No === "1" || companyAd.No === "2" || companyAd.No === "5"
     );
 
-
     companyfilter.forEach((company) => {
       let a = document.createElement("a");
       let companycard = document.createElement("section");
@@ -70,12 +69,10 @@ fetch(reqURL)
     });
   });
 
+// ------weather JSON Fetch------
 
-  // ------weather JSON Fetch------
-
-  const aquireURL =
+const aquireURL =
   "https://api.openweathermap.org/data/2.5/onecall?lat=47.35896&lon=-122.11796&appid=946ee3e55995e79e2d6f02d00a3dce79&units=imperial";
-
 
 fetch(aquireURL)
   .then(function (summaryresponse) {
@@ -88,40 +85,44 @@ fetch(aquireURL)
     const currentweather = document.querySelector("#currently");
     const weatherhumidity = document.querySelector("#humidity");
 
-    
     weatherTemp.innerHTML = `${weather.temp.toFixed(0)}`;
     currentweather.innerHTML = `${weather.weather[0].description}`;
     weatherhumidity.innerHTML = `${weather.humidity}`;
-    });
+  });
 
+// ------weather alert JSON fetch------
+const accioURL =
+  "https://api.openweathermap.org/data/2.5/onecall?lat=47.35896&lon=-122.11796&appid=946ee3e55995e79e2d6f02d00a3dce79&units=imperial";
 
-    // ------weather alert JSON fetch------
+fetch(accioURL)
+  .then(function (alertresponse) {
+    return alertresponse.json();
+  })
+  .then(function (jObject) {
+    const wthrAlert = jObject["alerts"];
+    const weatherBox = document.getElementById("weatherAlert");
 
-    const accioURL =
-    "https://api.openweathermap.org/data/2.5/onecall?lat=47.35896&lon=-122.11796&appid=946ee3e55995e79e2d6f02d00a3dce79&units=imperial";
-  
-  
-  fetch(accioURL)
-    .then(function (alertresponse) {
-      return alertresponse.json();
-    })
-    .then(function (jObject) {
-      const wthrAlert = jObject["alerts"];
-      const weatherBox = document.getElementById("weatherAlert");
+    if (wthrAlert === undefined) {
+      
+      let alertSection = document.createElement("section");
+      let alertP = document.createElement("p");
 
-  let alertSection = document.createElement("section");
-  let alertP = document.createElement("p")
-  let button = document.createElement("button");
+      alertP.innerHTML = `"No Weather Alert Today"`;
 
-  button.setAttribute('onclick', 'closeAlert()')
-  button.setAttribute('class', 'closeButton')
-  button.innerHTML = `close`;
-  alertP.innerHTML = `<strong>Weather Alert!</strong> ${wthrAlert.events}`;
+      weatherBox.append(alertSection);
+      alertSection.appendChild(alertP);
+    }
 
-  weatherBox.append(alertSection);
-  alertSection.appendChild(alertP);
-  alertSection.appendChild(button);
-})
+    let alertSection = document.createElement("section");
+    let alertP = document.createElement("p");
+
+    alertP.innerHTML = `<strong>Weather Alert!</strong> ${wthrAlert.event}`;
+
+    weatherBox.append(alertSection);
+    alertSection.appendChild(alertP);
+
+    
+  });
 
 // ------WEATHER ALERT CLOSE Button------
 
@@ -136,7 +137,15 @@ const weekdays = document.querySelector("#weekdays");
 
 function day() {
   let day = new Date();
-  let week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  let week = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
 
   for (i = 0; i < 3; i++) {
     let tablehead = document.createElement("th");
@@ -155,20 +164,18 @@ const forecastURL =
 fetch(forecastURL)
   .then((response) => response.json())
   .then((forecastObject) => {
-
     const forecast = forecastObject["daily"];
     const table = document.querySelector("#forecast3day");
-  
-      let tabledata0 = document.createElement("td");
-      let tabledata1 = document.createElement("td");
-      let tabledata2 = document.createElement("td");
 
-      tabledata0.innerHTML = `${forecast[0].temp.day.toFixed(0)}&deg;F`;
-      tabledata1.innerHTML = `${forecast[1].temp.day.toFixed(0)}&deg;F`;
-      tabledata2.innerHTML = `${forecast[2].temp.day.toFixed(0)}&deg;F`;
+    let tabledata0 = document.createElement("td");
+    let tabledata1 = document.createElement("td");
+    let tabledata2 = document.createElement("td");
 
+    tabledata0.innerHTML = `${forecast[0].temp.day.toFixed(0)}&deg;F`;
+    tabledata1.innerHTML = `${forecast[1].temp.day.toFixed(0)}&deg;F`;
+    tabledata2.innerHTML = `${forecast[2].temp.day.toFixed(0)}&deg;F`;
 
-      table.appendChild(tabledata0);
-      table.appendChild(tabledata1);
-      table.appendChild(tabledata2);
-})
+    table.appendChild(tabledata0);
+    table.appendChild(tabledata1);
+    table.appendChild(tabledata2);
+  });
