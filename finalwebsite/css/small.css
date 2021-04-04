@@ -138,7 +138,8 @@ figcaption a {
   justify-self: right;
 }
 .closeButton:hover {
-  background-color: #d09d06;
+  background-color: #ff5c3e;
+  border: 1px solid #01395a;
 }
 
 .callToAction {
@@ -293,6 +294,10 @@ article {
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
+}
+.covdemo img {
+  border: 1px solid #01395a;
+  box-shadow: 0 0 30px #777;
 }
 .covevents {
   width: 350px;
