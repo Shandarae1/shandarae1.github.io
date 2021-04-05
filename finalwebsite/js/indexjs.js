@@ -133,6 +133,80 @@ function closeAlert() {
 
 // ------ 3 day forecast------
 
+// const weekdays = document.querySelector("#weekdays");
+
+// function day() {
+//   let day = new Date();
+//   let week = [
+//     "Sunday",
+//     "Monday",
+//     "Tuesday",
+//     "Wednesday",
+//     "Thursday",
+//     "Friday",
+//     "Saturday",
+//   ];
+
+//   for (i = 0; i < 3; i++) {
+//     let tablehead = document.createElement("th");
+//     tablehead.innerHTML = week[(day.getDay() + 1 + i) % 7];
+//     weekdays.appendChild(tablehead);
+//   }
+// }
+
+// day();
+
+// ------3 day forecast JSON fetch------
+
+// const forecastURL =
+//   "https://api.openweathermap.org/data/2.5/onecall?lat=47.35896&lon=-122.11796&appid=946ee3e55995e79e2d6f02d00a3dce79&units=imperial";
+
+// fetch(forecastURL)
+//   .then((response) => response.json())
+//   .then((forecastObject) => {
+//     const forecast = forecastObject["daily"];
+//     const table = document.querySelector("#forecast3day");
+
+//     let tabledata0 = document.createElement("td");
+//     let tabledata1 = document.createElement("td");
+//     let tabledata2 = document.createElement("td");
+
+//     tabledata0.innerHTML = `${forecast[0].temp.day.toFixed(0)}&deg;F`;
+//     tabledata1.innerHTML = `${forecast[1].temp.day.toFixed(0)}&deg;F`;
+//     tabledata2.innerHTML = `${forecast[2].temp.day.toFixed(0)}&deg;F`;
+
+//     table.appendChild(tabledata0);
+//     table.appendChild(tabledata1);
+//     table.appendChild(tabledata2);
+//   });
+
+const forecastURL =
+  "https://api.openweathermap.org/data/2.5/onecall?lat=47.35896&lon=-122.11796&appid=946ee3e55995e79e2d6f02d00a3dce79&units=imperial";
+
+fetch(forecastURL)
+  .then((response) => response.json())
+  .then((forecastObject) => {
+    const forecast = forecastObject["daily"];
+    const table = document.querySelector("#weekdays");
+
+    let tablerow = document.createElement("tr");
+    let caption = document.createElement("caption");
+    let tabledata0 = document.createElement("td");
+    let tabledata1 = document.createElement("td");
+    let tabledata2 = document.createElement("td");
+
+    caption.innerHTML = "3 Day Forecast";
+    tabledata0.innerHTML = `${forecast[0].temp.day.toFixed(0)}&deg;F`;
+    tabledata1.innerHTML = `${forecast[1].temp.day.toFixed(0)}&deg;F`;
+    tabledata2.innerHTML = `${forecast[2].temp.day.toFixed(0)}&deg;F`;
+
+ table.appendChild(caption);
+  table.appendChild(tablerow);  
+    tablerow.appendChild(tabledata0);
+    tablerow.appendChild(tabledata1);
+    tablerow.appendChild(tabledata2);
+  });
+
 const weekdays = document.querySelector("#weekdays");
 
 function day() {
@@ -144,7 +218,7 @@ function day() {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday",
+    "Saturday"
   ];
 
   for (i = 0; i < 3; i++) {
@@ -155,27 +229,3 @@ function day() {
 }
 
 day();
-
-// ------3 day forecast JSON fetch------
-
-const forecastURL =
-  "https://api.openweathermap.org/data/2.5/onecall?lat=47.35896&lon=-122.11796&appid=946ee3e55995e79e2d6f02d00a3dce79&units=imperial";
-
-fetch(forecastURL)
-  .then((response) => response.json())
-  .then((forecastObject) => {
-    const forecast = forecastObject["daily"];
-    const table = document.querySelector("#forecast3day");
-
-    let tabledata0 = document.createElement("td");
-    let tabledata1 = document.createElement("td");
-    let tabledata2 = document.createElement("td");
-
-    tabledata0.innerHTML = `${forecast[0].temp.day.toFixed(0)}&deg;F`;
-    tabledata1.innerHTML = `${forecast[1].temp.day.toFixed(0)}&deg;F`;
-    tabledata2.innerHTML = `${forecast[2].temp.day.toFixed(0)}&deg;F`;
-
-    table.appendChild(tabledata0);
-    table.appendChild(tabledata1);
-    table.appendChild(tabledata2);
-  });

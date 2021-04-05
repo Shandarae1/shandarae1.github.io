@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
-  #forecast3day {
+  #weekdays {
     width: 100%;
     height: fit-content;
   }

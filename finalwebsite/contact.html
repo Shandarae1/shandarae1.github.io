@@ -20,9 +20,11 @@
 
 
     <header>
-        <picture class="mobilelogo">
-            <a href="index.html" ><img src="images/covlogo.png" alt="Covingon Chamber Logo" /></a>
-        </picture>
+        <a href="index.html">
+            <picture class="mobilelogo">
+                <img src="images/covlogo.png" alt="Covingon Chamber Logo" />
+            </picture>
+        </a>
 
         <section class="headings">
             <h1>Covington Chamber of Commerce</h1>
@@ -48,14 +50,7 @@
     </nav>
 
     <main>
-        <div class="boarddiv">
-            <h2>Meet our Board of Directors</h2>
-            <figure>
-                <img class="board" src="images/board.jpg" alt="board of directors" loading="lazy">
-            </div><figcaption>
-                <a href="https://www.covingtonwachamber.com/?s=board&et_pb_searchform_submit=et_search_proccess&et_pb_include_posts=yes&et_pb_include_pages=yes"target="_blank">image credit</a>
-            </figcaption>
-        </figure>
+
         <h2 class="bigH2">
             <strong>Contact Us:</strong>
         </h2>
@@ -67,16 +62,26 @@
                 <label class="contactForm">First and Last Name*<input type="text" name="fname" required
                         pattern="[A-Za-z]{5,}"></label>
                 <label class="contactForm">Email<input type="email" name="email"
-                        placeholder=" someone@covmail.com"></label>
+                        placeholder=" someone@covmail.com"required></label>
                 <label class="contactForm">Cell Phone*<input type="tel" name="phone" placeholder="12068675309"
-                        required></label>
-                <label class="comments">Leave Us a Comment: <textarea name="comments"
+                        ></label>
+                <label class="comments">Leave us a comment: <textarea name="comments"
                         placeholder="Comments here:"></textarea></label>
-                </div>
-
             </fieldset>
             <input type="submit" value="Send" class="formButton">
         </form>
+
+        <div class="boarddiv">
+            <h2>Meet our Board of Directors</h2>
+            <figure>
+                <img class="board" src="images/board.jpg" alt="board of directors" loading="lazy">
+                <figcaption>
+                    <a href="https://www.covingtonwachamber.com/?s=board&et_pb_searchform_submit=et_search_proccess&et_pb_include_posts=yes&et_pb_include_pages=yes"
+                        target="_blank">image credit</a>
+                </figcaption>
+            </figure>
+        </div>
+
         <div class="covcontact">
 
 
@@ -102,7 +107,9 @@
                 <a href="https://www.instagram.com" target="blank">
                     <img class="wordpress" src="images/instaicon.png" alt="instagram icon" /></a>
             </div>
-            </section><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10810.06359458744!2d-122.11691911003767!3d47.36284863181749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54908a12088498ad%3A0x6c6316aa54602fca!2sCovington%2C%20WA%2098042!5e0!3m2!1sen!2sus!4v1617385835966!5m2!1sen!2sus" width="350" height="300" allowfullscreen="" loading="lazy"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10810.06359458744!2d-122.11691911003767!3d47.36284863181749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54908a12088498ad%3A0x6c6316aa54602fca!2sCovington%2C%20WA%2098042!5e0!3m2!1sen!2sus!4v1617385835966!5m2!1sen!2sus"
+                width="350" height="300" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </main>
 
@@ -111,7 +118,7 @@
 
     <footer>
         &copy; <span id="year"></span> | Shanda Aurich | Covington, WA |
-        <a href="https://www.byui.edu/online">BYUI Online Learning</a><br>Last Updated: 
+        <a href="https://www.byui.edu/online">BYUI Online Learning</a><br>Last Updated:
         <span id="date"></span>
 
 

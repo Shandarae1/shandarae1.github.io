@@ -115,15 +115,13 @@ figcaption a {
 
 .alert {
   display: block;
-  background: radial-gradient(#ffffff, #ff5c3e);
+  background: radial-gradient(#ffffff, #D09D06);
   border: 1px solid #01395a;
   font-size: 1.2rem;
   padding: 0.7rem;
   box-shadow: 0 0 30px #777;
   color: #01395a;
   margin: 0.5rem 0;
-  /* display: grid;
-  grid-template-columns: 1.5fr .5fr; */
   text-align: center;
 }
 .alert p {
@@ -138,7 +136,7 @@ figcaption a {
   justify-self: right;
 }
 .closeButton:hover {
-  background-color: #ff5c3e;
+  background-color: #D09D06;
   border: 1px solid #01395a;
 }
 
@@ -184,9 +182,7 @@ figcaption a {
   grid-row: 1/2;
   margin: 0.5rem 0;
 }
-.forecast3day {
-  grid-row: 2/3;
-}
+
 .weathersummary {
   display: flex;
   background: radial-gradient(#ffffff, #84d2e1);
@@ -217,20 +213,21 @@ figcaption a {
   text-align: left;
 }
 
-.caption3day {
+.forecast3day caption {
   background: radial-gradient(#ffffff, #84d2e1);
   color: #01395a;
   padding: 0.5rem;
   font-size: 1.5rem;
   border: 1px solid #01395a;
 }
-#forecast3day {
+.forecast3day {
+  grid-row: 2/3;
   width: 350px;
   margin: 0 auto;
   padding: 0;
   text-align: center;
 }
-.weekdays {
+.forecast3day th {
   background-color: #84d2e1;
 }
 table,
