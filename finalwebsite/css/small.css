@@ -256,8 +256,10 @@ table {
   text-align: center;
 }
 .events h2 {
-  color: #01395a;
   text-decoration: underline;
+}
+.events a {
+  color: #01395a;
 }
 .companyAds {
   width: 350px;
@@ -311,15 +313,16 @@ article {
   text-align: center;
   padding: 0 .5rem;
 }
-.covevents h2 {
+.covevents h2 a {
   color: white;
   font-size: 2rem;
+  text-decoration: underline;
 }
 .covevents a {
   color: #01395a;
 }
 .covevents a:hover {
-  color: #1770a3;
+  color: white;
 }
 
 video{
@@ -444,9 +447,13 @@ form label.contactForm input:required:valid {
   margin: .5rem;
 }
 .boarddiv {
-  max-width: 100%;
   margin: 0 auto;
   text-align: center;
+}
+.board {
+  max-width: 100%;
+  border: 1px solid #01395a;
+  box-shadow: 0 0 30px #777;
 }
 /*----------- FOOTER --------------*/
 

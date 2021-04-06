@@ -111,7 +111,7 @@
 
   /* ------Covington Page------*/
   .covevents {
-    width: 600px;
+    width: 630px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0.5rem;
