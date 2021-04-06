@@ -61,12 +61,13 @@ fetch(reqURL)
 
 
       a.setAttribute("href", `${company.weblink}`)
+      a.setAttribute("target", "blank");
       companyName.innerHTML = `${company.Name}`;
-      companyAddress.innerHTML = `${company.address}<br>${company.city}<br>&#9743; ${company.phone}`;
+      companyAddress.innerHTML = `${company.address}<br>${company.city}<br>&#9743; ${company.phone} <br>Website: ${company.weblink}`;
       companyCity.innerHTML = `${company.city}`;
       companyPhone.innerHTML = `&#9743; ${company.phone}`;
-      companyWeb.innerHTML = `${company.weblink}`;
-      // companyWeb.setAttribute = ("href", `${company.weblink}`)
+      companyWeb.innerHTML = `Website`;
+      companyWeb.setAttribute = ("href", `${company.weblink}`)
       companylogo.setAttribute("src", `images/${company.logo}`);
       companylogo.setAttribute("alt", `${company.Name} logo`);
       companylogo.setAttribute("loading", "lazy");

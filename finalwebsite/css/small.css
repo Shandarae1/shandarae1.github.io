@@ -432,9 +432,6 @@ form label.contactForm input:required:valid {
   margin: 0.5rem 0;
   text-align: center;
 }
-.cards section article p {
-  display: none;
-}
 
 /* ------Contact Page------ */
 
