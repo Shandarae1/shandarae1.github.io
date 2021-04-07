@@ -384,11 +384,15 @@ form input.formButton {
   color: #01395a;
   border-radius: 5px;
   padding: 0.75rem 1.5rem;
-  margin: 2rem 0 2rem 2rem;
-  width: 96%;
-  max-width: 20rem;
+  width: 100%;
+  /* max-width: 20rem; */
   font-size: 1.2rem;
   font-weight: bold;
+}
+.formButtonDiv {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 400px;
 }
 .formButton:hover {
   color:#ffffff;
@@ -403,7 +407,7 @@ form input.formButton {
 }
 .comments textarea {
   display: block;
-  width: 100%;
+  width: 98%;
   height: 3rem;
   max-width: 20rem;
   border-radius: 5px;
@@ -422,6 +426,9 @@ form label.contactForm input:required:valid {
 #gridButton {
   display: none;
 }
+#listButton {
+  display: none;
+}
 .cards {
   width: 350px;
   margin: 0 auto;
@@ -429,10 +436,12 @@ form label.contactForm input:required:valid {
 .cards section {
   border: 1px solid #01395a;
   box-shadow: 0 0 30px #777;
-  margin: 0.5rem 0;
   text-align: center;
+  margin: 0.5rem 0;
 }
-
+.cards h2 {
+  font-size: 150%;
+}
 /* ------Contact Page------ */
 
 .covcontact {

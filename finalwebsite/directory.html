@@ -39,7 +39,7 @@
             <button onclick="toggleMenu()">&#9776;</button>
         </div>
         <ul id="toggleNav" class="hide">
-            <li><a href="index.html" >Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="covington.html">City of Covington</a></li>
             <li><a href="join.html">Join Us</a></li>
             <li><a href="directory.html" class="active">Directory</a></li>
@@ -48,17 +48,19 @@
     </nav>
 
     <main>
-        <h2 >
+        <h2>
             <strong>Member Directory</strong>
         </h2>
-        <div class="gridButton">
-            <button id="gridButton" onclick="toggleGrid()"> &#8863; &#8862;</button>
-        </div>
 
+
+        <div class="gridButton">
+            <button id="gridButton" onclick="toggleGrid()"> &#8862;</button>
+
+            <button id="listButton" onclick="toggleList()"> &#8863; </button>
+        </div>
 
         <div id="list" class="cards"></div>
 
-  
 
 
     </main>
@@ -88,7 +90,7 @@
             <a href="https://www.instagram.com" target="blank">
                 <img class="wordpress" src="images/instaicon.png" alt="instagram icon" /></a>
         </div>
-        
+
     </div>
 
     <footer>
@@ -98,7 +100,7 @@
 
 
     </footer>
-    <script src=js/directory.js ></script>
+    <script src=js/directory.js></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({

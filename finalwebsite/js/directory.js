@@ -6,8 +6,17 @@ function toggleMenu() {
 
 //togglelist menu
 
+// function toggleGrid() {
+//   document.getElementById("list").classList.toggle("gridview");
+// }
+
+
 function toggleGrid() {
-  document.getElementById("list").classList.toggle("gridview");
+  document.getElementById("list").classList.add("gridview");
+}
+
+function toggleList() {
+  document.getElementById("list").classList.remove("gridview");
 }
 
 //footer year

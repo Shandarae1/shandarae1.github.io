@@ -86,29 +86,35 @@
                 </legend>
                 <div class="levelsh3">
                     <h3 >Level Benefits</h3>
-                    <p><strong>Small Business</strong></p>$400/year
+                    <p><strong>Non-Profit</strong></p>$100/year
                     <ul>
                         <li> Single listing in Online Business Directory</li>
                         <li> Money-Saving Benefits.</li>
                         <li> Promotion of Member News, Events and Discounts</li>
                     </ul>
-                    <p><strong>Business Leader</strong></p>$1,000/year
+                    <p><strong>Bronze</strong></p>$200/year
                     <ul>
                         <li>Three Listings in Online Business Directory</li>
                         <li>Invitation to Two Investor-Only Events</li>
-                        <li>Access to Chamber Economic De</li>
+                        <li>Access to Chamber Economic Development Data</li>
                     </ul>
-                    <p><strong>Community Champion</strong></p>$2,500+/year
+                    <p><strong>Silver</strong></p>$400/year
+                    <ul>
+                        <li>Six Listings in Online Business Directory</li>
+                        <li>Invitation to all Investor-Only Events</li>
+                        <li>Membership Database Availability</li>
+                    </ul>
+                    <p><strong>Gold</strong></p>$1,000+/year
                     <ul>
                         <li>Premium Membership Listing Including Logo and Five or more Listings in Online Business Directory </li>
                         <li>Access to key business and governmental leaders.</li>
                         <li>Eligible to serve on the Board of Directors and key committees</li>
                     </ul>
                 </div>
-                <div>Select Investment Level:
+                <div>Select Investment Level*:
                     <label>
-                        <select name="region" id="memberLevel" onchange="selectLevel()">
-                            <option value="" disabled selected>Select a level ...</option>
+                        <select name="region" id="memberLevel" onchange="selectLevel()" >
+                            <option value="" disabled selected >Select a level ...</option>
                             <option value="Small business">Small Business</option>
                             <option value="Business leader">Business Leader</option>
                             <option value="Community Champion">Community Champion</option>
@@ -120,7 +126,8 @@
                     </div>
 
             </fieldset>
-            <input type="submit" value="Send Member Application" class="formButton">
+            
+            <div class="formButtonDiv"><input type="submit" value="Send Member Application" class="formButton"></div>
         </form>
     </main>
 
