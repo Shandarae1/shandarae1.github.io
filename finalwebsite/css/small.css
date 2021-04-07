@@ -341,7 +341,18 @@ video{
   border-radius: 2%;
 }
 /* ------Join page ------ */
-
+.handshake {
+  margin: auto;
+}
+.handshake img {
+  border: 1px solid #01395a;
+  box-shadow: 0 0 30px #777;
+}
+.handshake a {
+  color: #01395a;
+  display: block;
+  text-align: center;
+}
 form {
   margin: 0 auto;
   width: 90%;
