@@ -90,7 +90,7 @@ h1 {
 }
 
 h2 {
-  color: #d09d06;
+  color: #01395a;
 }
 main {
   margin: 0 auto;
@@ -283,9 +283,10 @@ table {
   display: flex;
   margin: 0 auto;
 }
-.chamberPurpose picture a {
+.chamberPurpose a {
   color: #01395a;
   font-size: 90%;
+  
 }
 a {
   text-decoration: none;
