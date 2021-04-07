@@ -277,6 +277,15 @@ table {
 .chamberPurpose {
   border: 1px solid #01395a;
   box-shadow: 0 0 30px #777;
+  text-align: center;
+}
+.missionimg {
+  display: flex;
+  margin: 0 auto;
+}
+.chamberPurpose picture a {
+  color: #01395a;
+  font-size: 90%;
 }
 a {
   text-decoration: none;
@@ -385,7 +394,6 @@ form input.formButton {
   border-radius: 5px;
   padding: 0.75rem 1.5rem;
   width: 100%;
-  /* max-width: 20rem; */
   font-size: 1.2rem;
   font-weight: bold;
 }

@@ -60,11 +60,10 @@
                         pattern="[A-Za-z]{5,}"></label>
                 <label class="contactForm">Last Name*<input type="text" name="lname" required
                         pattern="[A-Za-z]{5,}"></label>
-                <label class="contactForm">Title<input type="text" name="title" ></label>
-                <label class="contactForm">Email*<input type="email" name="email"
-                        placeholder=" someone@covmail.com" required></label>
-                <label class="contactForm">Cell Phone<input type="tel" name="phone" placeholder="12068675309"
-                        ></label>
+                <label class="contactForm">Title<input type="text" name="title"></label>
+                <label class="contactForm">Email*<input type="email" name="email" placeholder=" someone@covmail.com"
+                        required></label>
+                <label class="contactForm">Cell Phone<input type="tel" name="phone" placeholder="12068675309"></label>
 
             </fieldset>
 
@@ -72,9 +71,10 @@
                 <legend>
                     Business Information
                 </legend>
-                <label class="contactForm">Business Name*<input type="text" name="busname" required
-                       ></label>
-                <label class="contactForm"> Business Website<input type="text" name="buswebsite"
+                <label class="contactForm">Business Name*<input type="text" name="busname" required></label>
+                <label class="contactForm">Business Address<input type="text" name="busaddress"></label>
+                <label class="contactForm">City, State Zip<input type="text" name="busaddress"></label>
+                <label class="contactForm"> Business Website*<input type="text" name="buswebsite"
                         placeholder=" www.mybusiness.com"></label>
                 <label class="comments">Business Description: <textarea name="busdescription"
                         placeholder="Description here:"></textarea></label>
@@ -85,7 +85,7 @@
                     Membership Levels
                 </legend>
                 <div class="levelsh3">
-                    <h3 >Level Benefits</h3>
+                    <h3>Level Benefits</h3>
                     <p><strong>Non-Profit</strong></p>$100/year
                     <ul>
                         <li> Single listing in Online Business Directory</li>
@@ -106,27 +106,28 @@
                     </ul>
                     <p><strong>Gold</strong></p>$1,000+/year
                     <ul>
-                        <li>Premium Membership Listing Including Logo and Five or more Listings in Online Business Directory </li>
+                        <li>Premium Membership Listing Including Logo and Five or more Listings in Online Business
+                            Directory </li>
                         <li>Access to key business and governmental leaders.</li>
                         <li>Eligible to serve on the Board of Directors and key committees</li>
                     </ul>
                 </div>
                 <div>Select Investment Level*:
                     <label>
-                        <select name="region" id="memberLevel" onchange="selectLevel()" >
-                            <option value="" disabled selected >Select a level ...</option>
+                        <select name="region" id="memberLevel" onchange="selectLevel()">
+                            <option value="" disabled selected>Select a level ...</option>
                             <option value="Small business">Small Business</option>
                             <option value="Business leader">Business Leader</option>
                             <option value="Community Champion">Community Champion</option>
                         </select></label>
                 </div>
                 <div>
-                <label class="comments">Add additional comments or information: <textarea name="comments"
-                        placeholder="Comments here:"></textarea></label>
-                    </div>
+                    <label class="comments">Add additional comments or information: <textarea name="comments"
+                            placeholder="Comments here:"></textarea></label>
+                </div>
 
             </fieldset>
-            
+
             <div class="formButtonDiv"><input type="submit" value="Send Member Application" class="formButton"></div>
         </form>
     </main>
@@ -155,7 +156,7 @@
             <a href="https://www.instagram.com" target="blank">
                 <img class="wordpress" src="images/instaicon.png" alt="instagram icon" /></a>
         </div>
-       
+
     </div>
 
     <footer>
