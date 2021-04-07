@@ -61,10 +61,9 @@
                 </legend>
                 <label class="contactForm">First and Last Name*<input type="text" name="fname" required
                         pattern="[A-Za-z]{5,}"></label>
-                <label class="contactForm">Email<input type="email" name="email"
-                        placeholder=" someone@covmail.com" required></label>
-                <label class="contactForm">Cell Phone*<input type="tel" name="phone" placeholder="12068675309"
-                        ></label>
+                <label class="contactForm">Email<input type="email" name="email" placeholder=" someone@covmail.com"
+                        required></label>
+                <label class="contactForm">Cell Phone*<input type="tel" name="phone" placeholder="12068675309"></label>
                 <label class="comments">Leave us a comment: <textarea name="comments"
                         placeholder="Comments here:"></textarea></label>
             </fieldset>
@@ -73,13 +72,15 @@
 
         <div class="boarddiv">
             <h2>Meet our Board of Directors</h2>
-            <figure>
-                <img class="board" src="images/board.jpg" alt="board of directors" loading="lazy">
-                <figcaption>
-                    <a href="https://www.covingtonwachamber.com/?s=board&et_pb_searchform_submit=et_search_proccess&et_pb_include_posts=yes&et_pb_include_pages=yes"
-                        target="_blank">image credit</a>
-                </figcaption>
-            </figure>
+            <a href="https://www.covingtonwachamber.com/staff-2021-2/">
+                <h3>Bio Page</h3>
+            </a>
+            <picture>
+                <source srcset="images/meetboard600.jpg" media="(min-width: 700px)" />
+                <source srcset="images/meetboard320.jpg" />
+                <img src="images/meetboard600.jpg" alt="image of Board of Directors" loading="lazy" />
+            </picture>
+            <a href="https://www.covingtonwachamber.com/our-story/">image credit</a>
         </div>
 
         <div class="covcontact">

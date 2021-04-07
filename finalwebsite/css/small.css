@@ -472,8 +472,17 @@ form label.contactForm input:required:valid {
   margin: .5rem;
 }
 .boarddiv {
-  margin: 0 auto;
+  margin: .5rem auto;
   text-align: center;
+}
+.boarddiv a {
+  display: block;
+  font-size: 1.2rem;
+  color: #01395a;
+}
+.boarddiv a:hover {
+  color: #d09d06;
+  text-decoration: underline #d09d06;
 }
 .board {
   max-width: 100%;

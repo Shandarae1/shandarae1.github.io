@@ -189,6 +189,8 @@ fetch(forecastURL)
     const forecast = forecastObject["daily"];
     const table = document.querySelector("#weekdays");
 
+    console.log(forecast);
+
     let tablerow = document.createElement("tr");
     let caption = document.createElement("caption");
     let tabledata0 = document.createElement("td");
