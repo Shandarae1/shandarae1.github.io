@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        NASAmissions Home
+    </title>
+    <meta name="description" content="NASAMissions - Everything you want to know about NASA's manned and un-manned missions" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css" />
+
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+</head>
+
+<body>
+    <header>
+        <picture class="mobilelogo">
+            <img src="images/NASA/nasa-logo-web-rgb.png" alt="NASAmissions header" />
+        </picture>
+
+        <section class="headings">
+            <h1>NASA Program Missions</h1>
+            <div class="motto">
+                Everything you want to know about NASA's manned and un-manned missions.
+            </div>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <div class="hamButton">
+            <button onclick="toggleMenu()">&#9776;</button>
+        </div>
+        <ul id="toggleNav" class="hide">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="search.html">Search</a></li>
+            <!-- <li><a href="gallery.html">Gallery</a></li> -->
+        </ul>
+    </nav>
+    <main>
+        <div class="herodiv">
+            <picture>
+                <img class="prestonHero" src="images/NASA/launchHERO.jpeg" alt="image of rocket launch" loading="lazy" />
+            </picture>
+        </div>
+        <h2>Select a program</h2>
+        <form method="GET" action="https://www.nasa.gov/mission_pages/shuttle/main/index.html">
+
+            <fieldset>
+                <legend>
+                    Program
+                </legend>
+
+
+                <div>Program Selection</div>
+                <label>
+                    <select name="region" id="stormRegion" onchange="selectRegion()">
+                        <option value="" disabled selected>Select a NASA Program ...</option>
+                        <option value=""disabled selected>Apollo</option>
+                        <option value=""disabled selected>Apollo-Soyuz</option>
+                        <option value=""disabled selected>Gemini</option>
+                        <option value=""disabled selected>Mercury</option>
+                        <option value=""disabled selected>Skylab</option>
+                        <option value="">Space Shuttle</option>
+                    </select></label>
+
+
+            </fieldset>
+
+            <input type="submit" value="Select Mission Type" class="formButton">
+        </form>
+        <div class="indexCards">
+            <section class="humansinspace.jpg"><img src="images/NASA/humansinspace.jpg" alt="Humans in Space image"
+                    loading="lazy" class="pimg" style="box-shadow: rgb(119, 119, 119) 0px 0px 30px;">
+                <article>
+                    <h2 href="https://www.nasa.gov/mission_pages/station/main/index.html"><a href="https://www.nasa.gov/content/human-missions-list">Humans in Space</a></h2>
+                </article>
+            </section>
+            <section class="voyager.jpg"><img src="images/NASA/voyager.jpg" alt="Unmanned Missions image" loading="lazy"
+                    class="pimg" style="box-shadow: rgb(119, 119, 119) 0px 0px 30px;">
+                <article>
+                    <h2 href="https://www.nasa.gov/mission_pages/station/main/index.html"><a href="https://www.nasa.gov/missions">Unmanned Missions</a></h2>
+                </article>
+            </section>
+            <section class="ISS.jpg"><img src="images/NASA/ISS.jpg" alt="International Space Station image" loading="lazy"
+                    class="pimg" style="box-shadow: rgb(119, 119, 119) 0px 0px 30px;">
+                <article>
+                    <h2 href="https://www.nasa.gov/mission_pages/station/main/index.html"><a href="https://www.nasa.gov/mission_pages/station/main/index.html">International Space Station</a></h2>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <div class="stormContact">
+        <section class="stormAddress">
+
+           <div class="stormContactPara1"> <h3><a href="index.html" >NASAMissions.com</a></h3>
+           </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; <span id="year"></span> | Shanda Aurich | Covington, WA |
+        <a href="https://www.byui.edu/online">BYUI Online Learning</a><br />
+        <span id="date"></span>
+
+
+    </footer>
+    <script src="javascript/indexjs.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Comfortaa', 'Hammersmith One'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
