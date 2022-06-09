@@ -69,7 +69,7 @@ fetch(reqURL)
       let companyWeb = document.createElement("p");
 
 
-      a.setAttribute("href", `${company.weblink}`)
+      a.setAttribute("href", `${company.weblink}`);
       a.setAttribute("target", "blank");
       companyName.innerHTML = `${company.Name}`;
       companyAddress.innerHTML = `${company.address}<br>${company.city}<br>&#9743; ${company.phone} <br>Website: ${company.weblink}`;
